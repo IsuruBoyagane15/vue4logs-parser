@@ -339,15 +339,20 @@ def search_index(query_log):
 def index_doc(doc_id):
     new_template = TEMPLATES[doc_id]
 
-    for token in new_template:
-        if token not in BENCHMARK_SETTINGS[DATASET]['banned_word']:
+    template_length = len(new_template)
+    # print(new_template)
+
+    for i in range(template_length):
+        token = new_template[i]
+        alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
+        is_alpha_numeric = re.search(alpha_numeric_regex, token)
+        if is_alpha_numeric:
+            TEMPLATES[doc_id][i] = re.sub(alpha_numeric_regex, '<*>', token)
+        else:
             if token in INVERTED_INDEX:
                 INVERTED_INDEX[token].append(doc_id)
             else:
                 INVERTED_INDEX[token] = [doc_id]
-        # else:
-        #     print("BANNED", token)
-
 
 def update_doc(tokens_to_remove, doc_id):
     for token in tokens_to_remove:
