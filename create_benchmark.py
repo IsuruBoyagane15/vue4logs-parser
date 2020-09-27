@@ -344,15 +344,15 @@ def index_doc(doc_id):
 
     for i in range(template_length):
         token = new_template[i]
-        alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
-        is_alpha_numeric = re.search(alpha_numeric_regex, token)
-        if is_alpha_numeric:
-            TEMPLATES[doc_id][i] = re.sub(alpha_numeric_regex, '<*>', token)
+        # alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
+        # is_alpha_numeric = re.search(alpha_numeric_regex, token)
+        # if is_alpha_numeric:
+        #     TEMPLATES[doc_id][i] = re.sub(alpha_numeric_regex, '<*>', token)
+        # else:
+        if token in INVERTED_INDEX:
+            INVERTED_INDEX[token].append(doc_id)
         else:
-            if token in INVERTED_INDEX:
-                INVERTED_INDEX[token].append(doc_id)
-            else:
-                INVERTED_INDEX[token] = [doc_id]
+            INVERTED_INDEX[token] = [doc_id]
 
 def update_doc(tokens_to_remove, doc_id):
     for token in tokens_to_remove:
@@ -496,6 +496,17 @@ def preprocess(dataset, line):
     return line
 
 
+def replace_alpha_nums(preprocessed_log):
+    # length = len(pre_processed_log)
+    for i,token in enumerate(preprocessed_log):
+        # token = preprocessed_log[i]
+        alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
+        is_alpha_numeric = re.search(alpha_numeric_regex, token)
+        if is_alpha_numeric:
+            pre_processed_log[i] = re.sub(alpha_numeric_regex, '<*>', token)
+    return pre_processed_log
+
+
 if __name__ == '__main__':
 
     TYPE = sys.argv[1]
@@ -505,7 +516,7 @@ if __name__ == '__main__':
     BENCHMARK['Dataset'] = list(BENCHMARK_SETTINGS.keys())
     input_dir = 'logs/'
 
-    THRESHOLD = 0.1
+    THRESHOLD = 0.01
 
     while THRESHOLD < 1:
         PAs_for_threshold = []
@@ -523,7 +534,8 @@ if __name__ == '__main__':
                 pre_processed_log = preprocess(DATASET, line['Content']).strip().split()
                 # print(logID, pre_processed_log)
 
-                log_line = filter_from_wildcards(pre_processed_log)
+                log_line = replace_alpha_nums(pre_processed_log)
+                log_line = filter_from_wildcards(log_line)
                 # print("FILTERED LOG LINE :", log_line)
 
                 hits = search_index(log_line)
