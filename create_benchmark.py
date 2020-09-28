@@ -366,6 +366,10 @@ def update_doc(tokens_to_remove, doc_id):
 
 
 def get_new_template(temp_template):
+    for i in TEMPLATES:
+        if TEMPLATES[i] == temp_template:
+            RESULTS.append(i)
+            return i
     if len(TEMPLATES.keys()) == 0:
         next_id = 0
     else:
@@ -495,6 +499,16 @@ def preprocess(dataset, line):
         line = re.sub(currentRex, '<*>', line)
     return line
 
+def replace_alpha_nums(preprocessed_log):
+    # length = len(pre_processed_log)
+    for i,token in enumerate(preprocessed_log):
+        # token = preprocessed_log[i]
+        alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
+        is_alpha_numeric = re.search(alpha_numeric_regex, token)
+        if is_alpha_numeric:
+            pre_processed_log[i] = re.sub(alpha_numeric_regex, '<*>', token)
+    return pre_processed_log
+
 
 def replace_alpha_nums(preprocessed_log):
     # length = len(pre_processed_log)
@@ -533,6 +547,7 @@ if __name__ == '__main__':
                 logID = line['LineId']
                 pre_processed_log = preprocess(DATASET, line['Content']).strip().split()
                 # print(logID, pre_processed_log)
+                pre_processed_log = replace_alpha_nums(pre_processed_log)
 
                 log_line = replace_alpha_nums(pre_processed_log)
                 log_line = filter_from_wildcards(log_line)
@@ -554,61 +569,69 @@ if __name__ == '__main__':
                         new_id = get_new_template(pre_processed_log)
                         index_doc(new_id)
                     else:
-                        max_similarity = 0
-                        selected_candidate_id = None
-                        remaining_hits = list(length_filtered_candidates.keys())
+                        candidate_found = False
+                        for i in length_filtered_candidates:
+                            if pre_processed_log == TEMPLATES[i]:
+                                RESULTS.append(i)
+                                candidate_found = True
+                                break
 
-                        TEMPLATES[-1] = pre_processed_log
-                        doc_ids = [-1]
-                        for hit in length_filtered_candidates:
-                            doc_ids.append(hit)
+                        if not candidate_found:
+                            max_similarity = 0
+                            selected_candidate_id = None
+                            remaining_hits = list(length_filtered_candidates.keys())
 
-                        cosine_similarity = get_tfidf(doc_ids, TEMPLATES)[0]
+                            TEMPLATES[-1] = pre_processed_log
+                            doc_ids = [-1]
+                            for hit in length_filtered_candidates:
+                                doc_ids.append(hit)
 
-                        TEMPLATES[-1] = None
-                        # print(cosine_similarity)
-                        # mean = np.mean(list(cosine_similarity))
-                        # sd =  np.std(list(cosine_similarity))
-                        for i in range(len(cosine_similarity)):
-                            if i == 0:
-                                continue
+                            cosine_similarity = get_tfidf(doc_ids, TEMPLATES)[0]
+
+                            TEMPLATES[-1] = None
+                            # print(cosine_similarity)
+                            # mean = np.mean(list(cosine_similarity))
+                            # sd =  np.std(list(cosine_similarity))
+                            for i in range(len(cosine_similarity)):
+                                if i == 0:
+                                    continue
+                                else:
+                                    current_similarity = cosine_similarity[i]
+                                    if current_similarity > max_similarity:
+                                        max_similarity = current_similarity
+                                        selected_candidate_id = remaining_hits[i-1]
+
+
+                            if max_similarity < THRESHOLD:
+                            # if mean + 2*sd > max_similarity:
+                                new_id = get_new_template(pre_processed_log)
+                                index_doc(new_id)
                             else:
-                                current_similarity = cosine_similarity[i]
-                                if current_similarity > max_similarity:
-                                    max_similarity = current_similarity
-                                    selected_candidate_id = remaining_hits[i-1]
+                                selected_candidate = TEMPLATES[selected_candidate_id]
 
+                                if pre_processed_log == selected_candidate:
+                                    # print("SELECTED TEMPLATE IS EQUAL TO LOG LINE")
+                                    RESULTS.append(selected_candidate_id)
+                                else:
+                                    template_length = len(selected_candidate)
+                                    # print("SELECTED TEMPLATE IS not EQUAL TO LOG LINE")
+                                    temporary_tokens = []
+                                    changed_tokens = []
 
-                        if max_similarity < THRESHOLD:
-                        # if mean + 2*sd > max_similarity:
-                            new_id = get_new_template(pre_processed_log)
-                            index_doc(new_id)
-                        else:
-                            selected_candidate = TEMPLATES[selected_candidate_id]
+                                    for index in range(template_length):
+                                        # if log_line_token_list[position] == candidate_token_list[position]:
+                                        if pre_processed_log[index] == selected_candidate[index] or \
+                                                "<*>" in selected_candidate[index]:
+                                            temporary_tokens.append(selected_candidate[index])
+                                        else:
+                                            changed_tokens.append(selected_candidate[index])
+                                            temporary_tokens.append("<*>")
+                                    updated_template = temporary_tokens
+                                    update_doc(changed_tokens, selected_candidate_id)
 
-                            if pre_processed_log == selected_candidate:
-                                # print("SELECTED TEMPLATE IS EQUAL TO LOG LINE")
-                                RESULTS.append(selected_candidate_id)
-                            else:
-                                template_length = len(selected_candidate)
-                                # print("SELECTED TEMPLATE IS not EQUAL TO LOG LINE")
-                                temporary_tokens = []
-                                changed_tokens = []
-
-                                for index in range(template_length):
-                                    # if log_line_token_list[position] == candidate_token_list[position]:
-                                    if pre_processed_log[index] == selected_candidate[index] or \
-                                            "<*>" in selected_candidate[index]:
-                                        temporary_tokens.append(selected_candidate[index])
-                                    else:
-                                        changed_tokens.append(selected_candidate[index])
-                                        temporary_tokens.append("<*>")
-                                updated_template = temporary_tokens
-                                update_doc(changed_tokens, selected_candidate_id)
-
-                                TEMPLATES[selected_candidate_id] = updated_template
-                                # index_doc(selected_candidate_id)
-                                RESULTS.append(selected_candidate_id)
+                                    TEMPLATES[selected_candidate_id] = updated_template
+                                    # index_doc(selected_candidate_id)
+                                    RESULTS.append(selected_candidate_id)
 
                     assert len(RESULTS) == logID
 
