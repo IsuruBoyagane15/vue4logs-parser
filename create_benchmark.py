@@ -366,6 +366,10 @@ def update_doc(tokens_to_remove, doc_id):
 
 
 def get_new_template(temp_template):
+    for i in TEMPLATES:
+        if TEMPLATES[i] == temp_template:
+            RESULTS.append(i)
+            return i
     if len(TEMPLATES.keys()) == 0:
         next_id = 0
     else:
@@ -515,7 +519,7 @@ if __name__ == '__main__':
     BENCHMARK['Dataset'] = list(BENCHMARK_SETTINGS.keys())
     input_dir = 'logs/'
 
-    THRESHOLD = 0.1
+    THRESHOLD = 0.01
 
     while THRESHOLD < 1:
         PAs_for_threshold = []
@@ -557,7 +561,6 @@ if __name__ == '__main__':
                         for i in length_filtered_candidates:
                             if pre_processed_log == TEMPLATES[i]:
                                 RESULTS.append(i)
-                                print(TEMPLATES[i], i)
                                 candidate_found = True
                                 break
 
@@ -639,7 +642,7 @@ if __name__ == '__main__':
             TEMPLATES = {}
 
         BENCHMARK[THRESHOLD] = PAs_for_threshold
-        THRESHOLD = round(THRESHOLD + 0.1, 2)
+        THRESHOLD = round(THRESHOLD + 0.01, 2)
 
     print(BENCHMARK)
     BENCHMARK.to_csv('results/' + BENCHMARK_NAME + '.csv', index=False)
