@@ -122,11 +122,7 @@ BENCHMARK_SETTINGS = {
     'HealthApp': {
         'log_file': 'HealthApp/HealthApp_2k.log',
         'log_format': '<Time>\|<Component>\|<Pid>\|<Content>',
-        'regex': [
-        #     r'blk_(|-)[0-9]+',  # block id
-        # r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)',  # IP
-        # r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$',  # Numbers,
-        ],
+        'regex': [],
         # 'st': 0.2,
         # 'depth': 4
         'banned_word': []
@@ -182,135 +178,6 @@ BENCHMARK_SETTINGS = {
 
     },
 }
-BENCHMARK_SETTINGS_p = {
-    'HDFS': {
-        'log_file': 'HDFS/HDFS_2k.log',
-        'log_format': '<Date> <Time> <Pid> <Level> <Component>: <Content>',
-        'regex': [r'blk_-?\d+', r'(\d+\.){3}\d+(:\d+)?'],
-        'st': 0.5,
-        'banned_word': []
-    },
-    'Hadoop': {
-        'log_file': 'Hadoop/Hadoop_2k.log',
-        'log_format': '<Date> <Time> <Level> \[<Process>\] <Component>: <Content>',
-        'regex': [r'(\d+\.){3}\d+', '\d{2,}'],
-        'st': 0.5,
-        'banned_word': ['UNASSIGNED', 'SCHEDULED']
-    },
-
-    'Spark': {
-        'log_file': 'Spark/Spark_2k.log',
-        'log_format': '<Date> <Time> <Level> <Component>: <Content>',
-        'regex': [r'(\d+\.){3}\d+', r'\b[KGTM]?B\b', r'([\w-]+\.){2,}[\w-]+'],
-        'st': 0.5,
-        'banned_word': ['bytes', 'values']
-    },
-
-    'Zookeeper': {
-        'log_file': 'Zookeeper/Zookeeper_2k.log',
-        'log_format': '<Date> <Time> - <Level>  \[<Node>:<Component>@<Id>\] - <Content>',
-        'regex': [r'(/|)(\d+\.){3}\d+(:\d+)?'],
-        'st': 0.5,
-        'banned_word': []
-    },
-
-    'BGL': {
-        'log_file': 'BGL/BGL_2k.log',
-        'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>',
-        'regex': [r'core\.\d+'],
-        'st': 0.4,
-        'banned_word': []
-    },
-
-    'HPC': {
-        'log_file': 'HPC/HPC_2k.log',
-        'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>',
-        'regex': [r'=\d+'],
-        'st': 0.5,
-        'banned_word': []
-    },
-
-    'Thunderbird': {
-        'log_file': 'Thunderbird/Thunderbird_2k.log',
-        'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>',
-        'regex': [r'(\d+\.){3}\d+', '(an\d+ )+', '(bn\d+ )+', '(cn\d+ )+', '(dn\d+ )+'],
-        'st': 0.5,
-        'banned_word': []
-    },
-
-    'Windows': {
-        'log_file': 'Windows/Windows_2k.log',
-        'log_format': '<Date> <Time>, <Level>                  <Component>    <Content>',
-        'regex': [r'0x.*?\s'],
-        'st': 0.7,
-        'banned_word': []
-    },
-
-    'Linux': {
-        'log_file': 'Linux/Linux_2k.log',
-        'log_format': '<Month> <Date> <Time> <Level> <Component>(\[<PID>\])?: <Content>',
-        'regex': [r'(\d+\.){3}\d+', r'\d{2}:\d{2}:\d{2}'],
-        'st': 0.39,
-        'banned_word': ['user=root', 'user=test', 'user=guest']
-    },
-
-    'Android': {
-        'log_file': 'Android/Android_2k.log',
-        'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>',
-        'regex': [r'(/[\w-]+)+', r'([\w-]+\.){2,}[\w-]+', r'\b(\-?\+?\d+)\b|\b0[Xx][a-fA-F\d]+\b|\b[a-fA-F\d]{4,}\b'],
-        'st': 0.2,
-        'banned_word': ['brightnessIn', 'brightnessOut', 'getRunningAppProcesses:', 'getTasks:', 'overlap:false',
-                        'overlap:true',
-                        'isOverlap:false,', 'isOverlap:true,', 'Acquiring', 'Releasing', 'ret:false', 'ret:true',
-                        'false', 'true']
-    },
-    'HealthApp': {
-        'log_file': 'HealthApp/HealthApp_2k.log',
-        'log_format': '<Time>\|<Component>\|<Pid>\|<Content>',
-        'regex': [],
-        'st': 0.2,
-        'banned_word': []
-    },
-    'Apache': {
-        'log_file': 'Apache/Apache_2k.log',
-        'log_format': '\[<Time>\] \[<Level>\] <Content>',
-        'regex': [r'(\d+\.){3}\d+'],
-        'st': 0.5,
-        'banned_word': []
-    },
-    'Proxifier': {
-        'log_file': 'Proxifier/Proxifier_2k.log',
-        'log_format': '\[<Time>\] <Program> - <Content>',
-        'regex': [r'\((\d+)? [KGTM]B\)', r'\(([\w-]+\.)+[\w-]+(:\d+)? [KGTM]B\)', r'<\d+\ssec',
-                  r'([\w-]+\.)+[\w-]+(:\d+)?', r'\d{2}:\d{2}(:\d{2})*', r'\d{1,}'],
-        'st': 0.6,
-        'banned_word': []
-    },
-    'OpenSSH': {
-        'log_file': 'OpenSSH/OpenSSH_2k.log',
-        'log_format': '<Date> <Day> <Time> <Component> sshd\[<Pid>\]: <Content>',
-        'regex': [r'(\d+\.){3}\d+', r'([\w-]+\.){2,}[\w-]+'],
-        'st': 0.6,
-        'banned_word': []
-    },
-
-    'OpenStack': {
-        'log_file': 'OpenStack/OpenStack_2k.log',
-        'log_format': '<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>',
-        'regex': [r'((\d+\.){3}\d+,?)+', r'/.+?\s', r'\d+'],
-        'st': 0.5,
-        'banned_word': []
-    },
-
-    'Mac': {
-        'log_file': 'Mac/Mac_2k.log',
-        'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
-        'regex': [r'([\w-]+\.){2,}[\w-]+'],
-        'st': 0.5,
-        'banned_word': []
-    },
-
-}
 
 
 def filter_from_wildcards(processed_log):
@@ -353,6 +220,7 @@ def index_doc(doc_id):
             INVERTED_INDEX[token].append(doc_id)
         else:
             INVERTED_INDEX[token] = [doc_id]
+
 
 def update_doc(tokens_to_remove, doc_id):
     for token in tokens_to_remove:
@@ -397,6 +265,7 @@ def write_results():
     df.to_csv('results/' + BENCHMARK_NAME + '/' + str(THRESHOLD) + '/' + DATASET + '_structured.csv')
 
 
+'''
 def length(template, log_message):
     message_length = len(log_message)
     template_length = len(template)
@@ -448,6 +317,7 @@ def similarity(template, log_message):
         sys.exit(0)
 
     return LAMBDA_1 * length_feature + LAMBDA_2 * similarity
+'''
 
 
 def generate_logformat_regex(logformat):
@@ -485,34 +355,15 @@ def log_to_dataframe(log_file, regex, headers):
 
 
 def preprocess(dataset, line):
-    if PREPROCESSING == '1':
-        regex = [
-            r'blk_(|-)[0-9]+',  # block id
-            r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)',  # IP
-            r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$',  # Numbers
-        ]
-    elif PREPROCESSING == '0':
-        regex = BENCHMARK_SETTINGS[dataset]['regex']
-    else:
-        print("Error in configs")
+    regex = BENCHMARK_SETTINGS[dataset]['regex']
     for currentRex in regex:
         line = re.sub(currentRex, '<*>', line)
     return line
 
-def replace_alpha_nums(preprocessed_log):
-    # length = len(pre_processed_log)
-    for i,token in enumerate(preprocessed_log):
-        # token = preprocessed_log[i]
-        alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
-        is_alpha_numeric = re.search(alpha_numeric_regex, token)
-        if is_alpha_numeric:
-            pre_processed_log[i] = re.sub(alpha_numeric_regex, '<*>', token)
-    return pre_processed_log
-
 
 def replace_alpha_nums(preprocessed_log):
     # length = len(pre_processed_log)
-    for i,token in enumerate(preprocessed_log):
+    for i, token in enumerate(preprocessed_log):
         # token = preprocessed_log[i]
         alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
         is_alpha_numeric = re.search(alpha_numeric_regex, token)
@@ -524,8 +375,9 @@ def replace_alpha_nums(preprocessed_log):
 if __name__ == '__main__':
 
     TYPE = sys.argv[1]
-    PREPROCESSING = sys.argv[2]
-    BENCHMARK_NAME = TYPE + PREPROCESSING
+    # PREPROCESSING = sys.argv[2]
+    # BENCHMARK_NAME = TYPE + PREPROCESSING
+    BENCHMARK_NAME = TYPE
     BENCHMARK = pd.DataFrame()
     BENCHMARK['Dataset'] = list(BENCHMARK_SETTINGS.keys())
     input_dir = 'logs/'
@@ -564,7 +416,8 @@ if __name__ == '__main__':
                 # IF THERE IS AT LEAST ONE CANDIDATE
                 else:
                     candidates = {key: TEMPLATES[key] for key in hits}
-                    length_filtered_candidates = {key: candidates[key] for key in candidates if len(candidates[key]) == len(pre_processed_log)}
+                    length_filtered_candidates = {key: candidates[key] for key in candidates if
+                                                  len(candidates[key]) == len(pre_processed_log)}
                     if len(length_filtered_candidates) == 0:
                         new_id = get_new_template(pre_processed_log)
                         index_doc(new_id)
@@ -599,11 +452,10 @@ if __name__ == '__main__':
                                     current_similarity = cosine_similarity[i]
                                     if current_similarity > max_similarity:
                                         max_similarity = current_similarity
-                                        selected_candidate_id = remaining_hits[i-1]
-
+                                        selected_candidate_id = remaining_hits[i - 1]
 
                             if max_similarity < THRESHOLD:
-                            # if mean + 2*sd > max_similarity:
+                                # if mean + 2*sd > max_similarity:
                                 new_id = get_new_template(pre_processed_log)
                                 index_doc(new_id)
                             else:

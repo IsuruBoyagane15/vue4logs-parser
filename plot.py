@@ -5,7 +5,7 @@ import numpy as np
 pd.set_option('display.expand_frame_repr', False)
 
 if __name__ == '__main__':
-    TYPE = sys.argv[1] + sys.argv[2]
+    TYPE = sys.argv[1]
     benchmark_csv = 'results/' + TYPE + '.csv'
 
     df = pd.read_csv(benchmark_csv, index_col='Dataset').transpose()
