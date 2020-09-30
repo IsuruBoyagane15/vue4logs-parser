@@ -5,15 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 pd.set_option('display.expand_frame_repr', False)
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-
-def filter_from_wildcards(processed_log):
-    filtered_token_list = []
-    for current_token in processed_log:
-        if "<*>" not in current_token:
-            filtered_token_list.append(current_token)
-
-    return filtered_token_list
+from create_benchmark import filter_wildcards
 
 
 # def tf_idf(templates, log_message):
@@ -158,7 +150,7 @@ def my_tokenizer(text):
 
 def get_tfidf(doc_ids, temp):
     corpus = [temp[i] for i in doc_ids]
-    filtered_corpus = list(map(lambda x: filter_from_wildcards(x), corpus))
+    filtered_corpus = list(map(lambda x: filter_wildcards(x), corpus))
     # print(corpus, end='')
     vectorizer = TfidfVectorizer(lowercase=False, analyzer='word', stop_words=None, tokenizer=my_tokenizer,
                                  token_pattern=None)
@@ -215,7 +207,7 @@ if __name__ == '__main__':
     # print("++++++++")
 
     corpus = [TEMPLATES[i] for i in lista]
-    filtered_corpus = list(map(lambda x: filter_from_wildcards(x), corpus))
+    filtered_corpus = list(map(lambda x: filter_wildcards(x), corpus))
     # vectorizer = TfidfVectorizer(lowercase=False, analyzer='word', stop_words=None, tokenizer=my_tokenizer,
     #                              token_pattern=None)
     #

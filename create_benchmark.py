@@ -180,7 +180,7 @@ BENCHMARK_SETTINGS = {
 }
 
 
-def filter_from_wildcards(processed_log):
+def filter_wildcards(processed_log):
     filtered_token_list = []
     for current_token in processed_log:
         if "<*>" not in current_token:
@@ -382,9 +382,9 @@ if __name__ == '__main__':
     BENCHMARK['Dataset'] = list(BENCHMARK_SETTINGS.keys())
     input_dir = 'logs/'
 
-    THRESHOLD = 0.01
+    THRESHOLD = 0.1
 
-    while THRESHOLD < 1:
+    while THRESHOLD < 0.3:
         PAs_for_threshold = []
 
         print(THRESHOLD)
@@ -402,7 +402,7 @@ if __name__ == '__main__':
                 pre_processed_log = replace_alpha_nums(pre_processed_log)
 
                 log_line = replace_alpha_nums(pre_processed_log)
-                log_line = filter_from_wildcards(log_line)
+                log_line = filter_wildcards(log_line)
                 # print("FILTERED LOG LINE :", log_line)
 
                 hits = search_index(log_line)
@@ -506,7 +506,7 @@ if __name__ == '__main__':
             TEMPLATES = {}
 
         BENCHMARK[THRESHOLD] = PAs_for_threshold
-        THRESHOLD = round(THRESHOLD + 0.01, 2)
+        THRESHOLD = round(THRESHOLD + 0.1, 2)
 
     print(BENCHMARK)
     BENCHMARK.to_csv('results/' + BENCHMARK_NAME + '.csv', index=False)
