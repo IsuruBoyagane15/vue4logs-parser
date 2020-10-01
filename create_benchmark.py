@@ -1,9 +1,6 @@
-import sys
 import os.path as path
-import pandas as pd
 import re
 import os
-import numpy as np
 
 from evaluate import *
 from tf_idf import *
@@ -18,8 +15,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'HDFS/HDFS_2k.log',
         'log_format': '<Date> <Time> <Pid> <Level> <Component>: <Content>',
         'regex': [r'blk_-?\d+', r'(\d+\.){3}\d+(:\d+)?'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -28,8 +23,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Hadoop/Hadoop_2k.log',
         'log_format': '<Date> <Time> <Level> \[<Process>\] <Component>: <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -38,8 +31,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Spark/Spark_2k.log',
         'log_format': '<Date> <Time> <Level> <Component>: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'\b[KGTM]?B\b', r'([\w-]+\.){2,}[\w-]+'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -48,8 +39,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Zookeeper/Zookeeper_2k.log',
         'log_format': '<Date> <Time> - <Level>  \[<Node>:<Component>@<Id>\] - <Content>',
         'regex': [r'(/|)(\d+\.){3}\d+(:\d+)?'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -58,8 +47,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'BGL/BGL_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>',
         'regex': [r'core\.\d+'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -68,8 +55,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'HPC/HPC_2k.log',
         'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>',
         'regex': [r'=\d+'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -78,8 +63,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Thunderbird/Thunderbird_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -88,8 +71,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Windows/Windows_2k.log',
         'log_format': '<Date> <Time>, <Level>                  <Component>    <Content>',
         'regex': [r'0x.*?\s'],
-        # 'st': 0.7,
-        # 'depth': 5
         'banned_word': []
 
     },
@@ -98,13 +79,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Linux/Linux_2k.log',
         'log_format': '<Month> <Date> <Time> <Level> <Component>(\[<PID>\])?: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'\d{2}:\d{2}:\d{2}'],
-        # 'regex':[
-        #         r'blk_(|-)[0-9]+',  # block id
-        #     r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)',  # IP
-        #     r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$',  # Numbers,
-        # ],
-        # 'st': 0.39,
-        # 'depth': 6
         'banned_word': []
 
     },
@@ -113,8 +87,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Android/Android_2k.log',
         'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>',
         'regex': [r'(/[\w-]+)+', r'([\w-]+\.){2,}[\w-]+', r'\b(\-?\+?\d+)\b|\b0[Xx][a-fA-F\d]+\b|\b[a-fA-F\d]{4,}\b'],
-        # 'st': 0.2,
-        # 'depth': 6
         'banned_word': []
 
     },
@@ -123,8 +95,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'HealthApp/HealthApp_2k.log',
         'log_format': '<Time>\|<Component>\|<Pid>\|<Content>',
         'regex': [],
-        # 'st': 0.2,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -133,8 +103,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Apache/Apache_2k.log',
         'log_format': '\[<Time>\] \[<Level>\] <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        # 'st': 0.5,
-        # 'depth': 4
         'banned_word': []
 
     },
@@ -143,8 +111,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Proxifier/Proxifier_2k.log',
         'log_format': '\[<Time>\] <Program> - <Content>',
         'regex': [r'<\d+\ssec', r'([\w-]+\.)+[\w-]+(:\d+)?', r'\d{2}:\d{2}(:\d{2})*', r'[KGTM]B'],
-        # 'st': 0.6,
-        # 'depth': 3
         'banned_word': []
 
     },
@@ -153,8 +119,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'OpenSSH/OpenSSH_2k.log',
         'log_format': '<Date> <Day> <Time> <Component> sshd\[<Pid>\]: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'([\w-]+\.){2,}[\w-]+'],
-        # 'st': 0.6,
-        # 'depth': 5
         'banned_word': []
 
     },
@@ -163,8 +127,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'OpenStack/OpenStack_2k.log',
         'log_format': '<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>',
         'regex': [r'((\d+\.){3}\d+,?)+', r'/.+?\s', r'\d+'],
-        # 'st': 0.5,
-        # 'depth': 5
         'banned_word': []
     },
 
@@ -172,8 +134,6 @@ BENCHMARK_SETTINGS = {
         'log_file': 'Mac/Mac_2k.log',
         'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
         'regex': [r'([\w-]+\.){2,}[\w-]+'],
-        # 'st': 0.7,
-        # 'depth': 6
         'banned_word': []
 
     },
@@ -191,10 +151,7 @@ def filter_wildcards(processed_log):
 
 def search_index(query_log):
     # print("SEARCH QUERY : ", query_log)
-
-    # tokens = query_log.split(" ")
     hits = []
-
     for token in query_log:
         if token not in BENCHMARK_SETTINGS[DATASET]['banned_word']:
             if token in INVERTED_INDEX:
@@ -211,11 +168,6 @@ def index_doc(doc_id):
 
     for i in range(template_length):
         token = new_template[i]
-        # alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
-        # is_alpha_numeric = re.search(alpha_numeric_regex, token)
-        # if is_alpha_numeric:
-        #     TEMPLATES[doc_id][i] = re.sub(alpha_numeric_regex, '<*>', token)
-        # else:
         if token in INVERTED_INDEX:
             INVERTED_INDEX[token].append(doc_id)
         else:
@@ -234,10 +186,6 @@ def update_doc(tokens_to_remove, doc_id):
 
 
 def get_new_template(temp_template):
-    for i in TEMPLATES:
-        if TEMPLATES[i] == temp_template:
-            RESULTS.append(i)
-            return i
     if len(TEMPLATES.keys()) == 0:
         next_id = 0
     else:
@@ -265,7 +213,6 @@ def write_results():
     df.to_csv('results/' + BENCHMARK_NAME + '/' + str(THRESHOLD) + '/' + DATASET + '_structured.csv')
 
 
-'''
 def length(template, log_message):
     message_length = len(log_message)
     template_length = len(template)
@@ -279,8 +226,8 @@ def length(template, log_message):
 
 
 def jaccard(template, log_message):
-    filtered_log_tokens = filter_from_wildcards(log_message)
-    filtered_template_tokens = filter_from_wildcards(template)
+    filtered_log_tokens = filter_wildcards(log_message)
+    filtered_template_tokens = filter_wildcards(template)
 
     log_token_set = set(filtered_log_tokens)
     template_token_set = set(filtered_template_tokens)
@@ -317,7 +264,6 @@ def similarity(template, log_message):
         sys.exit(0)
 
     return LAMBDA_1 * length_feature + LAMBDA_2 * similarity
-'''
 
 
 def generate_logformat_regex(logformat):
@@ -362,21 +308,18 @@ def preprocess(dataset, line):
 
 
 def replace_alpha_nums(preprocessed_log):
-    # length = len(pre_processed_log)
     for i, token in enumerate(preprocessed_log):
-        # token = preprocessed_log[i]
         alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
         is_alpha_numeric = re.search(alpha_numeric_regex, token)
         if is_alpha_numeric:
             pre_processed_log[i] = re.sub(alpha_numeric_regex, '<*>', token)
+
     return pre_processed_log
 
 
 if __name__ == '__main__':
 
     TYPE = sys.argv[1]
-    # PREPROCESSING = sys.argv[2]
-    # BENCHMARK_NAME = TYPE + PREPROCESSING
     BENCHMARK_NAME = TYPE
     BENCHMARK = pd.DataFrame()
     BENCHMARK['Dataset'] = list(BENCHMARK_SETTINGS.keys())
@@ -384,7 +327,7 @@ if __name__ == '__main__':
 
     THRESHOLD = 0.1
 
-    while THRESHOLD < 0.3:
+    while THRESHOLD < 1:
         PAs_for_threshold = []
 
         print(THRESHOLD)
@@ -406,6 +349,17 @@ if __name__ == '__main__':
                 # print("FILTERED LOG LINE :", log_line)
 
                 hits = search_index(log_line)
+                found = False
+                if len(hits) > 0:
+                    for hit in hits:
+                        if pre_processed_log == TEMPLATES[hit]:
+                            # print("early catch")
+                            RESULTS.append(hit)
+                            found = True
+
+                if found:
+                    continue
+                # print("more rules")
 
                 # IF NO CANDIDATE FOUND
                 if len(hits) == 0:
@@ -442,9 +396,6 @@ if __name__ == '__main__':
                             cosine_similarity = get_tfidf(doc_ids, TEMPLATES)[0]
 
                             TEMPLATES[-1] = None
-                            # print(cosine_similarity)
-                            # mean = np.mean(list(cosine_similarity))
-                            # sd =  np.std(list(cosine_similarity))
                             for i in range(len(cosine_similarity)):
                                 if i == 0:
                                     continue
@@ -455,7 +406,6 @@ if __name__ == '__main__':
                                         selected_candidate_id = remaining_hits[i - 1]
 
                             if max_similarity < THRESHOLD:
-                                # if mean + 2*sd > max_similarity:
                                 new_id = get_new_template(pre_processed_log)
                                 index_doc(new_id)
                             else:
@@ -482,7 +432,6 @@ if __name__ == '__main__':
                                     update_doc(changed_tokens, selected_candidate_id)
 
                                     TEMPLATES[selected_candidate_id] = updated_template
-                                    # index_doc(selected_candidate_id)
                                     RESULTS.append(selected_candidate_id)
 
                     assert len(RESULTS) == logID
