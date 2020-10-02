@@ -1,9 +1,10 @@
 import os.path as path
 import re
 import os
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 from evaluate import *
-from tf_idf import *
 
 TEMPLATES = {}
 RESULTS = []
@@ -15,112 +16,112 @@ BENCHMARK_SETTINGS = {
         'log_file': 'HDFS/HDFS_2k.log',
         'log_format': '<Date> <Time> <Pid> <Level> <Component>: <Content>',
         'regex': [r'blk_-?\d+', r'(\d+\.){3}\d+(:\d+)?'],
-        'threshold' : 0.27
+        'threshold': 0.27
     },
 
     'Hadoop': {
         'log_file': 'Hadoop/Hadoop_2k.log',
         'log_format': '<Date> <Time> <Level> \[<Process>\] <Component>: <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        'threshold' : 0.77
+        'threshold': 0.77
     },
 
     'Spark': {
         'log_file': 'Spark/Spark_2k.log',
         'log_format': '<Date> <Time> <Level> <Component>: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'\b[KGTM]?B\b', r'([\w-]+\.){2,}[\w-]+'],
-        'threshold' : 0.67
+        'threshold': 0.67
     },
 
     'Zookeeper': {
         'log_file': 'Zookeeper/Zookeeper_2k.log',
         'log_format': '<Date> <Time> - <Level>  \[<Node>:<Component>@<Id>\] - <Content>',
         'regex': [r'(/|)(\d+\.){3}\d+(:\d+)?'],
-        'threshold' : 0.64
+        'threshold': 0.64
     },
 
     'BGL': {
         'log_file': 'BGL/BGL_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>',
         'regex': [r'core\.\d+'],
-        'threshold' : 0.43
+        'threshold': 0.43
     },
 
     'HPC': {
         'log_file': 'HPC/HPC_2k.log',
         'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>',
         'regex': [r'=\d+'],
-        'threshold' : 0.34
+        'threshold': 0.34
     },
 
     'Thunderbird': {
         'log_file': 'Thunderbird/Thunderbird_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        'threshold' : 0.27
+        'threshold': 0.27
     },
 
     'Windows': {
         'log_file': 'Windows/Windows_2k.log',
         'log_format': '<Date> <Time>, <Level>                  <Component>    <Content>',
         'regex': [r'0x.*?\s'],
-        'threshold' : 0.67
+        'threshold': 0.67
     },
 
     'Linux': {
         'log_file': 'Linux/Linux_2k.log',
         'log_format': '<Month> <Date> <Time> <Level> <Component>(\[<PID>\])?: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'\d{2}:\d{2}:\d{2}'],
-        'threshold' : 0.42
+        'threshold': 0.42
     },
 
     'Android': {
         'log_file': 'Android/Android_2k.log',
         'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>',
         'regex': [r'(/[\w-]+)+', r'([\w-]+\.){2,}[\w-]+', r'\b(\-?\+?\d+)\b|\b0[Xx][a-fA-F\d]+\b|\b[a-fA-F\d]{4,}\b'],
-        'threshold' : 0.78
+        'threshold': 0.78
     },
 
     'HealthApp': {
         'log_file': 'HealthApp/HealthApp_2k.log',
         'log_format': '<Time>\|<Component>\|<Pid>\|<Content>',
         'regex': [],
-        'threshold' : 0.34
+        'threshold': 0.34
     },
 
     'Apache': {
         'log_file': 'Apache/Apache_2k.log',
         'log_format': '\[<Time>\] \[<Level>\] <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        'threshold' : 0.21
+        'threshold': 0.21
     },
 
     'Proxifier': {
         'log_file': 'Proxifier/Proxifier_2k.log',
         'log_format': '\[<Time>\] <Program> - <Content>',
         'regex': [r'<\d+\ssec', r'([\w-]+\.)+[\w-]+(:\d+)?', r'\d{2}:\d{2}(:\d{2})*', r'[KGTM]B'],
-        'threshold' : 0.78
+        'threshold': 0.78
     },
 
     'OpenSSH': {
         'log_file': 'OpenSSH/OpenSSH_2k.log',
         'log_format': '<Date> <Day> <Time> <Component> sshd\[<Pid>\]: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'([\w-]+\.){2,}[\w-]+'],
-        'threshold' : 0.59
+        'threshold': 0.59
     },
 
     'OpenStack': {
         'log_file': 'OpenStack/OpenStack_2k.log',
         'log_format': '<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>',
         'regex': [r'((\d+\.){3}\d+,?)+', r'/.+?\s', r'\d+'],
-        'threshold' : 0.67
+        'threshold': 0.67
     },
 
     'Mac': {
         'log_file': 'Mac/Mac_2k.log',
         'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
         'regex': [r'([\w-]+\.){2,}[\w-]+'],
-        'threshold' : 0.68
+        'threshold': 0.68
     },
 }
 
@@ -301,6 +302,21 @@ def replace_alpha_nums(preprocessed_log):
     return pre_processed_log
 
 
+def my_tokenizer(text):
+    return text
+
+
+def get_tfidf(doc_ids, temp):
+    corpus = [temp[i] for i in doc_ids]
+    filtered_corpus = list(map(lambda x: filter_wildcards(x), corpus))
+    vectorizer = TfidfVectorizer(lowercase=False, analyzer='word', stop_words=None, tokenizer=my_tokenizer,
+                                 token_pattern=None)
+
+    vectors = vectorizer.fit_transform(filtered_corpus).toarray()
+    vectors = [vectors[i].tolist() for i in range(len(corpus))]
+    return cosine_similarity(vectors)
+
+
 if __name__ == '__main__':
 
     TYPE = sys.argv[1]
@@ -381,14 +397,14 @@ if __name__ == '__main__':
                         for hit in length_filtered_candidates:
                             doc_ids.append(hit)
 
-                        cosine_similarity = get_tfidf(doc_ids, TEMPLATES)[0]
+                        similarity = get_tfidf(doc_ids, TEMPLATES)[0]
 
                         TEMPLATES[-1] = None
-                        for i in range(len(cosine_similarity)):
+                        for i in range(len(similarity)):
                             if i == 0:
                                 continue
                             else:
-                                current_similarity = cosine_similarity[i]
+                                current_similarity = similarity[i]
                                 if current_similarity > max_similarity:
                                     max_similarity = current_similarity
                                     selected_candidate_id = remaining_hits[i - 1]
@@ -444,5 +460,5 @@ if __name__ == '__main__':
 
     BENCHMARK['PA'] = PAs
     print(BENCHMARK)
-    print("Average :", round(sum(PAs)/16.0, 4))
+    print("Average :", round(sum(PAs) / 16.0, 4))
     BENCHMARK.to_csv('results/' + BENCHMARK_NAME + '.csv', index=False)
