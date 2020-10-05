@@ -2,6 +2,10 @@
 
 Automatic structuring of textual system logs.
 
+## Parsing Process
+
+![Drag Racing](parser.png)
+
 ## Usage
 
 #### To create benchmarks with dataset specific parameter tuning (TYPE = 0): 
