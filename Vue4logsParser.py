@@ -4,7 +4,7 @@ import os
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from evaluate import *
+from Evaluate import *
 
 benchmark_settings = {
     'HDFS': {

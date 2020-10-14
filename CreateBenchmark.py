@@ -1,4 +1,4 @@
-from vue4logs_parser import *
+from Vue4logsParser import *
 
 if __name__ == '__main__':
     for dataset, setting in benchmark_settings.items():
