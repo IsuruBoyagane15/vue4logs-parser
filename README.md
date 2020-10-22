@@ -9,10 +9,10 @@ Automatic structuring of textual system logs.
 ## Usage
 
 #### To create benchmarks with dataset specific parameter tuning (TYPE = 0): 
-- python create_benchmark.py 0
+- python CreateBenchmark.py 0
 
 #### To create benchmarks with single parameter for all datasets (TYPE = 1): 
-- python create_benchmark.py 1
+- python CreateBenchmark.py 1
 
 ## Results
 
