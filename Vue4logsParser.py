@@ -1,6 +1,8 @@
 import os.path as path
 import re
 import os
+
+from rank_bm25 import BM25Okapi
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -146,6 +148,7 @@ def generate_logformat_regex(logformat):
     regex = re.compile('^' + regex + '$')
     return headers, regex
 
+
 def log_to_dataframe(log_file, regex, headers):
     log_messages = []
     linecount = 0
@@ -163,8 +166,10 @@ def log_to_dataframe(log_file, regex, headers):
     logdf['LineId'] = [i + 1 for i in range(linecount)]
     return logdf
 
+
 def my_tokenizer(text):
     return text
+
 
 def replace_alpha_nums(preprocessed_log):
     for i, token in enumerate(preprocessed_log):
@@ -194,7 +199,7 @@ class Vue4Logs:
         self.templates = {}
         self.results = []
         self.dataset = dataset
-        self.output_path = "results1/" + str(threshold)
+        self.output_path = "results/" + str(threshold)
 
     def search_index(self, query_log):
         hits = []
@@ -241,12 +246,11 @@ class Vue4Logs:
                 print("Error in result")
                 sys.exit(0)
             else:
-                templates_df.append(self.templates[j])
+                templates_df.append(" ".join(self.templates[j]))
         df['EventTemplate'] = templates_df
 
         if not path.exists(self.output_path):
             os.makedirs(self.output_path)
-            print("created")
         df.to_csv(self.output_path + '/' + self.dataset + '_structured.csv')
 
     def preprocess(self, line):
@@ -255,13 +259,26 @@ class Vue4Logs:
             line = re.sub(currentRex, '<*>', line)
         return line
 
+    def get_bm25(self, doc_ids):
+        logs = []
+        for i in doc_ids:
+            if i == -1:
+                query = self.templates[i]
+            else:
+                logs.append(self.templates[i])
+        # print(query)
+        # print("--")
+        # print(logs)
+        bm25 = BM25Okapi(logs)
+        doc_scores = bm25.get_scores(query)
+        return doc_scores
+
     def parse(self):
         dataset_config = benchmark_settings[self.dataset]
         indir = os.path.join(input_dir, os.path.dirname(dataset_config['log_file']))
         log_file = os.path.basename(dataset_config['log_file'])
         headers, regex = generate_logformat_regex(dataset_config['log_format'])
         df_log = log_to_dataframe(indir + '/' + log_file, regex, headers)
-
         for idx, line in df_log.iterrows():
             log_id = line['LineId']
             pre_processed_log = self.preprocess(line['Content']).strip().split()
@@ -305,8 +322,8 @@ class Vue4Logs:
                     doc_ids = [-1]
                     for hit in length_filtered_candidates:
                         doc_ids.append(hit)
-
                     similarity = get_tfidf(doc_ids, self.templates)[0]
+                    # similarity = self.get_bm25(doc_ids)
 
                     self.templates[-1] = None
 
@@ -354,6 +371,5 @@ class Vue4Logs:
         ground_truth_df = 'ground_truth/' + self.dataset + '_2k.log_structured.csv'
         output = self.output_path + "/" + self.dataset + "_structured.csv"
         pa = evaluate(ground_truth_df, output)[1]
-        print(self.dataset, pa)
-
-
+        # print(self.dataset, pa)
+        return pa
