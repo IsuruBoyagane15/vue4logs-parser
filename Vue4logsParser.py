@@ -341,30 +341,25 @@ class Vue4Logs:
                         self.index_doc(new_id)
                     else:
                         selected_candidate = self.templates[selected_candidate_id]
+                        template_length = len(selected_candidate)
+                        # print("SELECTED TEMPLATE IS not EQUAL TO LOG LINE")
+                        temporary_tokens = []
+                        changed_tokens = []
 
-                        if pre_processed_log == selected_candidate:
-                            # print("SELECTED TEMPLATE IS EQUAL TO LOG LINE")
-                            self.results.append(selected_candidate_id)
-                        else:
-                            template_length = len(selected_candidate)
-                            # print("SELECTED TEMPLATE IS not EQUAL TO LOG LINE")
-                            temporary_tokens = []
-                            changed_tokens = []
+                        for index in range(template_length):
+                            # if log_line_token_list[position] == candidate_token_list[position]:
+                            if pre_processed_log[index] == selected_candidate[index] or \
+                                    "<*>" in selected_candidate[index]:
+                                temporary_tokens.append(selected_candidate[index])
+                            else:
+                                changed_tokens.append(selected_candidate[index])
+                                temporary_tokens.append("<*>")
 
-                            for index in range(template_length):
-                                # if log_line_token_list[position] == candidate_token_list[position]:
-                                if pre_processed_log[index] == selected_candidate[index] or \
-                                        "<*>" in selected_candidate[index]:
-                                    temporary_tokens.append(selected_candidate[index])
-                                else:
-                                    changed_tokens.append(selected_candidate[index])
-                                    temporary_tokens.append("<*>")
+                        updated_template = temporary_tokens
+                        self.update_doc(changed_tokens, selected_candidate_id)
 
-                            updated_template = temporary_tokens
-                            self.update_doc(changed_tokens, selected_candidate_id)
-
-                            self.templates[selected_candidate_id] = updated_template
-                            self.results.append(selected_candidate_id)
+                        self.templates[selected_candidate_id] = updated_template
+                        self.results.append(selected_candidate_id)
                 assert len(self.results) == log_id
 
         self.write_results()
