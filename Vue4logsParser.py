@@ -289,18 +289,6 @@ class Vue4Logs:
 
             hits = self.search_index(log_line)
 
-            greedily_found = False
-            if len(hits) > 0:
-                for hit in hits:
-                    if pre_processed_log == self.templates[hit]:
-                        # print("greedy catch")
-                        self.results.append(hit)
-                        greedily_found = True
-
-            if greedily_found:
-                continue
-            # print("more rules")
-
             if len(hits) == 0:
                 new_id = self.get_new_template(pre_processed_log)
                 self.index_doc(new_id)
@@ -309,14 +297,26 @@ class Vue4Logs:
                 candidates = {key: self.templates[key] for key in hits}
                 length_filtered_candidates = {key: candidates[key] for key in candidates if
                                               len(candidates[key]) == len(pre_processed_log)}
+                remaining_hits = list(length_filtered_candidates.keys())
 
                 if len(length_filtered_candidates) == 0:
                     new_id = self.get_new_template(pre_processed_log)
                     self.index_doc(new_id)
                 else:
+
+                    greedily_found = False
+                    for hit in remaining_hits:
+                        if pre_processed_log == self.templates[hit]:
+                            # print("greedy catch")
+                            self.results.append(hit)
+                            greedily_found = True
+
+                    if greedily_found:
+                        continue
+                    # print("more rules")
+
                     max_similarity = 0
                     selected_candidate_id = None
-                    remaining_hits = list(length_filtered_candidates.keys())
 
                     self.templates[-1] = pre_processed_log
                     doc_ids = [-1]
