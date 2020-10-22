@@ -38,7 +38,7 @@ def get_accuracy(series_ground_truth, series_parsedlog, debug=False):
     accurate_pairs = 0
     accurate_events = 0  # determine how many lines are correctly parsed
     for parsed_eventId in series_parsed_log_value_counts.index:
-        log_ids = series_parsedlog[series_parsedlog == parsed_eventId].index
+        log_ids = series_parsedlog[series_parsedlog == parsed_eventId].index # log ids that are given parsed_eventId in the results output file
         series_ground_truth_logId_value_counts = series_ground_truth[log_ids].value_counts()
         error_eventIds = (parsed_eventId, series_ground_truth_logId_value_counts.index.tolist())
         error = True
