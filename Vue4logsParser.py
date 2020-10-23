@@ -2,7 +2,7 @@ import os.path as path
 import re
 import os
 
-from rank_bm25 import BM25Okapi
+# from rank_bm25 import BM25Okapi
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -90,7 +90,7 @@ benchmark_settings = {
         'log_file': 'Apache/Apache_2k.log',
         'log_format': '\[<Time>\] \[<Level>\] <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        'threshold': 0.21
+        'threshold': 0.23
     },
 
     'Proxifier': {
@@ -181,6 +181,28 @@ def replace_alpha_nums(preprocessed_log):
     return preprocessed_log
 
 
+def checkNum(token):
+    returnToken = ""
+    for i in range(0, len(token)):
+        if not token[i].isnumeric():
+            returnToken += token[i]
+        else:
+            returnToken += '<*>'
+    wildCardCheck = re.compile('(?:\<\*\>)+')
+    return re.sub(wildCardCheck,'<*>',returnToken)
+
+def replace_nums(preprocessed_log):
+    for i, token in enumerate(preprocessed_log):
+        preprocessed_log[i] = checkNum(token)
+    return preprocessed_log
+
+def replace_only_nums(preprocessed_log):
+    for i, token in enumerate(preprocessed_log):
+        if token.isnumeric():
+            preprocessed_log[i] = '<*>'
+
+    return preprocessed_log
+
 def get_tfidf(doc_ids, temp):
     corpus = [temp[i] for i in doc_ids]
     filtered_corpus = list(map(lambda x: filter_wildcards(x), corpus))
@@ -259,19 +281,19 @@ class Vue4Logs:
             line = re.sub(currentRex, '<*>', line)
         return line
 
-    def get_bm25(self, doc_ids):
-        logs = []
-        for i in doc_ids:
-            if i == -1:
-                query = self.templates[i]
-            else:
-                logs.append(self.templates[i])
-        # print(query)
-        # print("--")
-        # print(logs)
-        bm25 = BM25Okapi(logs)
-        doc_scores = bm25.get_scores(query)
-        return doc_scores
+    # def get_bm25(self, doc_ids):
+    #     logs = []
+    #     for i in doc_ids:
+    #         if i == -1:
+    #             query = self.templates[i]
+    #         else:
+    #             logs.append(self.templates[i])
+    #     # print(query)
+    #     # print("--")
+    #     # print(logs)
+    #     bm25 = BM25Okapi(logs)
+    #     doc_scores = bm25.get_scores(query)
+    #     return doc_scores
 
     def parse(self):
         dataset_config = benchmark_settings[self.dataset]
@@ -284,7 +306,7 @@ class Vue4Logs:
             pre_processed_log = self.preprocess(line['Content']).strip().split()
             # print(logID, pre_processed_log)
 
-            pre_processed_log = replace_alpha_nums(pre_processed_log)
+            pre_processed_log = replace_nums(pre_processed_log) #replace_only_nums(pre_processed_log) #replace_nums(pre_processed_log) #pre_processed_log  #replace_alpha_nums(pre_processed_log)
             log_line = filter_wildcards(pre_processed_log)
 
             hits = self.search_index(log_line)
