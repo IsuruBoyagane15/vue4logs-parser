@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from Evaluate import *
+from inverted_index.VanillaInvertedIndex import *
 
 benchmark_settings = {
     'HDFS': {
@@ -220,37 +221,11 @@ def get_tfidf(doc_ids, temp):
 class Vue4Logs:
     def __init__(self, threshold, dataset):
         self.threshold = threshold
-        self.inverted_index = {}
         self.templates = {}
+        self.inverted_index = VanillaInvertedIndex()
         self.results = []
         self.dataset = dataset
         self.output_path = "results/" + str(threshold)
-
-    def search_index(self, query_log):
-        hits = []
-        for token in query_log:
-            if token in self.inverted_index:
-                hits += self.inverted_index[token]
-        hit_set = set(hits)
-        return list(hit_set)
-
-    def index_doc(self, doc_id):
-        new_template = self.templates[doc_id]
-        template_length = len(new_template)
-        # print(new_template)
-
-        for i in range(template_length):
-            token = new_template[i]
-            if token in self.inverted_index:
-                self.inverted_index[token].append(doc_id)
-            else:
-                self.inverted_index[token] = [doc_id]
-
-    def update_doc(self, tokens_to_remove, doc_id):
-        for token in tokens_to_remove:
-            if token in self.inverted_index:
-                if doc_id in self.inverted_index[token]:
-                    self.inverted_index[token].remove(doc_id)
 
     def get_new_template(self, temp_template):
         if len(self.templates.keys()) == 0:
@@ -309,11 +284,11 @@ class Vue4Logs:
             pre_processed_log = replace_nums(pre_processed_log)
             log_line = filter_wildcards(pre_processed_log)
 
-            hits = self.search_index(log_line)
+            hits = self.inverted_index.search_doc(log_line)
 
             if len(hits) == 0:
                 new_id = self.get_new_template(pre_processed_log)
-                self.index_doc(new_id)
+                self.inverted_index.index_doc(new_id, self.templates[new_id])
 
             else:
                 candidates = {key: self.templates[key] for key in hits}
@@ -323,7 +298,7 @@ class Vue4Logs:
 
                 if len(length_filtered_candidates) == 0:
                     new_id = self.get_new_template(pre_processed_log)
-                    self.index_doc(new_id)
+                    self.inverted_index.index_doc(new_id, self.templates[new_id])
                 else:
 
                     greedily_found = False
@@ -360,7 +335,7 @@ class Vue4Logs:
 
                     if max_similarity < self.threshold:
                         new_id = self.get_new_template(pre_processed_log)
-                        self.index_doc(new_id)
+                        self.inverted_index.index_doc(new_id, self.templates[new_id])
                     else:
                         selected_candidate = self.templates[selected_candidate_id]
                         template_length = len(selected_candidate)
@@ -378,7 +353,7 @@ class Vue4Logs:
                                 temporary_tokens.append("<*>")
 
                         updated_template = temporary_tokens
-                        self.update_doc(changed_tokens, selected_candidate_id)
+                        self.inverted_index.update_doc(changed_tokens, selected_candidate_id)
 
                         self.templates[selected_candidate_id] = updated_template
                         self.results.append(selected_candidate_id)
