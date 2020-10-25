@@ -37,8 +37,9 @@ class VanillaInvertedIndex(InvertedIndex):
             else:
                 self.dict[token] = [doc_id]
 
-    def update_doc(self, tokens_to_remove, doc_id):
-        for token in tokens_to_remove:
+    def update_doc(self, doc_id, old_template, updated_template):
+        for token in old_template:
             if token in self.dict:
                 if doc_id in self.dict[token]:
                     self.dict[token].remove(doc_id)
+        self.index_doc(doc_id,updated_template)

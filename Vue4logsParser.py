@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from Evaluate import *
+from inverted_index.BiWordInvertedIndex import BiWordInvertedIndex
 from inverted_index.VanillaInvertedIndex import *
 
 benchmark_settings = {
@@ -352,7 +353,7 @@ class Vue4Logs:
                                 temporary_tokens.append("<*>")
 
                         updated_template = temporary_tokens
-                        self.inverted_index.update_doc(changed_tokens, selected_candidate_id)
+                        self.inverted_index.update_doc(selected_candidate_id, self.templates[selected_candidate_id], updated_template)
 
                         self.templates[selected_candidate_id] = updated_template
                         self.results.append(selected_candidate_id)
@@ -363,6 +364,8 @@ class Vue4Logs:
         output = self.output_path + "/" + self.dataset + "_structured.csv"
         pa = evaluate(ground_truth_df, output)[1]
         # print(self.dataset, pa)
+        # print(self.inverted_index.dict)
+        # print(self.dataset, len(self.templates), "\n")
         return pa
 
 
