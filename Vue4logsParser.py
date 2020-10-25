@@ -282,9 +282,8 @@ class Vue4Logs:
             # print(logID, pre_processed_log)
 
             pre_processed_log = replace_nums(pre_processed_log)
-            log_line = filter_wildcards(pre_processed_log)
 
-            hits = self.inverted_index.search_doc(log_line)
+            hits = self.inverted_index.search_doc(pre_processed_log)
 
             if len(hits) == 0:
                 new_id = self.get_new_template(pre_processed_log)
@@ -365,3 +364,5 @@ class Vue4Logs:
         pa = evaluate(ground_truth_df, output)[1]
         # print(self.dataset, pa)
         return pa
+
+
