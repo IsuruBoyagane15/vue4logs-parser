@@ -7,7 +7,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from Evaluate import *
-from inverted_index.BiWordInvertedIndex import BiWordInvertedIndex
 from inverted_index.VanillaInvertedIndex import *
 
 benchmark_settings = {
@@ -124,15 +123,6 @@ benchmark_settings = {
     },
 }
 input_dir = 'logs/'
-
-
-def filter_wildcards(processed_log):
-    filtered_token_list = []
-    for current_token in processed_log:
-        if "<*>" not in current_token:
-            filtered_token_list.append(current_token)
-
-    return filtered_token_list
 
 
 def generate_logformat_regex(logformat):

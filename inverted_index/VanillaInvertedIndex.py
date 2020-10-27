@@ -1,7 +1,7 @@
 from inverted_index.InvertetIndex import *
 
 
-def filter(preprocessed_log):
+def filter_wildcards(preprocessed_log):
     filtered_token_list = []
     for current_token in preprocessed_log:
         if "<*>" not in current_token:
@@ -15,7 +15,7 @@ class VanillaInvertedIndex(InvertedIndex):
         self.dict = {}
 
     def search_doc(self, query_log):
-        query_log = filter(query_log)
+        query_log = filter_wildcards(query_log)
 
         hits = []
         for token in query_log:
@@ -25,7 +25,7 @@ class VanillaInvertedIndex(InvertedIndex):
         return list(hit_set)
 
     def index_doc(self, doc_id, new_template):
-        new_template = filter(new_template)
+        new_template = filter_wildcards(new_template)
 
         template_length = len(new_template)
         # print(new_template)
