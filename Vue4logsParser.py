@@ -315,14 +315,12 @@ class Vue4Logs:
                     max_similarity = 0
                     selected_candidate_id = None
 
-                    self.templates[-1] = pre_processed_log
-                    doc_ids = [-1]
-                    for hit in length_filtered_candidates:
-                        doc_ids.append(hit)
-                    similarity = get_tfidf(doc_ids, self.templates)[0]
-                    # similarity = self.get_bm25(doc_ids)
+                    similarity_candidates = {key: self.templates[key] for key in length_filtered_candidates}
+                    similarity_candidates[-1] = pre_processed_log
+                    doc_ids = [-1] + list(length_filtered_candidates.keys())
 
-                    self.templates[-1] = None
+                    similarity = get_tfidf(doc_ids, similarity_candidates)[0]
+                    # similarity = self.get_bm25(doc_ids)
 
                     for i in range(len(similarity)):
                         if i == 0:
@@ -358,7 +356,7 @@ class Vue4Logs:
                         self.templates[selected_candidate_id] = updated_template
                         self.results.append(selected_candidate_id)
                 assert len(self.results) == log_id
-
+        print(self.dataset)
         self.write_results()
         ground_truth_df = 'ground_truth/' + self.dataset + '_2k.log_structured.csv'
         output = self.output_path + "/" + self.dataset + "_structured.csv"
