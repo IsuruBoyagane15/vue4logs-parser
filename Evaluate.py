@@ -4,6 +4,13 @@ import sys
 
 
 def evaluate(ground_truth, parsed_result):
+    """
+    Given the output structured file and ground truth structured file, return the f1 measure of clustering and
+    parsing accuracy of log parsing.
+    :param ground_truth: ground truth file location
+    :param parsed_result: output structured file location
+    :return: f1 measure of clustering and parsing accuracy
+    """
     df_ground_truth = pd.read_csv(ground_truth)
     df_parsed_log = pd.read_csv(parsed_result)
 
@@ -21,6 +28,14 @@ def evaluate(ground_truth, parsed_result):
 
 
 def get_accuracy(series_ground_truth, series_parsedlog, debug=False):
+    """
+    Given the ground truth and output templates as Pandas series calculate precision, recall, f1-measure and parsing
+    accuracy
+    :param series_ground_truth: ground truth templates as Pandas series
+    :param series_parsedlog: output templates as Pandas series
+    :param debug: configuration parameter to debug or not
+    :return: precision, recall, f1-measure and parsing accuracy
+    """
     series_ground_truth_value_counts = series_ground_truth.value_counts()
 
     real_pairs = 0  # number of all possible combination given the ground truth
