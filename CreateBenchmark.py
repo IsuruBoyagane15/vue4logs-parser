@@ -11,14 +11,18 @@ if __name__ == '__main__':
         if dataset_chosen is not None and dataset != dataset_chosen:
             continue
         if type == '1':
-            parser = Vue4Logs(0.78, dataset)
+            threshold = 0.78
         elif type == '0':
-            parser = Vue4Logs(benchmark_settings[dataset]['threshold'], dataset)
+            threshold = benchmark_settings[dataset]['threshold']
         else:
             print("Error in arguments.")
             sys.exit(0)
 
-        pa = parser.parse()
+        parser = Vue4Logs(threshold, dataset)
+        parser.parse()
+        ground_truth_df = 'ground_truth/' + dataset + '_2k.log_structured.csv'
+        output = "results/" + str(threshold) + "/" + dataset + "_structured.csv"
+        pa = evaluate(ground_truth_df, output)[1]
         pas.append(pa)
 
     print(sum(pas)/16.0)

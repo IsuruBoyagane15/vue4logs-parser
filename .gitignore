@@ -1,8 +1,5 @@
 .idea/
 __pycache__
+
 results/
-parse.py
-
-
-plot1.py
-test.py
+scripts/

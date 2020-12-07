@@ -9,6 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from Evaluate import *
 from inverted_index.VanillaInvertedIndex import *
 
+# Configurations for benchmark datasets taken from https://github.com/logpai/logparser
 benchmark_settings = {
     'HDFS': {
         'log_file': 'HDFS/HDFS_2k.log',
@@ -126,6 +127,12 @@ input_dir = 'logs/'
 
 
 def generate_logformat_regex(logformat):
+    """
+    Extract the log message and headers from raw log line by using the configuration logformat
+
+    :param logformat: Format of header fields present in the particular dataset
+    :return: log message and headers
+    """
     headers = []
     splitters = re.split(r'(<[^<>]+>)', logformat)
     regex = ''
@@ -142,6 +149,14 @@ def generate_logformat_regex(logformat):
 
 
 def log_to_dataframe(log_file, regex, headers):
+    """
+    Convert log data in a logfile into a Pandas dataframe
+
+    :param log_file: raw log file location
+    :param regex: Regex to seperate
+    :param headers: headers present in a log line
+    :return: pandas dataframe containing log messages
+    """
     log_messages = []
     linecount = 0
     with open(log_file, 'r') as fin:
@@ -160,10 +175,21 @@ def log_to_dataframe(log_file, regex, headers):
 
 
 def my_tokenizer(text):
+    """
+    Dummy tokenizer to be used in tf-idf
+    :param text: pre-tokenized text
+    :return: pre-tokenized text
+    """
     return text
 
 
 def replace_alpha_nums(preprocessed_log):
+    """
+    Replace numeric parts in a log message using a regex
+
+    :param preprocessed_log: resultant log message after pre-processing
+    :return: input text after replacing numeric parts with a wildcard
+    """
     for i, token in enumerate(preprocessed_log):
         alpha_numeric_regex = r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$'
         is_alpha_numeric = re.search(alpha_numeric_regex, token)
@@ -174,6 +200,12 @@ def replace_alpha_nums(preprocessed_log):
 
 
 def check_numeric(token):
+    """
+    Replace numeric parts in a token  using character level check and merge
+
+    :param token: token to be checked for numerical
+    :return: input token after replacing numeric parts with a wildcard
+    """
     return_token = ""
     for i in range(0, len(token)):
         if not token[i].isnumeric():
@@ -185,12 +217,23 @@ def check_numeric(token):
 
 
 def replace_nums(preprocessed_log):
+    """
+    Replace numeric parts in a log message by calling check_numeric on each token
+
+    :param preprocessed_log: resultant log message after pre-processing
+    :return: input text after replacing numeric parts with a wildcard
+    """
     for i, token in enumerate(preprocessed_log):
         preprocessed_log[i] = check_numeric(token)
     return preprocessed_log
 
 
 def replace_only_nums(preprocessed_log):
+    """
+    Replace nuemeric tokens with a wildcard
+    :param preprocessed_log: resultant log message after pre-processing
+    :return: input text after replacing numeric tokens with a wildcard
+    """
     for i, token in enumerate(preprocessed_log):
         if token.isnumeric():
             preprocessed_log[i] = '<*>'
@@ -198,7 +241,13 @@ def replace_only_nums(preprocessed_log):
     return preprocessed_log
 
 
-def get_tfidf(doc_ids, temp):
+def get_cosine_similarity(doc_ids, temp):
+    """
+    Convert set of log messages into tf-idf representation and calculate cosine similarity
+    :param doc_ids: list of ids of the log messages
+    :param temp: templates dictionary
+    :return: cosine similarity matrix
+    """
     corpus = [temp[i] for i in doc_ids]
     filtered_corpus = list(map(lambda x: filter_wildcards(x), corpus))
     vectorizer = TfidfVectorizer(lowercase=False, analyzer='word', stop_words=None, tokenizer=my_tokenizer,
@@ -210,7 +259,16 @@ def get_tfidf(doc_ids, temp):
 
 
 class Vue4Logs:
+    """
+    Parsing solution
+    """
     def __init__(self, threshold, dataset):
+        """
+        Constructor
+
+        :param threshold: Selected threshold
+        :param dataset: Dataset name
+        """
         self.threshold = threshold
         self.templates = {}
         self.inverted_index = VanillaInvertedIndex()
@@ -219,6 +277,12 @@ class Vue4Logs:
         self.output_path = "results/" + str(threshold)
 
     def get_new_template(self, temp_template):
+        """
+        Put new log message into template dictionary as a new template
+
+        :param temp_template: log message
+        :return: id of the created template
+        """
         if len(self.templates.keys()) == 0:
             next_id = 0
         else:
@@ -229,6 +293,11 @@ class Vue4Logs:
         return next_id
 
     def write_results(self):
+        """
+        Write parsed results to a file
+
+        :return: None
+        """
         df = pd.read_csv('ground_truth/' + self.dataset + '_2k.log_structured.csv')
         df['EventId'] = ["E" + str(i) for i in self.results]
         templates_df = []
@@ -245,12 +314,23 @@ class Vue4Logs:
         df.to_csv(self.output_path + '/' + self.dataset + '_structured.csv')
 
     def preprocess(self, line):
+        """
+        Preprocess log message using correspondent regex
+
+        :param line: raw log message
+        :return: preprocessed log message
+        """
         regex = benchmark_settings[self.dataset]['regex']
         for currentRex in regex:
             line = re.sub(currentRex, '<*>', line)
         return line
 
     def get_bm25(self, doc_ids):
+        """
+        Get bm25 similarity of log messages
+        :param doc_ids: list of ids of log messages
+        :return: bm25 similarity
+        """
         logs = []
         for i in doc_ids:
             if i == -1:
@@ -262,6 +342,11 @@ class Vue4Logs:
         return doc_scores
 
     def parse(self):
+        """
+        Parsing algorithm
+
+        :return: Parsing accuracy for the given data
+        """
         dataset_config = benchmark_settings[self.dataset]
         indir = os.path.join(input_dir, os.path.dirname(dataset_config['log_file']))
         log_file = os.path.basename(dataset_config['log_file'])
@@ -309,7 +394,7 @@ class Vue4Logs:
                     similarity_candidates[-1] = pre_processed_log
                     doc_ids = [-1] + list(length_filtered_candidates.keys())
 
-                    similarity = get_tfidf(doc_ids, similarity_candidates)[0]
+                    similarity = get_cosine_similarity(doc_ids, similarity_candidates)[0]
                     # similarity = self.get_bm25(doc_ids)
 
                     for i in range(len(similarity)):
@@ -348,12 +433,5 @@ class Vue4Logs:
                 assert len(self.results) == log_id
         print(self.dataset)
         self.write_results()
-        ground_truth_df = 'ground_truth/' + self.dataset + '_2k.log_structured.csv'
-        output = self.output_path + "/" + self.dataset + "_structured.csv"
-        pa = evaluate(ground_truth_df, output)[1]
-        # print(self.dataset, pa)
-        # print(self.inverted_index.dict)
-        # print(self.dataset, len(self.templates), "\n")
-        return pa
 
 

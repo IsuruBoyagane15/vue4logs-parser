@@ -1,5 +1,8 @@
 from Vue4logsParser import *
 
+"""
+Run experiments by with parameter update
+"""
 if __name__ == '__main__':
     step = sys.argv[1]
     t = float(step)
