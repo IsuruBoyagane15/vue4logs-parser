@@ -2,7 +2,9 @@
 
 Automatic structuring of textual system logs.
 
-## Parsing Process
+## Dependencies
+
+- pip install -r requirements.txt
 
 ## Usage
 
