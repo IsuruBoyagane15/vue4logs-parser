@@ -2,7 +2,7 @@ import os.path as path
 import re
 import os
 
-# from rank_bm25 import BM25Okapi
+from rank_bm25 import BM25Okapi
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -250,16 +250,16 @@ class Vue4Logs:
             line = re.sub(currentRex, '<*>', line)
         return line
 
-    # def get_bm25(self, doc_ids):
-        # logs = []
-        # for i in doc_ids:
-            # if i == -1:
-                # query = self.templates[i]
-            # else:
-                # logs.append(self.templates[i])
-        # bm25 = BM25Okapi(logs)
-        # doc_scores = bm25.get_scores(query)
-        # return doc_scores
+    def get_bm25(self, doc_ids):
+        logs = []
+        for i in doc_ids:
+            if i == -1:
+                query = self.templates[i]
+            else:
+                logs.append(self.templates[i])
+        bm25 = BM25Okapi(logs)
+        doc_scores = bm25.get_scores(query)
+        return doc_scores
 
     def parse(self):
         dataset_config = benchmark_settings[self.dataset]
