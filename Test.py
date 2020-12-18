@@ -14,6 +14,9 @@ if __name__ == '__main__':
         for dataset, setting in benchmark_settings.items():
             parser = Vue4Logs(t, dataset)
             pa = parser.parse()
+            ground_truth_df = 'ground_truth/' + dataset + '_2k.log_structured.csv'
+            output = "results/" + str(t) + "/" + dataset + "_structured.csv"
+            pa = evaluate(ground_truth_df, output)[1]
             PAs.append(pa)
 
         print(t, sum(PAs) / 16.0)
