@@ -1,0 +1,1 @@
+{'log_format': '<Time>\|<Component>\|<Pid>\|<Content>','regex': [],'threshold': 0.51}

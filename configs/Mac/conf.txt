@@ -1,0 +1,1 @@
+{'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>','regex': [r'([\w-]+\.){2,}[\w-]+'],'threshold': 0.79}

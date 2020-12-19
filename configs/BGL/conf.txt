@@ -1,0 +1,1 @@
+{'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>','regex': [r'core\.\d+'],'threshold': 0.51}

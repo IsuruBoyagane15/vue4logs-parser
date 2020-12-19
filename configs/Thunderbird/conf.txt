@@ -1,0 +1,1 @@
+{'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>','regex': [r'(\d+\.){3}\d+'],'threshold': 0.61}

@@ -1,0 +1,1 @@
+{'log_format': '\[<Time>\] \[<Level>\] <Content>','regex': [r'(\d+\.){3}\d+'],'threshold': 0.23}

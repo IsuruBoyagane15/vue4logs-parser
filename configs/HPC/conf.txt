@@ -1,0 +1,1 @@
+{'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>','regex': [r'=\d+'],'threshold': 0.82}
