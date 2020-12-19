@@ -431,8 +431,7 @@ class Vue4Logs:
                         self.templates[selected_candidate_id] = updated_template
                         self.results.append(selected_candidate_id)
                 assert len(self.results) == log_id
-        print(self.dataset)
-        print("Number of templates :", len(list(self.templates.keys())), "\n")
+        print("\n", self.dataset, len(list(self.templates.keys())))
         self.write_results()
 
 
