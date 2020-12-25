@@ -22,14 +22,14 @@ benchmark_settings = {
         'log_file': 'Hadoop/Hadoop_2k.log',
         'log_format': '<Date> <Time> <Level> \[<Process>\] <Component>: <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        'threshold': 0.77
+        'threshold': 0.7
     },
 
     'Spark': {
         'log_file': 'Spark/Spark_2k.log',
         'log_format': '<Date> <Time> <Level> <Component>: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'\b[KGTM]?B\b', r'([\w-]+\.){2,}[\w-]+'],
-        'threshold': 0.67
+        'threshold': 0.81
     },
 
     'Zookeeper': {
@@ -43,35 +43,35 @@ benchmark_settings = {
         'log_file': 'BGL/BGL_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>',
         'regex': [r'core\.\d+'],
-        'threshold': 0.43
+        'threshold': 0.51
     },
 
     'HPC': {
         'log_file': 'HPC/HPC_2k.log',
         'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>',
         'regex': [r'=\d+'],
-        'threshold': 0.34
+        'threshold': 0.82
     },
 
     'Thunderbird': {
         'log_file': 'Thunderbird/Thunderbird_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>',
         'regex': [r'(\d+\.){3}\d+'],
-        'threshold': 0.27
+        'threshold': 0.61
     },
 
     'Windows': {
         'log_file': 'Windows/Windows_2k.log',
         'log_format': '<Date> <Time>, <Level>                  <Component>    <Content>',
         'regex': [r'0x.*?\s'],
-        'threshold': 0.67
+        'threshold': 0.68
     },
 
     'Linux': {
         'log_file': 'Linux/Linux_2k.log',
         'log_format': '<Month> <Date> <Time> <Level> <Component>(\[<PID>\])?: <Content>',
         'regex': [r'(\d+\.){3}\d+', r'\d{2}:\d{2}:\d{2}'],
-        'threshold': 0.42
+        'threshold': 0.35
     },
 
     'Android': {
@@ -85,7 +85,7 @@ benchmark_settings = {
         'log_file': 'HealthApp/HealthApp_2k.log',
         'log_format': '<Time>\|<Component>\|<Pid>\|<Content>',
         'regex': [],
-        'threshold': 0.34
+        'threshold': 0.51
     },
 
     'Apache': {
@@ -113,14 +113,14 @@ benchmark_settings = {
         'log_file': 'OpenStack/OpenStack_2k.log',
         'log_format': '<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>',
         'regex': [r'((\d+\.){3}\d+,?)+', r'/.+?\s', r'\d+'],
-        'threshold': 0.67
+        'threshold': 0.81
     },
 
     'Mac': {
         'log_file': 'Mac/Mac_2k.log',
         'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
         'regex': [r'([\w-]+\.){2,}[\w-]+'],
-        'threshold': 0.68
+        'threshold': 0.79
     },
 }
 input_dir = 'logs/'
