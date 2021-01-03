@@ -25,7 +25,6 @@ class VanillaInvertedIndex(InvertedIndex):
         return list(hit_set)
 
     def index_doc(self, doc_id, new_template):
-        new_template = filter_wildcards(new_template)
 
         template_length = len(new_template)
         # print(new_template)
