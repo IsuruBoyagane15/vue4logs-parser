@@ -1,1 +1,1 @@
-{'log_format': '<Date> <Time> - <Level>  \[<Node>:<Component>@<Id>\] - <Content>','regex': [r'(/|)(\d+\.){3}\d+(:\d+)?'],'threshold': 0.64}
+{'log_format': '<Date> <Time> - <Level>  \[<Node>:<Component>@<Id>\] - <Content>','log_file': 'Zookeeper'}

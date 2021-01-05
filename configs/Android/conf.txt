@@ -1,1 +1,1 @@
-{'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>','regex': [r'(/[\w-]+)+', r'([\w-]+\.){2,}[\w-]+', r'\b(\-?\+?\d+)\b|\b0[Xx][a-fA-F\d]+\b|\b[a-fA-F\d]{4,}\b'],'threshold': 0.78}
+{'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>','log_file': 'Android'}
