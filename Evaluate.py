@@ -22,8 +22,8 @@ def evaluate(ground_truth, parsed_result):
     (precision, recall, f_measure, accuracy) = get_accuracy(df_ground_truth['EventTemplate'],
                                                             df_parsed_log['EventTemplate'])
 
-    print('Precision: %.4f, Recall: %.4f, F1_measure: %.4f, Parsing_Accuracy: %.4f' % (
-        precision, recall, f_measure, accuracy))
+    # print('Precision: %.4f, Recall: %.4f, F1_measure: %.4f, Parsing_Accuracy: %.4f' % (
+    #     precision, recall, f_measure, accuracy))
     return f_measure, accuracy
 
 
