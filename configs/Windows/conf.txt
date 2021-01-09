@@ -1,1 +1,1 @@
-{'log_format': '<Date> <Time>, <Level>                  <Component>    <Content>','regex': [r'0x.*?\s'],'threshold': 0.68}
+{'log_format': '<Date> <Time>, <Level>                  <Component>    <Content>','log_file': 'Windows'}

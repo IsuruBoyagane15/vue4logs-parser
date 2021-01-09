@@ -1,1 +1,1 @@
-{'log_format': '<Date> <Day> <Time> <Component> sshd\[<Pid>\]: <Content>','regex': [r'(\d+\.){3}\d+', r'([\w-]+\.){2,}[\w-]+'],'threshold': 0.59}
+{'log_format': '<Date> <Day> <Time> <Component> sshd\[<Pid>\]: <Content>','log_file': 'OpenSSH'}

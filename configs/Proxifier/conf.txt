@@ -1,1 +1,1 @@
-{'log_format': '\[<Time>\] <Program> - <Content>','regex': [r'<\d+\ssec', r'([\w-]+\.)+[\w-]+(:\d+)?', r'\d{2}:\d{2}(:\d{2})*', r'[KGTM]B'],'threshold': 0.78}
+{'log_format': '\[<Time>\] <Program> - <Content>','log_file': 'Proxifier'}

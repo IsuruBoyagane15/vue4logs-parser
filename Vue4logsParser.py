@@ -16,7 +16,7 @@ benchmark_settings = {
     },
 
     'Hadoop': {
-        'regex': [r'(\d+\.){3}\d+']
+        'regex': [r'(\d+\.){3}\d+'],
     },
 
     'Spark': {
@@ -28,7 +28,7 @@ benchmark_settings = {
     },
 
     'BGL': {
-        'regex': [r'core\.\d+']
+        'regex': [r'core\.\d+'],
     },
 
     'HPC': {
