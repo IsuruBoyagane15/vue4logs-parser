@@ -1,0 +1,2000 @@
+[kernel] : [    7.658413] floppy0: no floppy controllers found
+[NetworkManager  pid: 582] : <info>  [1467205191.0685] SettingsPlugin-Ofono: init!
+[systemd-logind  pid: 586] : System is powering down.
+[dbus  pid: 536] : [system] Successfully activated service 'org.freedesktop.UDisks2'
+[NetworkManager  pid: 572] : <info>  [1466518545.7525] device (lo): link connected
+[/usr/lib/snapd/snapd  pid: 584] : daemon.go:203: DEBUG: init done in 3.36516ms
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[kernel] : [    0.616575] io scheduler noop registered
+[rtkit-daemon  pid: 1019] : Successfully made thread 1033 of process 1018 (n/a) owned by '108' RT at priority 5.
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] end _init.
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMTunFactory (internal)
+[kernel] : [    0.000000] Call Trace:
+[kernel] : [    0.000000]   Normal   empty
+[systemd  pid: 1] : Failed to start Automatically refresh installed snaps.
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[NetworkManager  pid: 567] : <info>  [1467290566.7325] ofono is now available
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.4763] DNS: starting dnsmasq...
+[kernel] : [    0.185005] ACPI: Executed 1 blocks of module-level executable AML code
+[kernel] : [    4.188963] lp: driver loaded but no devices found
+[NetworkManager  pid: 567] : <info>  [1467290566.6608] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-bluetooth.so)
+[kernel] : [    0.184929] ACPI: Executed 1 blocks of module-level executable AML code
+[kernel] : [    4.189686] lp: driver loaded but no devices found
+[NetworkManager  pid: 572] : <info>  [1466518545.4663] monitoring ifupdown state file '/run/network/ifstate'.
+[avahi-daemon  pid: 552] : Network interface enumeration completed.
+[kernel] : [    0.000000] CPUID[0d  0b]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.602442] GHES: HEST is not enabled!
+[kernel] : [    0.681483] ledtrig-cpu: registered to indicate activity on CPUs
+[kernel] : [    0.000000] Modules linked in:
+[NetworkManager  pid: 572] : <info>  [1466518545.8348] manager: NetworkManager state is now CONNECTED_LOCAL
+[NetworkManager  pid: 567] : <info>  [1467290566.8310] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[kernel] : [    0.619574] GHES: HEST is not enabled!
+[kernel] : [    4.542289] audit: type=1400 audit(1466518839.344:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=369 comm="apparmor_parser"
+[rtkit-daemon  pid: 1005] : Successfully made thread 1200 of process 1189 (n/a) owned by '1000' RT at priority 5.
+[kernel] : [    0.026805] Initializing cgroup subsys net_prio
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[kernel] : [    0.202524] NetLabel:  unlabeled traffic allowed by default
+[NetworkManager  pid: 567] : <info>  [1467290566.6399] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+[kernel] : [    0.183577] ACPI: Added _OSI(Processor Device)
+[kernel] : [    0.000000]   Normal   empty
+[kernel] : [    0.615152] io scheduler cfq registered
+[NetworkManager  pid: 585] : <info>  [1466518840.1790] device (enp0s3): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+[NetworkManager  pid: 572] : <info>  [1466518545.5965] (31076640) ... get_connections.
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[systemd  pid: 1] : Listening on ACPID Listen Socket.
+[kernel] : [    0.026804] Initializing cgroup subsys perf_event
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMEthernetFactory (internal)
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[kernel] : [    0.676907] Key type dns_resolver registered
+[NetworkManager  pid: 572] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[kernel] : [    3.911079] work still pending
+[kernel] : [    0.000000] kvm-clock: using sched offset of 3538057311 cycles
+[kernel] : [    4.533097] audit: type=1400 audit(1466518839.336:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=366 comm="apparmor_parser"
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[NetworkManager  pid: 572] : <info>  [1466518545.7334] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+[systemd  pid: 1] : Received SIGRTMIN+21 from PID 324 (plymouthd).
+[kernel] : [    0.671867] AppArmor: AppArmor sha1 policy hashing enabled
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[kernel] : [    0.205398] SCSI subsystem initialized
+[kernel] : [    0.000000] ---[ end trace 4d5ff9f2f68c4233 ]---
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMMacvlanFactory (internal)
+[anacron  pid: 545] : Will run job `cron.daily' in 5 min.
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMTunFactory (internal)
+[rtkit-daemon  pid: 1019] : Supervising 4 threads of 2 processes of 2 users.
+[kernel] : [    0.181982] devtmpfs: initialized
+[kernel] : [    0.000000] Early memory node ranges
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[rtkit-daemon  pid: 1005] : Supervising 2 threads of 1 processes of 1 users.
+[rtkit-daemon  pid: 1005] : Watchdog thread running.
+[NetworkManager  pid: 567] : <info>  [1467290566.4248] (29110176) ... get_connections.
+[dbus  pid: 536] : [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+[NetworkManager  pid: 582] : <info>  [1467205200.9615] WiFi hardware radio set enabled
+[systemd  pid: 1] : Stopped target Sound Card.
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[NetworkManager  pid: 567] : <info>  [1467290566.6399] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+[kernel] : [    0.617376] ACPI: Battery Slot [BAT0] (battery present)
+[systemd  pid: 1] : Mounting FUSE Control File System...
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[systemd  pid: 1045] : Stopped target Basic System.
+[kernel] : [    0.619526] brd: module loaded
+[NetworkManager  pid: 572] : <info>  [1466518545.7093] Loaded device plugin: NMVxlanFactory (internal)
+[rtkit-daemon  pid: 1005] : Successfully made thread 1189 of process 1189 (n/a) owned by '1000' high priority at nice level -11.
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[kernel] : [    0.000000] BRK [0x02201000  0x02201fff] PGTABLE
+[kernel] : [    0.602855] ACPI: Battery Slot [BAT0] (battery present)
+[systemd-logind  pid: 586] : New seat seat0.
+[kernel] : [    7.679356] floppy0: no floppy controllers found
+[kernel] : [    0.208213] pnp: PnP ACPI init
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[kernel] : [    0.000000] Modules linked in:
+[kernel] : [    0.000000] BRK [0x02201000  0x02201fff] PGTABLE
+[NetworkManager  pid: 572] : <info>  [1466518545.7176] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[kernel] : [    0.025697] Initializing cgroup subsys io
+[kernel] : [    0.000000]   Intel GenuineIntel
+[kernel] : [    0.182443] cpuidle: using governor ladder
+[rtkit-daemon  pid: 1005] : Successfully made thread 1004 of process 1004 (n/a) owned by '108' high priority at nice level -11.
+[kernel] : [    0.000000] BRK [0x021ff000  0x021fffff] PGTABLE
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMVlanFactory (internal)
+[NetworkManager  pid: 585] : <info>  [1466518844.9570] manager: startup complete
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[kernel] : [    0.000000] CPUID[0d  09]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.026564] Initializing cgroup subsys io
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[rtkit-daemon  pid: 1019] : Successfully made thread 1018 of process 1018 (n/a) owned by '108' high priority at nice level -11.
+[kernel] : [    0.600434] Initialise system trusted keyring
+[kernel] : [    0.602040] io scheduler noop registered
+[NetworkManager  pid: 572] : <info>  [1466518545.7292] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-bluetooth.so)
+[kernel] : [    7.666743] floppy0: no floppy controllers found
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.181783] smpboot: Total of 1 processors activated (5183.93 BogoMIPS)
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMInfinibandFactory (internal)
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMInfinibandFactory (internal)
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] end _init.
+[kernel] : [    7.679356] floppy0: no floppy controllers found
+[kernel] : [    0.671867] AppArmor: AppArmor sha1 policy hashing enabled
+[NetworkManager  pid: 572] : <info>  [1466518545.4708] dns-mgr[0x1da38c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[kernel] : [    0.186427] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[systemd  pid: 1] : Listening on CUPS Scheduler.
+[NetworkManager  pid: 582] : <info>  [1467205191.3727] urfkill disappeared from the bus
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[kernel] : [    0.000000]   AMD AuthenticAMD
+[kernel] : [    0.000000] BRK [0x021ff000  0x021fffff] PGTABLE
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMBondFactory (internal)
+[NetworkManager  pid: 572] : <info>  [1466518545.7150] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'
+[kernel] : [    0.000000] CPUID[0d  01]: eax=00000000 ebx=000003c0 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] tsc: Detected 2591.970 MHz processor
+[kernel] : [    0.000000] Movable zone start for each node
+[kernel] : [    0.000000] MTRR default type: uncachable
+[NetworkManager  pid: 567] : <info>  [1467290566.6682] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[kernel] : [    6.155511] AES CTR mode by8 optimization enabled
+[kernel] : [    0.616796] ACPI: Power Button [PWRF]
+[kernel] : [    0.183962] ACPI: Executed 1 blocks of module-level executable AML code
+[NetworkManager  pid: 585] : <info>  [1466518840.0888] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[NetworkManager  pid: 572] : <info>  [1466518545.5946] management mode: unmanaged
+[kernel] : [    0.026578] Initializing cgroup subsys pids
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[kernel] : [    0.026573] Initializing cgroup subsys net_cls
+[kernel] : [    0.026805] Initializing cgroup subsys net_prio
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.026431] AppArmor: AppArmor initialized
+[kernel] : [    0.689228] AppArmor: AppArmor sha1 policy hashing enabled
+[kernel] : [    0.203640] NetLabel:  unlabeled traffic allowed by default
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[NetworkManager  pid: 582] : <info>  [1467205191.0686] (11027664) ... get_connections.
+[NetworkManager  pid: 582] : <info>  [1467205191.3930] device (enp0s3): state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[NetworkManager  pid: 572] : <info>  [1466518545.4663] monitoring ifupdown state file '/run/network/ifstate'.
+[kernel] : [    0.000000] Policy zone: DMA32
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service'
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMBondFactory (internal)
+[org.gtk.vfs.Daemon  pid: 2877] : A connection to the bus can't be made
+[kernel] : [    0.026794] Initializing cgroup subsys io
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[NetworkManager  pid: 567] : <info>  [1467290566.6640] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[kernel] : [    0.000000] CPUID[0d  03]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 567] : <info>  [1467290566.8334] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.210034] pnp: PnP ACPI init
+[systemd-logind  pid: 617] : New seat seat0.
+[NetworkManager  pid: 585] : <info>  [1466518839.9478] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.205876] NetLabel: Initializing
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[kernel] : [    0.026431] AppArmor: AppArmor initialized
+[alsactl  pid: 600] : Hardware is initialized using a generic method
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMInfinibandFactory (internal)
+[kernel] : [    4.931879] AES CTR mode by8 optimization enabled
+[kernel] : [    0.000000] BRK [0x02202000  0x02202fff] PGTABLE
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[systemd  pid: 1] : Received SIGRTMIN+21 from PID 327 (plymouthd).
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[NetworkManager  pid: 572] : <info>  [1466518545.7850] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[kernel] : [    5.080504] audit: type=1400 audit(1466518544.900:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/ubuntu-core-launcher" pid=450 comm="apparmor_parser"
+[rtkit-daemon  pid: 1005] : Supervising 1 threads of 1 processes of 1 users.
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[NetworkManager  pid: 572] : <info>  [1466518545.5965] SettingsPlugin-Ofono: init!
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.hostname1'
+[rtkit-daemon  pid: 1005] : Canary thread running.
+[NetworkManager  pid: 582] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[kernel] : [    0.205780] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[kernel] : [    0.776925] Freeing unused kernel memory: 1868K (ffff88000182d000 - ffff880001a00000)
+[NetworkManager  pid: 585] : <info>  [1466518839.8237] dns-mgr[0x11e50c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    0.181112] KVM setup paravirtual spinlock
+[NetworkManager  pid: 567] : <info>  [1467290566.7344] device (enp0s3): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+[NetworkManager  pid: 585] : <info>  [1466518839.8141] NetworkManager (version 1.2.0) is starting...
+[systemd-logind  pid: 617] : Watching system buttons on /dev/input/event1 (Sleep Button)
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[kernel] : [    4.193717] ppdev: user-space parallel port driver
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[kernel] : [    0.660930] ohci-platform: OHCI generic platform driver
+[dnsmasq  pid: 754] : DBus support enabled: connected to system bus
+[kernel] : [    0.605301] loop: module loaded
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'
+[NetworkManager  pid: 567] : <info>  [1467290566.8380] DNS: starting dnsmasq...
+[systemd-logind  pid: 586] : Watching system buttons on /dev/input/event3 (Video Bus)
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[kernel] : [    0.000000] Early memory node ranges
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMEthernetFactory (internal)
+[NetworkManager  pid: 585] : <info>  [1466518840.2368] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[kernel] : [    0.206805] AppArmor: AppArmor Filesystem Enabled
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[NetworkManager  pid: 572] : <info>  [1466518545.7292] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-bluetooth.so)
+[NetworkManager  pid: 567] : <info>  [1467290566.8334] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.184549] ACPI: Added _OSI(Processor Device)
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMBondFactory (internal)
+[systemd-logind  pid: 617] : Watching system buttons on /dev/input/event1 (Sleep Button)
+[rtkit-daemon  pid: 1113] : Successfully dropped privileges.
+[kernel] : [    0.000000] CPUID[0d  0b]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000]   Intel GenuineIntel
+[kernel] : [    3.893745] floppy0: no floppy controllers found
+[rtkit-daemon  pid: 1088] : Successfully made thread 2931 of process 2918 (n/a) owned by '108' RT at priority 5.
+[systemd  pid: 1] : Listening on D-Bus System Message Bus Socket.
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[kernel] : [    0.000000] Booting paravirtualized kernel on KVM
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+[kernel] : [    0.616575] io scheduler noop registered
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[kernel] : [    0.051518] ftrace: allocating 31907 entries in 125 pages
+[pulseaudio  pid: 1253] : [pulseaudio] pid.c: Daemon already running.
+[kernel] : [    0.184550] ACPI: Added _OSI(Processor Aggregator Device)
+[kernel] : [    0.000000] CPUID[0d  09]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[systemd  pid: 1045] : Stopped target Default.
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[kernel] : [    0.205876] NetLabel: Initializing
+[kernel] : [    5.950988] audit: type=1400 audit(1467290565.756:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=371 comm="apparmor_parser"
+[kernel] : [    0.000000]   Intel GenuineIntel
+[rtkit-daemon  pid: 1113] : Supervising 1 threads of 1 processes of 1 users.
+[kernel] : [    0.026800] Initializing cgroup subsys devices
+[NetworkManager  pid: 582] : <info>  [1467205191.4081] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+[kernel] : [    0.025710] Initializing cgroup subsys hugetlb
+[rtkit-daemon  pid: 1019] : Successfully limited resources.
+[kernel] : [    0.672574] PM: Hibernation image not present or could not be loaded.
+[/usr/sbin/irqbalance] : Balancing is ineffective on systems with a single cpu.  Shutting down
+[kernel] : [    0.000000] BRK [0x021ff000  0x021fffff] PGTABLE
+[kernel] : [    0.182140] pinctrl core: initialized pinctrl subsystem
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMEthernetFactory (internal)
+[kernel] : [    0.180227] APIC calibration not consistent with PM-Timer: 96ms instead of 100ms
+[sshd  pid: 684] : Received SIGHUP; restarting.
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000]   Centaur CentaurHauls
+[systemd  pid: 1045] : Stopped target Sockets.
+[kernel] : [    6.155511] AVX version of gcm_enc/dec engaged.
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+[NetworkManager  pid: 572] : <info>  [1466518545.7292] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-bluetooth.so)
+[kernel] : [    0.025700] Initializing cgroup subsys memory
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMMacvlanFactory (internal)
+[kernel] : [    0.000000] CPUID[0d  08]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.206805] AppArmor: AppArmor Filesystem Enabled
+[kernel] : [    0.614893] Initialise system trusted keyring
+[kernel] : [    0.027312] Initializing cgroup subsys freezer
+[NetworkManager  pid: 582] : <info>  [1467205191.1461] SettingsPlugin-Ofono: (11027824) ... get_connections.
+[kernel] : [    0.000000] CPUID[0d  08]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[rtkit-daemon  pid: 1019] : Successfully made thread 1253 of process 1253 (n/a) owned by '1000' high priority at nice level -11.
+[lightdm] : pam_unix(lightdm-greeter:session): session closed for user lightdm
+[kernel] : [    4.538070] audit: type=1400 audit(1466518839.344:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=368 comm="apparmor_parser"
+[NetworkManager  pid: 572] : <info>  [1466518555.9793] WWAN hardware radio set enabled
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMVethFactory (internal)
+[kernel] : [    0.181885] KVM setup paravirtual spinlock
+[kernel] : [    0.185344] ACPI: Using IOAPIC for interrupt routing
+[rtkit-daemon  pid: 1113] : Supervising 6 threads of 2 processes of 2 users.
+[/usr/sbin/irqbalance] : Balancing is ineffective on systems with a single cpu.  Shutting down
+[kernel] : [    0.186229] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[kernel] : [    0.026803] Initializing cgroup subsys net_cls
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[kernel] : [    0.206847] pnp: PnP ACPI init
+[kernel] : [    0.000000] CPUID[0d  05]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[kernel] : [    0.046189] Freeing SMP alternatives memory: 28K (ffffffff820b4000 - ffffffff820bb000)
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[NetworkManager  pid: 567] : <info>  [1467290566.4247] SettingsPlugin-Ofono: init!
+[NetworkManager  pid: 582] : <info>  [1467205191.4045] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.187199] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[kernel] : [    0.000000] CPUID[0d  03]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 585] : <info>  [1466518840.1895] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[kernel] : [    0.000000] kvm-clock: using sched offset of 3628519956 cycles
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'
+[NetworkManager  pid: 585] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[kernel] : [    0.203537] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[NetworkManager  pid: 572] : <info>  [1466518545.6489] SettingsPlugin-Ofono: (31076800) ... get_connections.
+[kernel] : [    4.752126] AVX version of gcm_enc/dec engaged.
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[NetworkManager  pid: 582] : <info>  [1467205191.4654] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[kernel] : [    0.000000] CPUID[0d  0a]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    4.182239] lp: driver loaded but no devices found
+[systemd  pid: 909] : Stopped target Paths.
+[kernel] : [    0.000000] CPUID[0d  0c]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[kernel] : [    0.614955] Allocating IMA MOK and blacklist keyrings.
+[kernel] : [    0.000000]   Normal   empty
+[NetworkManager  pid: 572] : <info>  [1466518545.4599] Read config: /etc/NetworkManager/NetworkManager.conf
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[NetworkManager  pid: 585] : <info>  [1466518840.1895] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+[kernel] : [    0.613106] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[sshd  pid: 713] : Received SIGHUP; restarting.
+[pulseaudio  pid: 1004] : [pulseaudio] authkey.c: Failed to load authentication key '/var/lib/lightdm/.pulse-cookie': No such file or directory
+[NetworkManager  pid: 572] : <info>  [1466518545.7866] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[NetworkManager  pid: 572] : <info>  [1466518545.8345] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+[NetworkManager  pid: 572] : <info>  [1466518545.4708] dns-mgr[0x1da38c0]: using resolv.conf manager 'resolvconf'
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[kernel] : [    4.534584] audit: type=1400 audit(1466518839.336:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/ubuntu-core-launcher" pid=367 comm="apparmor_parser"
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.systemd1'
+[kernel] : [    0.616381] Allocating IMA MOK and blacklist keyrings.
+[kernel] : [    0.600012] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[kernel] : [    0.000000] CPUID[0d  0c]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Movable zone start for each node
+[NetworkManager  pid: 572] : <info>  [1466518545.7316] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'
+[kernel] : [    0.025703] Initializing cgroup subsys devices
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[avahi-daemon  pid: 522] : Successfully dropped root privileges.
+[kernel] : [    0.025703] Initializing cgroup subsys devices
+[systemd  pid: 1] : Failed to start Automatically refresh installed snaps.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[kernel] : [    0.000000] CPUID[0d  0b]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    4.538070] audit: type=1400 audit(1466518839.344:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=368 comm="apparmor_parser"
+[NetworkManager  pid: 585] : <info>  [1466518840.1249] device (enp0s3): link connected
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[kernel] : [    5.950985] audit: type=1400 audit(1467290565.756:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=371 comm="apparmor_parser"
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMBridgeFactory (internal)
+[kernel] : [    7.658413] floppy0: no floppy controllers found
+[kernel] : [    0.000000] No NUMA configuration found
+[kernel] : [    0.000000] kvm-clock: using sched offset of 15603558780986 cycles
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    0.202149] SCSI subsystem initialized
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[kernel] : [    0.615476] GHES: HEST is not enabled!
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[systemd-logind  pid: 586] : Watching system buttons on /dev/input/event0 (Power Button)
+[NetworkManager  pid: 572] : <info>  [1466518545.7316] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[kernel] : [    0.000000] Early memory node ranges
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[kernel] : [    0.604814] brd: module loaded
+[kernel] : [    0.027307] Initializing cgroup subsys memory
+[rtkit-daemon  pid: 1005] : Supervising 2 threads of 1 processes of 1 users.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+[org.gtk.vfs.Daemon  pid: 915] : A connection to the bus can't be made
+[NetworkManager  pid: 582] : <info>  [1467205190.8603] monitoring ifupdown state file '/run/network/ifstate'.
+[kernel] : [    0.182447] PCCT header not found.
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMBridgeFactory (internal)
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] devices added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3)
+[NetworkManager  pid: 567] : <info>  [1467290566.2403] dns-mgr[0x1bb40a0]: using resolv.conf manager 'resolvconf'
+[avahi-daemon  pid: 538] : Successfully dropped root privileges.
+[kernel] : [    0.616796] ACPI: Power Button [PWRF]
+[dnsmasq  pid: 786] : DBus support enabled: connected to system bus
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.hostname1'
+[systemd  pid: 867] : Stopped target Paths.
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[rtkit-daemon  pid: 1113] : Supervising 2 threads of 1 processes of 1 users.
+[anacron  pid: 517] : Will run job `cron.daily' in 5 min.
+[kernel] : [    0.691791] AppArmor: AppArmor sha1 policy hashing enabled
+[NetworkManager  pid: 582] : <info>  [1467205191.4045] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[NetworkManager  pid: 567] : <info>  [1467290566.7155] urfkill disappeared from the bus
+[kernel] : [    5.950977] audit: type=1400 audit(1467290565.756:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=371 comm="apparmor_parser"
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[kernel] : [    0.616599] io scheduler cfq registered
+[kernel] : [    0.617562] Initialise system trusted keyring
+[NetworkManager  pid: 572] : <info>  [1466518545.7093] Loaded device plugin: NMVlanFactory (internal)
+[kernel] : [    0.676337] ohci-platform: OHCI generic platform driver
+[kernel] : [    0.000000] ---[ end trace 4d5ff9f2f68c4233 ]---
+[NetworkManager  pid: 585] : <info>  [1466518839.9475] init!
+[rtkit-daemon  pid: 1113] : Supervising 7 threads of 3 processes of 2 users.
+[systemd  pid: 909] : Stopped target Timers.
+[kernel] : [    5.053090] audit: type=1400 audit(1466518544.872:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=383 comm="apparmor_parser"
+[kernel] : [    0.186227] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[kernel] : [    0.615348] ACPI: Power Button [PWRF]
+[kernel] : [    5.582925] lp: driver loaded but no devices found
+[NetworkManager  pid: 582] : <info>  [1467205190.8594] manager[0xa721a0]: monitoring kernel firmware directory '/lib/firmware'.
+[kernel] : [    4.745066] fbcon: vboxdrmfb (fb0) is primary device
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+[NetworkManager  pid: 585] : <info>  [1466518839.9495] SettingsPlugin-Ofono: init!
+[systemd  pid: 1] : Mounted FUSE Control File System.
+[kernel] : [    0.619526] brd: module loaded
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    5.947598] audit: type=1400 audit(1467290565.752:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=370 comm="apparmor_parser"
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[kernel] : [    0.183602] ACPI: bus type PCI registered
+[kernel] : [    0.025705] Initializing cgroup subsys freezer
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[NetworkManager  pid: 572] : <info>  [1466518545.7811] device (enp0s3): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+[systemd  pid: 1] : Listening on CUPS Scheduler.
+[kernel] : [    0.000000] CPUID[0d  08]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.027319] Initializing cgroup subsys pids
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] manager: Networking is enabled by state file
+[NetworkManager  pid: 582] : <info>  [1467205191.4016] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[kernel] : [    0.000000]   DMA zone: 21 pages reserved
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.203541] e820: reserve RAM buffer [mem 0x2fff0000-0x2fffffff]
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMIPTunnelFactory (internal)
+[kernel] : [    0.182483] ACPI: bus type PCI registered
+[kernel] : [    0.660930] ohci-platform: OHCI generic platform driver
+[systemd  pid: 909] : Stopped target Sockets.
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[systemd  pid: 1] : Reloading.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[kernel] : [    0.000000] CPUID[0d  08]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] end _init.
+[NetworkManager  pid: 567] : <info>  [1467290566.8331] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[NetworkManager  pid: 567] : <info>  [1467290566.1984] NetworkManager (version 1.2.0) is starting...
+[dbus  pid: 536] : [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+[kernel] : [    0.000000] CPUID[0d  0a]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[anacron  pid: 491] : Will run job `cron.monthly' in 15 min.
+[kernel] : [    0.601864] Allocating IMA MOK and blacklist keyrings.
+[dbus  pid: 558] : [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'
+[kernel] : [    0.025340] Security Framework initialized
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[systemd-logind  pid: 575] : Watching system buttons on /dev/input/event3 (Video Bus)
+[rtkit-daemon  pid: 1113] : Supervising 3 threads of 1 processes of 1 users.
+[kernel] : [    0.000000] No NUMA configuration found
+[kernel] : [    0.026421] Security Framework initialized
+[NetworkManager  pid: 582] : <info>  [1467205191.0685] SettingsPlugin-Ofono: init!
+[kernel] : [    4.541334] audit: type=1400 audit(1467205190.348:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=369 comm="apparmor_parser"
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[kernel] : [    0.183962] ACPI: Executed 1 blocks of module-level executable AML code
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.UPower'
+[NetworkManager  pid: 572] : <info>  [1466518545.7176] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[kernel] : [    0.185339] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[kernel] : [    0.619237] io scheduler noop registered
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[kernel] : [    0.181792] devtmpfs: initialized
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[systemd  pid: 909] : Stopped target Timers.
+[kernel] : [    0.026575] Initializing cgroup subsys net_prio
+[kernel] : [    0.000000] CPUID[0d  0a]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 567] : <info>  [1467290566.2010] Read config: /etc/NetworkManager/NetworkManager.conf
+[NetworkManager  pid: 582] : <info>  [1467205191.4694] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.026103] AppArmor: AppArmor initialized
+[kernel] : [    0.026807] Initializing cgroup subsys hugetlb
+[NetworkManager  pid: 567] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[systemd-logind  pid: 586] : New session c2 of user stefan.
+[systemd-logind  pid: 518] : Watching system buttons on /dev/input/event0 (Power Button)
+[kernel] : [    0.202422] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] manager: Networking is enabled by state file
+[NetworkManager  pid: 567] : <info>  [1467290566.6955] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+[kernel] : [    0.613518] Initialise system trusted keyring
+[NetworkManager  pid: 582] : <info>  [1467205190.8426] NetworkManager (version 1.2.0) is starting...
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.hostname1'
+[kernel] : [    0.687205] EDD information not available.
+[kernel] : [    0.044098] Freeing SMP alternatives memory: 28K (ffffffff820b3000 - ffffffff820ba000)
+[kernel] : [    0.602040] io scheduler noop registered
+[NetworkManager  pid: 582] : <info>  [1467205191.4687] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+[kernel] : [    0.000000] MTRR default type: uncachable
+[rtkit-daemon  pid: 1113] : Canary thread running.
+[systemd-logind  pid: 586] : Watching system buttons on /dev/input/event1 (Sleep Button)
+[NetworkManager  pid: 585] : <info>  [1466518840.1084] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[NetworkManager  pid: 572] : <info>  [1466518545.4706] dns-mgr[0x1da38c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[kernel] : [    0.185333] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[kernel] : [    0.619086] Allocating IMA MOK and blacklist keyrings.
+[kernel] : [    0.619963] ACPI: Battery Slot [BAT0] (battery present)
+[kernel] : [    0.000000] KERNEL supported cpus:
+[kernel] : [    4.542968] audit: type=1400 audit(1467205190.348:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/ubuntu-core-launcher" pid=371 comm="apparmor_parser"
+[kernel] : [    0.026103] AppArmor: AppArmor initialized
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[NetworkManager  pid: 582] : <info>  [1467205200.9616] WWAN hardware radio set enabled
+[kernel] : [    0.614955] Allocating IMA MOK and blacklist keyrings.
+[kernel] : [    0.000000] Booting paravirtualized kernel on KVM
+[kernel] : [    0.026567] Initializing cgroup subsys memory
+[kernel] : [    0.185937] ACPI: Executed 1 blocks of module-level executable AML code
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[systemd  pid: 1] : Reloading.
+[kernel] : [    0.000000] Policy zone: DMA32
+[pulseaudio  pid: 13870] : [pulseaudio] pid.c: Daemon already running.
+[dbus  pid: 563] : [system] Successfully activated service 'org.freedesktop.UPower'
+[kernel] : [    0.000000] CPUID[0d  05]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.4596] NetworkManager (version 1.2.0) is starting...
+[dbus  pid: 563] : [system] Successfully activated service 'org.freedesktop.UDisks2'
+[rtkit-daemon  pid: 1113] : Supervising 1 threads of 1 processes of 1 users.
+[NetworkManager  pid: 567] : <info>  [1467290566.4214] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[NetworkManager  pid: 567] : <info>  [1467290576.9616] WWAN hardware radio set enabled
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.0685] SettingsPlugin-Ofono: init!
+[kernel] : [    0.201969] vgaarb: loaded
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[kernel] : [    0.000000] CPUID[0d  01]: eax=00000000 ebx=000003c0 ecx=00000000 edx=00000000
+[kernel] : [    0.026800] Initializing cgroup subsys devices
+[kernel] : [    0.182447] PCCT header not found.
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[kernel] : [    4.533107] audit: type=1400 audit(1466518839.336:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=366 comm="apparmor_parser"
+[dbus  pid: 536] : [system] Successfully activated service 'org.freedesktop.UPower'
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[kernel] : [    0.000000]   Centaur CentaurHauls
+[NetworkManager  pid: 582] : <info>  [1467205191.4687] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[kernel] : [    4.551020] audit: type=1400 audit(1467205190.360:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=373 comm="apparmor_parser"
+[NetworkManager  pid: 585] : <info>  [1466518840.1249] device (enp0s3): link connected
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[NetworkManager  pid: 567] : <info>  [1467290566.6339] Loaded device plugin: NMVethFactory (internal)
+[kernel] : [    0.181790] APIC delta adjusted to PM-Timer: 6382138 (6127783)
+[dbus  pid: 558] : [system] Reloaded configuration
+[NetworkManager  pid: 567] : <info>  [1467290566.6339] Loaded device plugin: NMVethFactory (internal)
+[kernel] : [    0.000000] CPUID[0d  05]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.676272] ledtrig-cpu: registered to indicate activity on CPUs
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[dbus  pid: 558] : [system] Reloaded configuration
+[kernel] : [    0.204669] NetLabel:  unlabeled traffic allowed by default
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] kvm-clock: using sched offset of 3628519956 cycles
+[rtkit-daemon  pid: 1005] : Successfully made thread 1200 of process 1189 (n/a) owned by '1000' RT at priority 5.
+[kernel] : [    4.534584] audit: type=1400 audit(1466518839.336:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/ubuntu-core-launcher" pid=367 comm="apparmor_parser"
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[kernel] : [    4.538198] audit: type=1400 audit(1467205190.340:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=368 comm="apparmor_parser"
+[kernel] : [    0.000000] CPUID[0d  01]: eax=00000000 ebx=000003c0 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMIPTunnelFactory (internal)
+[kernel] : [    0.182955] pinctrl core: initialized pinctrl subsystem
+[kernel] : [    0.181112] KVM setup paravirtual spinlock
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[anacron  pid: 545] : Will run job `cron.daily' in 5 min.
+[kernel] : [    0.184622] ACPI: Added _OSI(Processor Device)
+[NetworkManager  pid: 585] : <info>  [1466518840.0228] SettingsPlugin-Ofono: (18763120) ... get_connections.
+[kernel] : [    0.000000] CPUID[0d  02]: eax=00000100 ebx=00000240 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.3133] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-bluetooth.so)
+[kernel] : [    0.183981] cpuidle: using governor ladder
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[rtkit-daemon  pid: 1088] : Supervising 5 threads of 2 processes of 2 users.
+[kernel] : [    0.687274] PM: Hibernation image not present or could not be loaded.
+[rtkit-daemon  pid: 1005] : Running.
+[kernel] : [    0.000000] CPUID[0d  0e]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.182955] pinctrl core: initialized pinctrl subsystem
+[/usr/sbin/irqbalance] : Balancing is ineffective on systems with a single cpu.  Shutting down
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[kernel] : [    0.185339] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[dbus  pid: 558] : [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+[kernel] : [    0.616381] Allocating IMA MOK and blacklist keyrings.
+[NetworkManager  pid: 572] : <info>  [1466518545.7693] urfkill disappeared from the bus
+[kernel] : [    0.000000]   Intel GenuineIntel
+[NetworkManager  pid: 585] : <info>  [1466518839.8237] dns-mgr[0x11e50c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    4.749698] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.182447] PCCT header not found.
+[kernel] : [    0.000000] Early memory node ranges
+[NetworkManager  pid: 567] : <info>  [1467290566.7537] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[kernel] : [    0.025712] Initializing cgroup subsys pids
+[kernel] : [  287.681186] show_signal_msg: 9 callbacks suppressed
+[kernel] : [    0.025943] Calibrating delay loop (skipped) preset value.. 5183.94 BogoMIPS (lpj=10367880)
+[lightdm] : pam_unix(lightdm-greeter:session): session closed for user lightdm
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[kernel] : [    0.617726] brd: module loaded
+[NetworkManager  pid: 567] : <info>  [1467290566.6640] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[NetworkManager  pid: 585] : <info>  [1466518840.1726] ofono is now available
+[kernel] : [    0.206847] pnp: PnP ACPI init
+[systemd  pid: 1] : Mounting FUSE Control File System...
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[NetworkManager  pid: 567] : <info>  [1467290566.4215] end _init.
+[kernel] : [    0.000000] Movable zone start for each node
+[kernel] : [    0.205212] vgaarb: loaded
+[kernel] : [    0.053276] ftrace: allocating 31920 entries in 125 pages
+[kernel] : [    0.000000]   Device   empty
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[kernel] : [    4.799501] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[kernel] : [    0.619461] ACPI: Power Button [PWRF]
+[rtkit-daemon  pid: 1088] : Supervising 1 threads of 1 processes of 1 users.
+[kernel] : [    0.203030] vgaarb: loaded
+[kernel] : [    0.000000] BRK [0x02201000  0x02201fff] PGTABLE
+[kernel] : [    0.050858] ftrace: allocating 31907 entries in 125 pages
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000] Booting paravirtualized kernel on KVM
+[kernel] : [    0.202425] e820: reserve RAM buffer [mem 0x2fff0000-0x2fffffff]
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[rtkit-daemon  pid: 1005] : Supervising 4 threads of 2 processes of 2 users.
+[kernel] : [    0.690063] PM: Hibernation image not present or could not be loaded.
+[anacron  pid: 513] : Will run job `cron.monthly' in 15 min.
+[kernel] : [    0.183565] cpuidle: using governor menu
+[NetworkManager  pid: 582] : <info>  [1467205191.0664] init!
+[systemd-timesyncd  pid: 343] : Synchronized to time server 91.189.89.199:123 (ntp.ubuntu.com).
+[kernel] : [    0.186227] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[kernel] : [    0.663870] Key type dns_resolver registered
+[NetworkManager  pid: 585] : <info>  [1466518839.9475] init!
+[rtkit-daemon  pid: 1019] : Supervising 3 threads of 1 processes of 1 users.
+[rtkit-daemon  pid: 1088] : Watchdog thread running.
+[kernel] : [    0.182140] pinctrl core: initialized pinctrl subsystem
+[kernel] : [    0.678887] ledtrig-cpu: registered to indicate activity on CPUs
+[kernel] : [    5.148942] audit: type=1400 audit(1466518544.972:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=459 comm="apparmor_parser"
+[kernel] : [    0.186224] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[systemd  pid: 1] : Received SIGRTMIN+21 from PID 329 (plymouthd).
+[NetworkManager  pid: 572] : <info>  [1466518545.5944] init!
+[kernel] : [    5.947593] audit: type=1400 audit(1467290565.752:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=370 comm="apparmor_parser"
+[NetworkManager  pid: 582] : <info>  [1467205191.3456] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+[NetworkManager  pid: 572] : <info>  [1466518545.7093] Loaded device plugin: NMVlanFactory (internal)
+[kernel] : [    7.658529] work still pending
+[NetworkManager  pid: 582] : <info>  [1467205191.1461] SettingsPlugin-Ofono: (11027824) ... get_connections.
+[kernel] : [    0.203204] SCSI subsystem initialized
+[kernel] : [    0.026576] Initializing cgroup subsys hugetlb
+[org.gtk.vfs.Daemon  pid: 945] : A connection to the bus can't be made
+[kernel] : [    0.000000] Early memory node ranges
+[kernel] : [    0.183579] ACPI: Added _OSI(Processor Aggregator Device)
+[NetworkManager  pid: 572] : <info>  [1466518545.7334] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+[systemd  pid: 909] : Received SIGRTMIN+24 from PID 1341 (kill).
+[kernel] : [    0.000000] Modules linked in:
+[kernel] : [    0.025710] Initializing cgroup subsys hugetlb
+[rtkit-daemon  pid: 1005] : Supervising 1 threads of 1 processes of 1 users.
+[kernel] : [    0.674143] ohci-platform: OHCI generic platform driver
+[kernel] : [    0.000000] Early memory node ranges
+[NetworkManager  pid: 572] : <info>  [1466518545.7150] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+[kernel] : [    0.205783] e820: reserve RAM buffer [mem 0x2fff0000-0x2fffffff]
+[kernel] : [    0.663154] ledtrig-cpu: registered to indicate activity on CPUs
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMBridgeFactory (internal)
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] kvm-clock: using sched offset of 15603558780986 cycles
+[kernel] : [    0.180789] smpboot: Total of 1 processors activated (5183.93 BogoMIPS)
+[NetworkManager  pid: 582] : <info>  [1467205191.4694] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.615348] ACPI: Power Button [PWRF]
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[kernel] : [    0.600434] Initialise system trusted keyring
+[NetworkManager  pid: 585] : <info>  [1466518840.0956] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wwan.so)
+[kernel] : [    0.181241] KVM setup paravirtual spinlock
+[NetworkManager  pid: 585] : <info>  [1466518839.9495] SettingsPlugin-Ofono: init!
+[kernel] : [    0.000000] CPUID[0d  04]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[kernel] : [    5.049826] audit: type=1400 audit(1466518544.872:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=383 comm="apparmor_parser"
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[NetworkManager  pid: 572] : <info>  [1466518555.9792] WiFi hardware radio set enabled
+[kernel] : [    0.183214] cpuidle: using governor menu
+[kernel] : [    0.203640] NetLabel:  unlabeled traffic allowed by default
+[rtkit-daemon  pid: 1019] : Supervising 2 threads of 1 processes of 1 users.
+[anacron  pid: 545] : Will run job `cron.monthly' in 15 min.
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[systemd-logind  pid: 575] : System is powering down.
+[rtkit-daemon  pid: 1019] : Supervising 1 threads of 1 processes of 1 users.
+[kernel] : [    4.745719] AVX version of gcm_enc/dec engaged.
+[kernel] : [    0.602064] io scheduler cfq registered
+[kernel] : [    0.185529] ACPI: Added _OSI(Processor Aggregator Device)
+[kernel] : [    0.025340] Security Framework initialized
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[kernel] : [    0.026576] Initializing cgroup subsys hugetlb
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[pulseaudio  pid: 1189] : [pulseaudio] authkey.c: Failed to load authentication key '/home/stefan/.config/pulse/cookie': No such file or directory
+[kernel] : [    4.541345] audit: type=1400 audit(1467205190.348:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=369 comm="apparmor_parser"
+[kernel] : [    0.026904] AppArmor: AppArmor initialized
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] devices added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3)
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[systemd  pid: 882] : Received SIGRTMIN+24 from PID 1384 (kill).
+[kernel] : [    0.026431] AppArmor: AppArmor initialized
+[kernel] : [    4.541339] audit: type=1400 audit(1467205190.348:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=369 comm="apparmor_parser"
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+[kernel] : [    0.000000] CPUID[0d  03]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    5.587874] ppdev: user-space parallel port driver
+[NetworkManager  pid: 572] : <info>  [1466518545.8355] manager: NetworkManager state is now CONNECTED_GLOBAL
+[kernel] : [    0.180956] APIC delta adjusted to PM-Timer: 6357727 (6169937)
+[kernel] : [    0.000000]   AMD AuthenticAMD
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.182368] smpboot: Total of 1 processors activated (5183.94 BogoMIPS)
+[NetworkManager  pid: 567] : <info>  [1467290566.7319] ModemManager available in the bus
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+[kernel] : [    0.000000] CPUID[0d  0a]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000]   Centaur CentaurHauls
+[kernel] : [    0.205888] NetLabel:  unlabeled traffic allowed by default
+[kernel] : [    0.689995] EDD information not available.
+[NetworkManager  pid: 585] : <info>  [1466518840.1119] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+[kernel] : [    0.051518] ftrace: allocating 31907 entries in 125 pages
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[kernel] : [    4.188963] lp: driver loaded but no devices found
+[systemd-logind  pid: 575] : New session c3 of user lightdm.
+[kernel] : [    0.186432] ACPI: Using IOAPIC for interrupt routing
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[NetworkManager  pid: 567] : <info>  [1467290566.4247] SettingsPlugin-Ofono: init!
+[kernel] : [    4.931877] AVX version of gcm_enc/dec engaged.
+[kernel] : [    0.000000] Call Trace:
+[kernel] : [    0.000000] No NUMA configuration found
+[kernel] : [    0.208213] pnp: PnP ACPI init
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service'
+[kernel] : [    0.210034] pnp: PnP ACPI init
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+[kernel] : [    4.189686] lp: driver loaded but no devices found
+[NetworkManager  pid: 572] : <info>  [1466518545.8326] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[kernel] : [    4.541342] audit: type=1400 audit(1467205190.348:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=369 comm="apparmor_parser"
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[kernel] : [    0.026574] Initializing cgroup subsys perf_event
+[rtkit-daemon  pid: 1113] : Supervising 1 threads of 1 processes of 1 users.
+[kernel] : [    0.187195] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[kernel] : [    0.025707] Initializing cgroup subsys perf_event
+[kernel] : [    0.186235] ACPI: Using IOAPIC for interrupt routing
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[kernel] : [    0.186229] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[kernel] : [    0.210355] AppArmor: AppArmor Filesystem Enabled
+[systemd  pid: 867] : Stopped target Basic System.
+[kernel] : [    0.026794] Initializing cgroup subsys io
+[kernel] : [    0.024569] Calibrating delay loop (skipped) preset value.. 5183.93 BogoMIPS (lpj=10367864)
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[kernel] : [    0.000000]   Intel GenuineIntel
+[rtkit-daemon  pid: 1005] : Successfully made thread 1202 of process 1189 (n/a) owned by '1000' RT at priority 5.
+[kernel] : [    0.187195] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMIPTunnelFactory (internal)
+[kernel] : [    0.051518] ftrace: allocating 31907 entries in 125 pages
+[rtkit-daemon  pid: 1113] : Successfully made thread 13851 of process 13843 (n/a) owned by '1000' RT at priority 5.
+[kernel] : [    0.000000] Call Trace:
+[NetworkManager  pid: 567] : <info>  [1467290571.9614] manager: startup complete
+[kernel] : [    0.181153] APIC calibration not consistent with PM-Timer: 96ms instead of 100ms
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[systemd  pid: 1] : Mounting FUSE Control File System...
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMTunFactory (internal)
+[kernel] : [    0.202581] clocksource: Switched to clocksource kvm-clock
+[kernel] : [    0.000000] KERNEL supported cpus:
+[rtkit-daemon  pid: 1113] : Watchdog thread running.
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service'
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[kernel] : [    0.000000] Movable zone start for each node
+[systemd-timesyncd  pid: 334] : Synchronized to time server 91.189.94.4:123 (ntp.ubuntu.com).
+[rtkit-daemon  pid: 1005] : Successfully called chroot.
+[kernel] : [    0.617148] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[kernel] : [    0.000000] CPUID[0d  02]: eax=00000100 ebx=00000240 ecx=00000000 edx=00000000
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[systemd-modules-load  pid: 213] : Inserted module 'lp'
+[kernel] : [    0.000000] tsc: Detected 2591.988 MHz processor
+[rtkit-daemon  pid: 1019] : Supervising 7 threads of 3 processes of 2 users.
+[dbus  pid: 558] : [system] Reloaded configuration
+[kernel] : [    0.181792] devtmpfs: initialized
+[pulseaudio  pid: 1004] : [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/lightdm/.pulse-cookie': No such file or directory
+[kernel] : [    0.000000] CPUID[0d  04]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.676272] ledtrig-cpu: registered to indicate activity on CPUs
+[NetworkManager  pid: 567] : <info>  [1467290566.2402] dns-mgr[0x1bb40a0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[kernel] : [    4.752126] AVX version of gcm_enc/dec engaged.
+[kernel] : [    0.602442] GHES: HEST is not enabled!
+[kernel] : [    0.602040] io scheduler noop registered
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[systemd  pid: 867] : Stopped target Basic System.
+[kernel] : [    0.000000]   Normal   empty
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[kernel] : [    5.049826] audit: type=1400 audit(1466518544.872:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=383 comm="apparmor_parser"
+[kernel] : [    0.204566] e820: reserve RAM buffer [mem 0x2fff0000-0x2fffffff]
+[systemd  pid: 1] : Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[NetworkManager  pid: 572] : <info>  [1466518545.8326] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[systemd  pid: 882] : Received SIGRTMIN+24 from PID 1384 (kill).
+[kernel] : [    4.541345] audit: type=1400 audit(1467205190.348:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=369 comm="apparmor_parser"
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'
+[kernel] : [    0.000000] MTRR default type: uncachable
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] CPUID[0d  04]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[kernel] : [    0.604814] brd: module loaded
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[kernel] : [    7.658413] floppy0: no floppy controllers found
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.183214] cpuidle: using governor menu
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 567] : <info>  [1467290566.6339] manager: Networking is enabled by state file
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    3.901944] work still pending
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[kernel] : [    0.615152] io scheduler cfq registered
+[kernel] : [    0.024569] Calibrating delay loop (skipped) preset value.. 5183.93 BogoMIPS (lpj=10367864)
+[kernel] : [    0.181885] KVM setup paravirtual spinlock
+[kernel] : [    0.000000] Call Trace:
+[rtkit-daemon  pid: 1113] : Successfully made thread 13851 of process 13843 (n/a) owned by '1000' RT at priority 5.
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[kernel] : [    0.000000] CPUID[0d  0a]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.604814] brd: module loaded
+[NetworkManager  pid: 567] : <info>  [1467290566.7319] ModemManager available in the bus
+[systemd-modules-load  pid: 210] : Inserted module 'lp'
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMVethFactory (internal)
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMInfinibandFactory (internal)
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[NetworkManager  pid: 567] : <info>  [1467290566.2226] monitoring ifupdown state file '/run/network/ifstate'.
+[systemd-modules-load  pid: 203] : Inserted module 'lp'
+[kernel] : [    4.745721] AES CTR mode by8 optimization enabled
+[kernel] : [    0.672516] EDD information not available.
+[kernel] : [    0.000000] CPUID[0d  02]: eax=00000100 ebx=00000240 ecx=00000000 edx=00000000
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[NetworkManager  pid: 582] : <info>  [1467205191.3727] urfkill disappeared from the bus
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[NetworkManager  pid: 567] : <info>  [1467290566.2403] dns-mgr[0x1bb40a0]: using resolv.conf manager 'resolvconf'
+[NetworkManager  pid: 572] : <info>  [1466518545.7525] device (lo): link connected
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.026808] Initializing cgroup subsys pids
+[kernel] : [    4.931877] AVX version of gcm_enc/dec engaged.
+[kernel] : [    0.000000] Modules linked in:
+[kernel] : [    0.025707] Initializing cgroup subsys perf_event
+[NetworkManager  pid: 572] : <info>  [1466518550.9752] manager: startup complete
+[NetworkManager  pid: 585] : <info>  [1466518840.1459] urfkill disappeared from the bus
+[systemd-logind  pid: 586] : New session c2 of user stefan.
+[kernel] : [    0.000000] tsc: Detected 2591.988 MHz processor
+[systemd-modules-load  pid: 210] : Inserted module 'ppdev'
+[anacron  pid: 517] : Will run job `cron.weekly' in 10 min.
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[kernel] : [    0.184929] ACPI: Executed 1 blocks of module-level executable AML code
+[/usr/sbin/irqbalance] : Balancing is ineffective on systems with a single cpu.  Shutting down
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[kernel] : [    4.186054] ppdev: user-space parallel port driver
+[kernel] : [    0.026804] Initializing cgroup subsys perf_event
+[kernel] : [    3.901944] work still pending
+[kernel] : [    0.027625] process: using mwait in idle threads
+[kernel] : [    0.000000] MTRR default type: uncachable
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'
+[kernel] : [    0.000000] Early memory node ranges
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[kernel] : [    4.533104] audit: type=1400 audit(1466518839.336:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=366 comm="apparmor_parser"
+[dbus  pid: 536] : [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[dbus  pid: 558] : [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[kernel] : [    0.000000] CPUID[0d  0b]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[rtkit-daemon  pid: 1088] : Supervising 4 threads of 2 processes of 2 users.
+[kernel] : [    4.541334] audit: type=1400 audit(1467205190.348:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=369 comm="apparmor_parser"
+[rtkit-daemon  pid: 1019] : Successfully limited resources.
+[kernel] : [    0.613518] Initialise system trusted keyring
+[kernel] : [    0.026800] Initializing cgroup subsys devices
+[rtkit-daemon  pid: 1019] : Successfully made thread 1018 of process 1018 (n/a) owned by '108' high priority at nice level -11.
+[kernel] : [    0.044098] Freeing SMP alternatives memory: 28K (ffffffff820b3000 - ffffffff820ba000)
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMMacvlanFactory (internal)
+[kernel] : [    0.204470] PCI: Using ACPI for IRQ routing
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] Loaded device plugin: NMVxlanFactory (internal)
+[NetworkManager  pid: 572] : <info>  [1466518545.7797] ModemManager available in the bus
+[rtkit-daemon  pid: 1088] : Supervising 2 threads of 1 processes of 1 users.
+[kernel] : [    0.205783] e820: reserve RAM buffer [mem 0x2fff0000-0x2fffffff]
+[NetworkManager  pid: 567] : <info>  [1467290566.4212] management mode: unmanaged
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[kernel] : [    0.000000] BRK [0x02202000  0x02202fff] PGTABLE
+[systemd  pid: 1026] : Stopped target Default.
+[kernel] : [    0.026706] process: using mwait in idle threads
+[kernel] : [    0.000000] CPUID[0d  04]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] BRK [0x02201000  0x02201fff] PGTABLE
+[kernel] : [    3.896119] floppy0: no floppy controllers found
+[kernel] : [    0.686381] AppArmor: AppArmor sha1 policy hashing enabled
+[kernel] : [    0.676907] Key type dns_resolver registered
+[NetworkManager  pid: 567] : <info>  [1467290566.8380] DNS: starting dnsmasq...
+[kernel] : [    7.679390] work still pending
+[rtkit-daemon  pid: 1113] : Successfully made thread 1195 of process 1112 (n/a) owned by '108' RT at priority 5.
+[anacron  pid: 517] : Will run job `cron.monthly' in 15 min.
+[rtkit-daemon  pid: 1019] : Supervising 4 threads of 2 processes of 2 users.
+[NetworkManager  pid: 582] : <info>  [1467205191.4654] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[kernel] : [    0.000000] ---[ end trace 4d5ff9f2f68c4233 ]---
+[sshd  pid: 684] : Received SIGHUP; restarting.
+[NetworkManager  pid: 572] : <info>  [1466518545.4599] Read config: /etc/NetworkManager/NetworkManager.conf
+[/usr/lib/snapd/snapd  pid: 552] : daemon.go:203: DEBUG: init done in 12.227472ms
+[kernel] : [    5.955624] audit: type=1400 audit(1467290565.756:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=374 comm="apparmor_parser"
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.183565] cpuidle: using governor menu
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[NetworkManager  pid: 582] : <info>  [1467205196.9719] manager: startup complete
+[systemd  pid: 1] : Listening on ACPID Listen Socket.
+[kernel] : [    0.000000] CPUID[0d  02]: eax=00000100 ebx=00000240 ecx=00000000 edx=00000000
+[kernel] : [    0.028339] process: using mwait in idle threads
+[kernel] : [    0.616381] Allocating IMA MOK and blacklist keyrings.
+[kernel] : [    0.181792] devtmpfs: initialized
+[kernel] : [    4.529260] audit: type=1400 audit(1466518839.336:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=365 comm="apparmor_parser"
+[kernel] : [    0.690063] PM: Hibernation image not present or could not be loaded.
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[kernel] : [    0.000000] CPUID[0d  01]: eax=00000000 ebx=000003c0 ecx=00000000 edx=00000000
+[kernel] : [    0.208213] pnp: PnP ACPI init
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.689228] AppArmor: AppArmor sha1 policy hashing enabled
+[rtkit-daemon  pid: 1005] : Supervising 7 threads of 3 processes of 2 users.
+[kernel] : [    0.204566] e820: reserve RAM buffer [mem 0x2fff0000-0x2fffffff]
+[kernel] : [    0.614454] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[NetworkManager  pid: 572] : <info>  [1466518545.4706] dns-mgr[0x1da38c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.186425] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[kernel] : [    0.616575] io scheduler noop registered
+[kernel] : [    0.205949] clocksource: Switched to clocksource kvm-clock
+[NetworkManager  pid: 585] : <info>  [1466518840.1895] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[NetworkManager  pid: 585] : <info>  [1466518840.1715] ModemManager available in the bus
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[kernel] : [    0.183293] pinctrl core: initialized pinctrl subsystem
+[NetworkManager  pid: 582] : <info>  [1467205191.4763] DNS: starting dnsmasq...
+[kernel] : [    0.600012] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[rtkit-daemon  pid: 1005] : Successfully made thread 1020 of process 1004 (n/a) owned by '108' RT at priority 5.
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[kernel] : [    4.529265] audit: type=1400 audit(1466518839.336:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=365 comm="apparmor_parser"
+[NetworkManager  pid: 582] : <info>  [1467205191.0686] (11027664) ... get_connections.
+[rtkit-daemon  pid: 1088] : Successfully made thread 1475 of process 1475 (n/a) owned by '1000' high priority at nice level -11.
+[NetworkManager  pid: 567] : <info>  [1467290566.7604] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+[kernel] : [    0.000000]   Intel GenuineIntel
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[systemd  pid: 1] : Mounting FUSE Control File System...
+[kernel] : [    4.541339] audit: type=1400 audit(1467205190.348:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=369 comm="apparmor_parser"
+[kernel] : [    0.026805] Initializing cgroup subsys net_prio
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMMacvlanFactory (internal)
+[kernel] : [    0.615128] io scheduler noop registered
+[NetworkManager  pid: 585] : <info>  [1466518840.0859] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+[NetworkManager  pid: 582] : <info>  [1467205191.3189] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[rtkit-daemon  pid: 1113] : Running.
+[kernel] : [    5.053090] audit: type=1400 audit(1466518544.872:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=383 comm="apparmor_parser"
+[kernel] : [    0.000000] CPUID[0d  09]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMBridgeFactory (internal)
+[NetworkManager  pid: 567] : <info>  [1467290566.6856] device (enp0s3): link connected
+[kernel] : [    0.000000] kvm-clock: using sched offset of 15603558780986 cycles
+[kernel] : [    0.000000] CPUID[0d  03]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 567] : <info>  [1467290566.7155] urfkill disappeared from the bus
+[NetworkManager  pid: 567] : <info>  [1467290566.7604] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[NetworkManager  pid: 585] : <info>  [1466518840.2414] manager: NetworkManager state is now CONNECTED_GLOBAL
+[kernel] : [    0.026571] Initializing cgroup subsys freezer
+[kernel] : [    0.000000] BRK [0x02203000  0x02203fff] PGTABLE
+[NetworkManager  pid: 582] : <info>  [1467205191.3919] ModemManager available in the bus
+[NetworkManager  pid: 585] : <info>  [1466518840.1874] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[kernel] : [    0.000000] CPUID[0d  02]: eax=00000100 ebx=00000240 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMTunFactory (internal)
+[kernel] : [    0.205949] clocksource: Switched to clocksource kvm-clock
+[kernel] : [    0.204136] vgaarb: loaded
+[kernel] : [    0.663154] ledtrig-cpu: registered to indicate activity on CPUs
+[NetworkManager  pid: 572] : <info>  [1466518545.7811] device (enp0s3): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[kernel] : [    0.025697] Initializing cgroup subsys io
+[NetworkManager  pid: 585] : <info>  [1466518839.8194] monitoring ifupdown state file '/run/network/ifstate'.
+[kernel] : [    0.602064] io scheduler cfq registered
+[kernel] : [    0.181112] KVM setup paravirtual spinlock
+[kernel] : [    4.931877] AVX version of gcm_enc/dec engaged.
+[systemd  pid: 882] : Stopped target Timers.
+[NetworkManager  pid: 582] : <info>  [1467205191.3923] ofono is now available
+[kernel] : [    0.025519] Calibrating delay loop (skipped) preset value.. 5183.97 BogoMIPS (lpj=10367952)
+[systemd-logind  pid: 518] : New session c1 of user lightdm.
+[NetworkManager  pid: 572] : <info>  [1466518545.7802] ofono is now available
+[sshd  pid: 686] : Received SIGHUP; restarting.
+[kernel] : [    0.181155] APIC delta adjusted to PM-Timer: 6382345 (6128053)
+[NetworkManager  pid: 585] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[kernel] : [    5.148942] audit: type=1400 audit(1466518544.972:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=459 comm="apparmor_parser"
+[kernel] : [    0.000000] CPUID[0d  09]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.7878] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+[kernel] : [    0.000000] MTRR default type: uncachable
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[NetworkManager  pid: 572] : <info>  [1466518545.7093] Loaded device plugin: NMVxlanFactory (internal)
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[kernel] : [    0.025706] Initializing cgroup subsys net_cls
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[rtkit-daemon  pid: 1113] : Successfully limited resources.
+[kernel] : [    5.052936] audit: type=1400 audit(1466518544.872:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=383 comm="apparmor_parser"
+[pulseaudio  pid: 1189] : [pulseaudio] authkey.c: Failed to open cookie file '/home/stefan/.config/pulse/cookie': No such file or directory
+[kernel] : [    0.202323] PCI: Using ACPI for IRQ routing
+[systemd-modules-load  pid: 210] : Inserted module 'parport_pc'
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Booting paravirtualized kernel on KVM
+[kernel] : [    0.000000] Booting paravirtualized kernel on KVM
+[NetworkManager  pid: 572] : <info>  [1466518545.7525] device (lo): link connected
+[NetworkManager  pid: 582] : <info>  [1467205191.4694] manager: NetworkManager state is now CONNECTED_LOCAL
+[NetworkManager  pid: 585] : <info>  [1466518849.9615] WWAN hardware radio set enabled
+[kernel] : [    0.205888] NetLabel:  unlabeled traffic allowed by default
+[systemd  pid: 1] : Reached target Timers.
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[kernel] : [    0.204470] PCI: Using ACPI for IRQ routing
+[kernel] : [    0.679661] Key type dns_resolver registered
+[dbus  pid: 563] : [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+[systemd  pid: 1] : Reached target Timers.
+[NetworkManager  pid: 582] : <info>  [1467205191.3923] ofono is now available
+[kernel] : [    0.180955] APIC calibration not consistent with PM-Timer: 97ms instead of 100ms
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.7866] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[kernel] : [    0.026574] Initializing cgroup subsys perf_event
+[kernel] : [    0.618217] loop: module loaded
+[kernel] : [    0.182444] cpuidle: using governor menu
+[kernel] : [    0.690063] PM: Hibernation image not present or could not be loaded.
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] manager: Networking is enabled by state file
+[NetworkManager  pid: 567] : <info>  [1467290566.8305] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[NetworkManager  pid: 582] : <info>  [1467205191.3456] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+[systemd-logind  pid: 575] : New session c1 of user lightdm.
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[kernel] : [    4.804049] audit: type=1400 audit(1466518544.628:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=333 comm="apparmor_parser"
+[NetworkManager  pid: 572] : <info>  [1466518545.5946] management mode: unmanaged
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[NetworkManager  pid: 585] : <info>  [1466518840.1726] ofono is now available
+[kernel] : [    4.533097] audit: type=1400 audit(1466518839.336:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=366 comm="apparmor_parser"
+[kernel] : [    3.901836] floppy0: no floppy controllers found
+[kernel] : [    0.000000] CPUID[0d  03]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[NetworkManager  pid: 585] : <info>  [1466518840.2426] DNS: starting dnsmasq...
+[kernel] : [    0.687205] EDD information not available.
+[systemd  pid: 1] : Listening on CUPS Scheduler.
+[kernel] : [    0.026573] Initializing cgroup subsys net_cls
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[anacron  pid: 513] : Will run job `cron.daily' in 5 min.
+[kernel] : [    0.025519] Calibrating delay loop (skipped) preset value.. 5183.97 BogoMIPS (lpj=10367952)
+[rtkit-daemon  pid: 1019] : Supervising 1 threads of 1 processes of 1 users.
+[kernel] : [    0.000000] BRK [0x021ff000  0x021fffff] PGTABLE
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[kernel] : [    0.202581] clocksource: Switched to clocksource kvm-clock
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[kernel] : [    0.000000] MTRR default type: uncachable
+[NetworkManager  pid: 582] : <info>  [1467205190.8687] dns-mgr[0xa848c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    0.027315] Initializing cgroup subsys perf_event
+[systemd  pid: 1] : Listening on ACPID Listen Socket.
+[NetworkManager  pid: 585] : <info>  [1466518839.9475] init!
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.UPower'
+[kernel] : [    0.186425] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[dnsmasq  pid: 738] : DBus support enabled: connected to system bus
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[kernel] : [    0.027305] Initializing cgroup subsys io
+[systemd  pid: 1] : Reloading.
+[systemd  pid: 1] : Created slice User Slice of stefan.
+[kernel] : [    0.617148] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[kernel] : [    0.000000] BRK [0x02201000  0x02201fff] PGTABLE
+[kernel] : [    0.619526] brd: module loaded
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[kernel] : [    0.686969] machinecheck machinecheck0: hash matches
+[pulseaudio  pid: 1189] : [pulseaudio] authkey.c: Failed to open cookie file '/home/stefan/.pulse-cookie': No such file or directory
+[kernel] : [    0.185339] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[NetworkManager  pid: 585] : <info>  [1466518840.1913] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+[kernel] : [    0.618217] loop: module loaded
+[NetworkManager  pid: 567] : <info>  [1467290566.7581] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[kernel] : [    0.026564] Initializing cgroup subsys io
+[kernel] : [    0.186224] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[kernel] : [    0.000000]   Normal   empty
+[avahi-daemon  pid: 606] : Successfully dropped root privileges.
+[rtkit-daemon  pid: 1113] : Supervising 2 threads of 1 processes of 1 users.
+[sshd  pid: 686] : Received SIGHUP; restarting.
+[NetworkManager  pid: 585] : <info>  [1466518840.0888] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[NetworkManager  pid: 572] : <info>  [1466518545.4648] manager[0x1d901a0]: monitoring kernel firmware directory '/lib/firmware'.
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[systemd  pid: 1] : Reached target Timers.
+[rtkit-daemon  pid: 1088] : Supervising 5 threads of 2 processes of 2 users.
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[kernel] : [    0.000000] CPUID[0d  0a]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMInfinibandFactory (internal)
+[rtkit-daemon  pid: 1113] : Successfully made thread 13870 of process 13870 (n/a) owned by '1000' high priority at nice level -11.
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.hostname1'
+[kernel] : [    0.000000] Call Trace:
+[systemd  pid: 909] : Stopped target Default.
+[kernel] : [    0.000000] BRK [0x02202000  0x02202fff] PGTABLE
+[rtkit-daemon  pid: 1088] : Supervising 4 threads of 2 processes of 2 users.
+[NetworkManager  pid: 585] : <info>  [1466518839.8234] dns-mgr[0x11e50c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[NetworkManager  pid: 582] : <info>  [1467205191.4674] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[anacron  pid: 545] : Will run job `cron.weekly' in 10 min.
+[kernel] : [    0.205398] SCSI subsystem initialized
+[kernel] : [    0.206847] pnp: PnP ACPI init
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[kernel] : [    0.026801] Initializing cgroup subsys freezer
+[systemd  pid: 1] : Created slice User Slice of stefan.
+[kernel] : [    0.053015] ftrace: allocating 31907 entries in 125 pages
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[systemd  pid: 1] : Mounted FUSE Control File System.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[NetworkManager  pid: 582] : <info>  [1467205190.8687] dns-mgr[0xa848c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    4.749698] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.025519] Calibrating delay loop (skipped) preset value.. 5183.97 BogoMIPS (lpj=10367952)
+[kernel] : [    0.027904] process: using mwait in idle threads
+[rtkit-daemon  pid: 1019] : Successfully made thread 1224 of process 1216 (n/a) owned by '1000' RT at priority 5.
+[rtkit-daemon  pid: 1113] : Canary thread running.
+[rtkit-daemon  pid: 1019] : Supervising 5 threads of 2 processes of 2 users.
+[kernel] : [    0.186231] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMBridgeFactory (internal)
+[kernel] : [    0.187201] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[kernel] : [    0.025706] Initializing cgroup subsys net_cls
+[sshd  pid: 713] : Received SIGHUP; restarting.
+[kernel] : [    4.745721] AES CTR mode by8 optimization enabled
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.2955] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[kernel] : [    0.183602] ACPI: bus type PCI registered
+[rtkit-daemon  pid: 1113] : Successfully called chroot.
+[kernel] : [    5.053090] audit: type=1400 audit(1466518544.872:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=383 comm="apparmor_parser"
+[kernel] : [    3.910969] floppy0: no floppy controllers found
+[kernel] : [    0.183293] pinctrl core: initialized pinctrl subsystem
+[rtkit-daemon  pid: 1019] : Watchdog thread running.
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[systemd  pid: 1] : Created slice User Slice of lightdm.
+[NetworkManager  pid: 582] : <info>  [1467205191.4045] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[kernel] : [    4.186054] ppdev: user-space parallel port driver
+[NetworkManager  pid: 572] : <info>  [1466518545.4708] dns-mgr[0x1da38c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMMacvlanFactory (internal)
+[NetworkManager  pid: 572] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[rtkit-daemon  pid: 1005] : Supervising 6 threads of 2 processes of 2 users.
+[kernel] : [    0.182444] cpuidle: using governor menu
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] Loaded device plugin: NMVlanFactory (internal)
+[systemd-modules-load  pid: 213] : Inserted module 'lp'
+[kernel] : [    0.181788] APIC calibration not consistent with PM-Timer: 96ms instead of 100ms
+[kernel] : [    4.745719] AVX version of gcm_enc/dec engaged.
+[systemd  pid: 1] : Received SIGRTMIN+21 from PID 329 (plymouthd).
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[NetworkManager  pid: 567] : <info>  [1467290566.2223] manager[0x1ba21a0]: monitoring kernel firmware directory '/lib/firmware'.
+[systemd  pid: 1] : Mounting FUSE Control File System...
+[kernel] : [    4.188963] lp: driver loaded but no devices found
+[systemd  pid: 882] : Reached target Timers.
+[kernel] : [    0.671867] AppArmor: AppArmor sha1 policy hashing enabled
+[kernel] : [    0.602307] ACPI: Power Button [PWRF]
+[NetworkManager  pid: 585] : <info>  [1466518839.8237] dns-mgr[0x11e50c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    0.203030] vgaarb: loaded
+[kernel] : [    0.180789] smpboot: Total of 1 processors activated (5183.93 BogoMIPS)
+[rtkit-daemon  pid: 1088] : Successfully made thread 2918 of process 2918 (n/a) owned by '108' high priority at nice level -11.
+[systemd  pid: 1026] : Stopped target Paths.
+[kernel] : [    5.327458] audit: type=1400 audit(1466518545.152:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=471 comm="apparmor_parser"
+[rtkit-daemon  pid: 1005] : Successfully dropped privileges.
+[kernel] : [    0.000000] CPUID[0d  0c]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[NetworkManager  pid: 582] : <info>  [1467205191.3035] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wwan.so)
+[/usr/lib/snapd/snapd  pid: 605] : daemon.go:203: DEBUG: init done in 5.678931ms
+[kernel] : [    0.687274] PM: Hibernation image not present or could not be loaded.
+[kernel] : [    0.000000] Call Trace:
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMVlanFactory (internal)
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] devices added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3)
+[kernel] : [    0.182483] ACPI: bus type PCI registered
+[kernel] : [    0.204563] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[kernel] : [    0.000000] MTRR default type: uncachable
+[kernel] : [    0.024569] Calibrating delay loop (skipped) preset value.. 5183.93 BogoMIPS (lpj=10367864)
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[kernel] : [    0.000000] Modules linked in:
+[kernel] : [    0.000000] MTRR default type: uncachable
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[rtkit-daemon  pid: 1019] : Successfully made thread 1033 of process 1018 (n/a) owned by '108' RT at priority 5.
+[kernel] : [    4.529265] audit: type=1400 audit(1466518839.336:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=365 comm="apparmor_parser"
+[NetworkManager  pid: 582] : <info>  [1467205191.3035] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wwan.so)
+[lightdm] : PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000]   DMA zone: 21 pages reserved
+[NetworkManager  pid: 585] : <info>  [1466518840.2414] manager: NetworkManager state is now CONNECTED_GLOBAL
+[kernel] : [    5.952627] audit: type=1400 audit(1467290565.756:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/ubuntu-core-launcher" pid=373 comm="apparmor_parser"
+[kernel] : [    4.182239] lp: driver loaded but no devices found
+[kernel] : [    4.533102] audit: type=1400 audit(1466518839.336:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=366 comm="apparmor_parser"
+[kernel] : [    0.000000]   Device   empty
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    5.950982] audit: type=1400 audit(1467290565.756:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=371 comm="apparmor_parser"
+[kernel] : [    0.000000] tsc: Detected 2591.970 MHz processor
+[dbus  pid: 558] : [system] Reloaded configuration
+[kernel] : [    0.185005] ACPI: Executed 1 blocks of module-level executable AML code
+[rtkit-daemon  pid: 1005] : Successfully made thread 1215 of process 1215 (n/a) owned by '1000' high priority at nice level -11.
+[rtkit-daemon  pid: 1005] : Successfully limited resources.
+[kernel] : [    0.183579] ACPI: Added _OSI(Processor Aggregator Device)
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] devices added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3)
+[rtkit-daemon  pid: 1113] : Successfully made thread 13850 of process 13843 (n/a) owned by '1000' RT at priority 5.
+[rtkit-daemon  pid: 1005] : Successfully made thread 1020 of process 1004 (n/a) owned by '108' RT at priority 5.
+[kernel] : [    0.687205] EDD information not available.
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.5965] SettingsPlugin-Ofono: init!
+[NetworkManager  pid: 582] : <info>  [1467205191.4674] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[rtkit-daemon  pid: 1005] : Supervising 2 threads of 1 processes of 1 users.
+[kernel] : [    0.000000]   AMD AuthenticAMD
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[NetworkManager  pid: 582] : <info>  [1467205191.2899] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+[kernel] : [    0.025705] Initializing cgroup subsys freezer
+[systemd  pid: 879] : Received SIGRTMIN+24 from PID 2191 (kill).
+[kernel] : [    0.186421] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[kernel] : [    0.000000] Early memory node ranges
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.615152] io scheduler cfq registered
+[kernel] : [    0.025710] Initializing cgroup subsys hugetlb
+[kernel] : [    0.000000]   Intel GenuineIntel
+[NetworkManager  pid: 585] : <info>  [1466518840.2385] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+[NetworkManager  pid: 567] : <info>  [1467290571.9614] manager: startup complete
+[kernel] : [    0.202149] SCSI subsystem initialized
+[kernel] : [    0.026093] Security Framework initialized
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMTunFactory (internal)
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[kernel] : [    0.183293] pinctrl core: initialized pinctrl subsystem
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[kernel] : [    4.538198] audit: type=1400 audit(1467205190.340:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=368 comm="apparmor_parser"
+[kernel] : [    0.615476] GHES: HEST is not enabled!
+[NetworkManager  pid: 572] : <info>  [1466518545.5965] (31076640) ... get_connections.
+[NetworkManager  pid: 572] : <info>  [1466518545.8335] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[kernel] : [    4.546179] audit: type=1400 audit(1467205190.356:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=372 comm="apparmor_parser"
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[NetworkManager  pid: 572] : <info>  [1466518555.9792] WiFi hardware radio set enabled
+[kernel] : [    3.893745] floppy0: no floppy controllers found
+[NetworkManager  pid: 582] : <info>  [1467205191.2955] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[kernel] : [    0.183212] cpuidle: using governor ladder
+[NetworkManager  pid: 585] : <info>  [1466518840.2376] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[kernel] : [    3.901944] work still pending
+[NetworkManager  pid: 585] : <info>  [1466518839.9475] init!
+[systemd-timesyncd  pid: 334] : Synchronized to time server 91.189.94.4:123 (ntp.ubuntu.com).
+[kernel] : [    5.582925] lp: driver loaded but no devices found
+[anacron  pid: 513] : Will run job `cron.weekly' in 10 min.
+[kernel] : [    0.000000] CPUID[0d  0b]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] CPUID[0d  01]: eax=00000000 ebx=000003c0 ecx=00000000 edx=00000000
+[systemd  pid: 1] : Reloading.
+[pulseaudio  pid: 1189] : [pulseaudio] authkey.c: Failed to load authentication key '/home/stefan/.config/pulse/cookie': No such file or directory
+[kernel] : [    0.186229] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[systemd  pid: 1] : Listening on D-Bus System Message Bus Socket.
+[kernel] : [    0.672574] PM: Hibernation image not present or could not be loaded.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[kernel] : [    0.026796] Initializing cgroup subsys memory
+[kernel] : [    0.616915] GHES: HEST is not enabled!
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000] CPUID[0d  09]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.202323] PCI: Using ACPI for IRQ routing
+[anacron  pid: 517] : Jobs will be executed sequentially
+[kernel] : [    0.681483] ledtrig-cpu: registered to indicate activity on CPUs
+[kernel] : [    0.620077] loop: module loaded
+[kernel] : [    0.620077] loop: module loaded
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    0.676907] Key type dns_resolver registered
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[rtkit-daemon  pid: 1113] : Watchdog thread running.
+[dbus  pid: 563] : [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+[kernel] : [    0.000000] kvm-clock: using sched offset of 3538057311 cycles
+[NetworkManager  pid: 572] : <info>  [1466518545.4706] dns-mgr[0x1da38c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[kernel] : [    0.183214] cpuidle: using governor menu
+[kernel] : [    0.187205] ACPI: Using IOAPIC for interrupt routing
+[kernel] : [    0.687274] PM: Hibernation image not present or could not be loaded.
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] Loaded device plugin: NMVethFactory (internal)
+[NetworkManager  pid: 582] : <info>  [1467205191.4763] DNS: starting dnsmasq...
+[NetworkManager  pid: 572] : <info>  [1466518545.7176] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[rtkit-daemon  pid: 1005] : Supervising 2 threads of 1 processes of 1 users.
+[kernel] : [    0.000000]   Centaur CentaurHauls
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[NetworkManager  pid: 582] : <info>  [1467205191.4761] manager: NetworkManager state is now CONNECTED_GLOBAL
+[NetworkManager  pid: 585] : <info>  [1466518840.1119] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+[systemd  pid: 1] : Received SIGRTMIN+21 from PID 332 (plymouthd).
+[NetworkManager  pid: 582] : <info>  [1467205190.8594] manager[0xa721a0]: monitoring kernel firmware directory '/lib/firmware'.
+[kernel] : [    0.025703] Initializing cgroup subsys devices
+[kernel] : [    5.950977] audit: type=1400 audit(1467290565.756:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=371 comm="apparmor_parser"
+[kernel] : [    0.000000] Call Trace:
+[kernel] : [    0.617726] brd: module loaded
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMTunFactory (internal)
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[kernel] : [    0.000000] BRK [0x02202000  0x02202fff] PGTABLE
+[kernel] : [    0.205783] e820: reserve RAM buffer [mem 0x2fff0000-0x2fffffff]
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[systemd  pid: 867] : Received SIGRTMIN+24 from PID 13974 (kill).
+[systemd  pid: 1] : Stopped target Multi-User System.
+[systemd-modules-load  pid: 211] : Inserted module 'lp'
+[kernel] : [    0.184622] ACPI: Added _OSI(Processor Device)
+[kernel] : [    0.000000] Early memory node ranges
+[org.gtk.vfs.Daemon  pid: 901] : A connection to the bus can't be made
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[NetworkManager  pid: 567] : <info>  [1467290566.7537] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[NetworkManager  pid: 585] : <info>  [1466518844.9570] manager: startup complete
+[kernel] : [    0.184549] ACPI: Added _OSI(Processor Device)
+[kernel] : [    3.901836] floppy0: no floppy controllers found
+[kernel] : [    0.000000] CPUID[0d  03]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 585] : <info>  [1466518840.2376] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[kernel] : [    0.000000] MTRR default type: uncachable
+[kernel] : [    0.186432] ACPI: Using IOAPIC for interrupt routing
+[kernel] : [    0.203397] PCI: Using ACPI for IRQ routing
+[kernel] : [    0.000000] CPUID[0d  02]: eax=00000100 ebx=00000240 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205200.9616] WWAN hardware radio set enabled
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[kernel] : [    4.529265] audit: type=1400 audit(1466518839.336:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=365 comm="apparmor_parser"
+[kernel] : [    0.050858] ftrace: allocating 31907 entries in 125 pages
+[kernel] : [    0.025710] Initializing cgroup subsys hugetlb
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[kernel] : [    0.026807] Initializing cgroup subsys hugetlb
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[kernel] : [    0.185335] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[kernel] : [    0.183563] cpuidle: using governor ladder
+[systemd  pid: 867] : Stopped target Default.
+[NetworkManager  pid: 567] : <info>  [1467290566.4215] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[kernel] : [    0.203640] NetLabel:  unlabeled traffic allowed by default
+[systemd  pid: 1026] : Received SIGRTMIN+24 from PID 2028 (kill).
+[kernel] : [    0.000000] Policy zone: DMA32
+[rtkit-daemon  pid: 1019] : Supervising 1 threads of 1 processes of 1 users.
+[NetworkManager  pid: 582] : <info>  [1467205190.8435] Read config: /etc/NetworkManager/NetworkManager.conf
+[kernel] : [    0.183602] ACPI: bus type PCI registered
+[NetworkManager  pid: 572] : <info>  [1466518550.9752] manager: startup complete
+[kernel] : [    4.931879] AES CTR mode by8 optimization enabled
+[systemd-logind  pid: 586] : System is powering down.
+[kernel] : [    0.181241] KVM setup paravirtual spinlock
+[systemd  pid: 909] : Stopped target Paths.
+[NetworkManager  pid: 572] : <info>  [1466518545.8355] manager: NetworkManager state is now CONNECTED_GLOBAL
+[kernel] : [    0.600434] Initialise system trusted keyring
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[kernel] : [    0.026571] Initializing cgroup subsys freezer
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'
+[kernel] : [    0.000000]   Device   empty
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[NetworkManager  pid: 585] : <info>  [1466518849.9614] WiFi hardware radio set enabled
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[kernel] : [    0.619574] GHES: HEST is not enabled!
+[systemd-logind  pid: 518] : New session c2 of user stefan.
+[anacron  pid: 517] : Will run job `cron.daily' in 5 min.
+[kernel] : [    0.183986] PCCT header not found.
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[rtkit-daemon  pid: 1113] : Supervising 5 threads of 2 processes of 2 users.
+[kernel] : [    6.127727] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.600012] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[kernel] : [    0.000000]   Normal   empty
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000]   AMD AuthenticAMD
+[kernel] : [    0.000000] ---[ end trace 4d5ff9f2f68c4233 ]---
+[systemd  pid: 1045] : Received SIGRTMIN+24 from PID 1823 (kill).
+[kernel] : [    0.026093] Security Framework initialized
+[NetworkManager  pid: 582] : <info>  [1467205200.9615] WiFi hardware radio set enabled
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    4.752126] AVX version of gcm_enc/dec engaged.
+[kernel] : [    0.203537] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[NetworkManager  pid: 572] : <info>  [1466518545.4708] dns-mgr[0x1da38c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    3.901944] work still pending
+[lightdm] : pam_unix(lightdm-greeter:session): session closed for user lightdm
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+[kernel] : [    0.182140] pinctrl core: initialized pinctrl subsystem
+[kernel] : [    0.180315] KVM setup paravirtual spinlock
+[kernel] : [    0.025707] Initializing cgroup subsys perf_event
+[rtkit-daemon  pid: 1019] : Successfully made thread 1034 of process 1018 (n/a) owned by '108' RT at priority 5.
+[NetworkManager  pid: 572] : <info>  [1466518545.7802] ofono is now available
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[rtkit-daemon  pid: 1019] : Supervising 6 threads of 2 processes of 2 users.
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    0.027625] process: using mwait in idle threads
+[kernel] : [    0.184929] ACPI: Executed 1 blocks of module-level executable AML code
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[kernel] : [    0.185005] ACPI: Executed 1 blocks of module-level executable AML code
+[kernel] : [    5.080504] audit: type=1400 audit(1466518544.900:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/ubuntu-core-launcher" pid=450 comm="apparmor_parser"
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[NetworkManager  pid: 572] : <info>  [1466518545.8362] DNS: starting dnsmasq...
+[systemd  pid: 1] : Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[NetworkManager  pid: 585] : <info>  [1466518840.1726] ofono is now available
+[NetworkManager  pid: 585] : <info>  [1466518840.1874] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[kernel] : [    0.185333] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'
+[NetworkManager  pid: 585] : <info>  [1466518839.8191] manager[0x11d21a0]: monitoring kernel firmware directory '/lib/firmware'.
+[kernel] : [    0.605301] loop: module loaded
+[pulseaudio  pid: 1501] : [pulseaudio] pid.c: Daemon already running.
+[kernel] : [    4.541334] audit: type=1400 audit(1467205190.348:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=369 comm="apparmor_parser"
+[kernel] : [    0.185529] ACPI: Added _OSI(Processor Aggregator Device)
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[kernel] : [    0.185339] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[kernel] : [    0.026103] AppArmor: AppArmor initialized
+[kernel] : [    0.180315] KVM setup paravirtual spinlock
+[NetworkManager  pid: 567] : <info>  [1467290566.4248] (29110176) ... get_connections.
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMIPTunnelFactory (internal)
+[rtkit-daemon  pid: 1019] : Watchdog thread running.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[kernel] : [    0.181155] APIC delta adjusted to PM-Timer: 6382345 (6128053)
+[systemd-modules-load  pid: 211] : Inserted module 'lp'
+[rtkit-daemon  pid: 1005] : Successfully limited resources.
+[systemd-logind  pid: 586] : New session c1 of user lightdm.
+[rtkit-daemon  pid: 1113] : Supervising 2 threads of 1 processes of 1 users.
+[kernel] : [    4.745066] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.026808] Initializing cgroup subsys pids
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[rtkit-daemon  pid: 1113] : Successfully made thread 1112 of process 1112 (n/a) owned by '108' high priority at nice level -11.
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[NetworkManager  pid: 567] : <info>  [1467290566.6339] manager: Networking is enabled by state file
+[kernel] : [    0.026103] AppArmor: AppArmor initialized
+[NetworkManager  pid: 572] : <info>  [1466518545.7334] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+[kernel] : [    5.148942] audit: type=1400 audit(1466518544.972:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=459 comm="apparmor_parser"
+[NetworkManager  pid: 572] : <info>  [1466518545.7093] Loaded device plugin: NMVxlanFactory (internal)
+[NetworkManager  pid: 585] : <info>  [1466518840.0888] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+[kernel] : [    0.206847] pnp: PnP ACPI init
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[kernel] : [    0.000000] Policy zone: DMA32
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMInfinibandFactory (internal)
+[systemd  pid: 1] : Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    0.027319] Initializing cgroup subsys pids
+[anacron  pid: 545] : Jobs will be executed sequentially
+[NetworkManager  pid: 582] : <info>  [1467205190.8687] dns-mgr[0xa848c0]: using resolv.conf manager 'resolvconf'
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[kernel] : [    0.202323] PCI: Using ACPI for IRQ routing
+[kernel] : [    0.027317] Initializing cgroup subsys hugetlb
+[kernel] : [    4.546179] audit: type=1400 audit(1467205190.356:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=372 comm="apparmor_parser"
+[kernel] : [    0.000000] KERNEL supported cpus:
+[kernel] : [    0.686381] AppArmor: AppArmor sha1 policy hashing enabled
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[kernel] : [    0.689995] EDD information not available.
+[systemd-logind  pid: 617] : Watching system buttons on /dev/input/event3 (Video Bus)
+[kernel] : [    0.182955] pinctrl core: initialized pinctrl subsystem
+[NetworkManager  pid: 582] : <info>  [1467205191.3923] ofono is now available
+[systemd  pid: 1] : Stopped target Timers.
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[NetworkManager  pid: 572] : <info>  [1466518545.8348] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.185337] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[kernel] : [    0.000000] No NUMA configuration found
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[kernel] : [    0.000000] No NUMA configuration found
+[kernel] : [    0.000000] KERNEL supported cpus:
+[NetworkManager  pid: 572] : <info>  [1466518545.7547] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+[kernel] : [    0.691791] AppArmor: AppArmor sha1 policy hashing enabled
+[kernel] : [    0.000000]   AMD AuthenticAMD
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    0.617726] brd: module loaded
+[lightdm] : pam_unix(lightdm-greeter:session): session closed for user lightdm
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[dbus  pid: 558] : [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'
+[systemd  pid: 1026] : Reached target Timers.
+[/usr/sbin/irqbalance] : Balancing is ineffective on systems with a single cpu.  Shutting down
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[NetworkManager  pid: 585] : <info>  [1466518840.1790] device (enp0s3): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+[NetworkManager  pid: 585] : <info>  [1466518840.0228] SettingsPlugin-Ofono: (18763120) ... get_connections.
+[kernel] : [    0.183250] ACPI: bus type PCI registered
+[kernel] : [    4.551020] audit: type=1400 audit(1467205190.360:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=373 comm="apparmor_parser"
+[kernel] : [    0.025712] Initializing cgroup subsys pids
+[kernel] : [    4.745721] AES CTR mode by8 optimization enabled
+[kernel] : [    0.053276] ftrace: allocating 31920 entries in 125 pages
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[NetworkManager  pid: 585] : <info>  [1466518839.8234] dns-mgr[0x11e50c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[kernel] : [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[NetworkManager  pid: 572] : <info>  [1466518545.7547] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+[kernel] : [    0.000000] kvm-clock: using sched offset of 3538057311 cycles
+[NetworkManager  pid: 572] : <info>  [1466518545.8348] manager: NetworkManager state is now CONNECTED_LOCAL
+[NetworkManager  pid: 572] : <info>  [1466518545.8355] manager: NetworkManager state is now CONNECTED_GLOBAL
+[avahi-daemon  pid: 522] : Successfully dropped root privileges.
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMEthernetFactory (internal)
+[kernel] : [    0.202581] clocksource: Switched to clocksource kvm-clock
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMEthernetFactory (internal)
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMTunFactory (internal)
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[kernel] : [    0.183212] cpuidle: using governor ladder
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    0.615886] ACPI: Battery Slot [BAT0] (battery present)
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[kernel] : [    0.186231] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[NetworkManager  pid: 567] : <info>  [1467290566.5567] SettingsPlugin-Ofono: (29110400) ... get_connections.
+[kernel] : [    0.000000]   AMD AuthenticAMD
+[kernel] : [    0.027625] process: using mwait in idle threads
+[kernel] : [    4.795492] audit: type=1400 audit(1466518544.616:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=333 comm="apparmor_parser"
+[kernel] : [    0.000000] CPUID[0d  0b]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    4.799501] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[systemd-logind  pid: 586] : New session c1 of user lightdm.
+[NetworkManager  pid: 582] : <info>  [1467205191.1461] SettingsPlugin-Ofono: (11027824) ... get_connections.
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] CPUID[0d  0e]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[systemd-timesyncd  pid: 346] : Synchronized to time server 91.189.94.4:123 (ntp.ubuntu.com).
+[kernel] : [    0.689995] EDD information not available.
+[NetworkManager  pid: 567] : <info>  [1467290566.5567] SettingsPlugin-Ofono: (29110400) ... get_connections.
+[kernel] : [    0.026803] Initializing cgroup subsys net_cls
+[kernel] : [    0.000000] BRK [0x02202000  0x02202fff] PGTABLE
+[kernel] : [    0.053015] ftrace: allocating 31907 entries in 125 pages
+[dbus  pid: 536] : [system] Successfully activated service 'org.freedesktop.hostname1'
+[dbus  pid: 558] : [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+[kernel] : [    0.000000] CPUID[0d  0c]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[dbus  pid: 558] : [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+[kernel] : [    0.205212] vgaarb: loaded
+[kernel] : [    0.692529] EDD information not available.
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMMacvlanFactory (internal)
+[rtkit-daemon  pid: 1019] : Successfully made thread 1224 of process 1216 (n/a) owned by '1000' RT at priority 5.
+[dbus  pid: 563] : [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+[kernel] : [    0.000000] Call Trace:
+[NetworkManager  pid: 585] : <info>  [1466518839.9496] (18762960) ... get_connections.
+[kernel] : [    0.676907] Key type dns_resolver registered
+[kernel] : [    0.000000] BRK [0x02201000  0x02201fff] PGTABLE
+[kernel] : [    0.025705] Initializing cgroup subsys freezer
+[rtkit-daemon  pid: 1088] : Successfully made thread 1103 of process 1087 (n/a) owned by '108' RT at priority 5.
+[systemd-modules-load  pid: 213] : Inserted module 'ppdev'
+[systemd  pid: 1] : Reloading.
+[kernel] : [    4.538198] audit: type=1400 audit(1467205190.340:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=368 comm="apparmor_parser"
+[kernel] : [    0.000000] CPUID[0d  0c]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Booting paravirtualized kernel on KVM
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[NetworkManager  pid: 585] : <info>  [1466518839.8237] dns-mgr[0x11e50c0]: using resolv.conf manager 'resolvconf'
+[NetworkManager  pid: 572] : <info>  [1466518545.7431] device (enp0s3): link connected
+[kernel] : [    0.000000] kvm-clock: using sched offset of 15309137013128 cycles
+[kernel] : [    0.186421] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[kernel] : [    0.187197] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[rtkit-daemon  pid: 1005] : Supervising 5 threads of 2 processes of 2 users.
+[kernel] : [    0.183983] cpuidle: using governor menu
+[kernel] : [    0.184021] ACPI: bus type PCI registered
+[kernel] : [    0.203030] vgaarb: loaded
+[systemd  pid: 1026] : Reached target Timers.
+[kernel] : [    0.614454] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[systemd  pid: 1] : Listening on D-Bus System Message Bus Socket.
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.systemd1'
+[kernel] : [    0.026706] process: using mwait in idle threads
+[systemd-modules-load  pid: 213] : Inserted module 'parport_pc'
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.182955] pinctrl core: initialized pinctrl subsystem
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] Loaded device plugin: NMVethFactory (internal)
+[kernel] : [    0.000000] CPUID[0d  0b]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMMacvlanFactory (internal)
+[rtkit-daemon  pid: 1113] : Supervising 7 threads of 3 processes of 2 users.
+[kernel] : [    5.052936] audit: type=1400 audit(1466518544.872:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=383 comm="apparmor_parser"
+[NetworkManager  pid: 585] : <info>  [1466518840.1874] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+[kernel] : [    0.210355] AppArmor: AppArmor Filesystem Enabled
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[kernel] : [    0.000000]   Normal   empty
+[kernel] : [    0.000000] CPUID[0d  01]: eax=00000000 ebx=000003c0 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205190.8426] NetworkManager (version 1.2.0) is starting...
+[kernel] : [    0.692603] PM: Hibernation image not present or could not be loaded.
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMBridgeFactory (internal)
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMIPTunnelFactory (internal)
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[kernel] : [    4.538203] audit: type=1400 audit(1467205190.340:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=368 comm="apparmor_parser"
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMIPTunnelFactory (internal)
+[rtkit-daemon  pid: 1019] : Supervising 4 threads of 2 processes of 2 users.
+[NetworkManager  pid: 572] : <info>  [1466518545.7093] manager: Networking is enabled by state file
+[systemd  pid: 1] : Stopped target Timers.
+[kernel] : [    0.000000]   DMA zone: 21 pages reserved
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMVethFactory (internal)
+[NetworkManager  pid: 585] : <info>  [1466518839.9476] management mode: unmanaged
+[kernel] : [    4.529260] audit: type=1400 audit(1466518839.336:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=365 comm="apparmor_parser"
+[kernel] : [    0.000000]   Centaur CentaurHauls
+[kernel] : [    0.000000]   Intel GenuineIntel
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[NetworkManager  pid: 582] : <info>  [1467205190.8435] Read config: /etc/NetworkManager/NetworkManager.conf
+[kernel] : [    0.025233] Calibrating delay loop (skipped) preset value.. 5183.93 BogoMIPS (lpj=10367864)
+[dbus  pid: 536] : [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'
+[kernel] : [    0.660930] ohci-platform: OHCI generic platform driver
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMInfinibandFactory (internal)
+[kernel] : [    4.799501] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 585] : <info>  [1466518840.0799] manager: Networking is enabled by state file
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[kernel] : [    0.181153] APIC calibration not consistent with PM-Timer: 96ms instead of 100ms
+[kernel] : [    0.000000] BRK [0x02201000  0x02201fff] PGTABLE
+[kernel] : [    0.205212] vgaarb: loaded
+[kernel] : [    0.679385] ohci-platform: OHCI generic platform driver
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[kernel] : [    0.000000] NX (Execute Disable) protection: active
+[kernel] : [    0.000000] Modules linked in:
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMEthernetFactory (internal)
+[kernel] : [    0.615128] io scheduler noop registered
+[kernel] : [    0.000000]   Normal   empty
+[kernel] : [    4.541345] audit: type=1400 audit(1467205190.348:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=369 comm="apparmor_parser"
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[NetworkManager  pid: 582] : <info>  [1467205191.3919] ModemManager available in the bus
+[kernel] : [    0.185344] ACPI: Using IOAPIC for interrupt routing
+[kernel] : [    5.052936] audit: type=1400 audit(1466518544.872:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=383 comm="apparmor_parser"
+[systemd  pid: 1] : Created slice User Slice of lightdm.
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMVethFactory (internal)
+[kernel] : [    0.000000] CPUID[0d  0e]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[NetworkManager  pid: 582] : <info>  [1467205191.3930] device (enp0s3): state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMVethFactory (internal)
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMBondFactory (internal)
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.025706] Initializing cgroup subsys net_cls
+[NetworkManager  pid: 567] : <info>  [1467290566.2226] monitoring ifupdown state file '/run/network/ifstate'.
+[kernel] : [    0.614955] Allocating IMA MOK and blacklist keyrings.
+[rtkit-daemon  pid: 1005] : Supervising 5 threads of 2 processes of 2 users.
+[NetworkManager  pid: 567] : <info>  [1467290566.6339] Loaded device plugin: NMVlanFactory (internal)
+[NetworkManager  pid: 585] : <info>  [1466518849.9614] WiFi hardware radio set enabled
+[kernel] : [    4.538070] audit: type=1400 audit(1466518839.344:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=368 comm="apparmor_parser"
+[kernel] : [    0.183214] cpuidle: using governor menu
+[kernel] : [    0.184622] ACPI: Added _OSI(Processor Device)
+[kernel] : [    0.184550] ACPI: Added _OSI(Processor Aggregator Device)
+[kernel] : [    0.000000] ---[ end trace 4d5ff9f2f68c4233 ]---
+[kernel] : [    0.000000] CPUID[0d  05]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.679385] ohci-platform: OHCI generic platform driver
+[NetworkManager  pid: 582] : <info>  [1467205191.3189] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[kernel] : [    0.026567] Initializing cgroup subsys memory
+[NetworkManager  pid: 567] : <info>  [1467290566.2223] manager[0x1ba21a0]: monitoring kernel firmware directory '/lib/firmware'.
+[kernel] : [    0.000000] Modules linked in:
+[systemd  pid: 1] : Listening on CUPS Scheduler.
+[NetworkManager  pid: 582] : <info>  [1467205190.8683] dns-mgr[0xa848c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[NetworkManager  pid: 582] : <info>  [1467205191.0686] (11027664) ... get_connections.
+[lightdm] : PAM adding faulty module: pam_kwallet.so
+[rtkit-daemon  pid: 1088] : Supervising 4 threads of 2 processes of 2 users.
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] end _init.
+[rtkit-daemon  pid: 1113] : Supervising 4 threads of 2 processes of 2 users.
+[NetworkManager  pid: 572] : <info>  [1466518545.7878] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+[kernel] : [    0.183565] cpuidle: using governor menu
+[kernel] : [    0.000000] ---[ end trace 4d5ff9f2f68c4233 ]---
+[anacron  pid: 517] : Will run job `cron.monthly' in 15 min.
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[NetworkManager  pid: 582] : <info>  [1467205191.3241] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[NetworkManager  pid: 572] : <info>  [1466518545.8348] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.203628] NetLabel: Initializing
+[kernel] : [    0.202422] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[NetworkManager  pid: 572] : <info>  [1466518545.7802] ofono is now available
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMMacvlanFactory (internal)
+[alsactl  pid: 600] : Hardware is initialized using a generic method
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] Loaded device plugin: NMVxlanFactory (internal)
+[NetworkManager  pid: 582] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[kernel] : [    0.000000] ---[ end trace 4d5ff9f2f68c4233 ]---
+[NetworkManager  pid: 582] : <info>  [1467205191.4694] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.046130] Freeing SMP alternatives memory: 28K (ffffffff820b3000 - ffffffff820ba000)
+[kernel] : [    0.000000] CPUID[0d  10]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.615886] ACPI: Battery Slot [BAT0] (battery present)
+[NetworkManager  pid: 567] : <info>  [1467290566.2402] dns-mgr[0x1bb40a0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[rtkit-daemon  pid: 1005] : Successfully made thread 1215 of process 1215 (n/a) owned by '1000' high priority at nice level -11.
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[kernel] : [    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[NetworkManager  pid: 572] : <info>  [1466518545.5965] (31076640) ... get_connections.
+[rtkit-daemon  pid: 1019] : Supervising 4 threads of 2 processes of 2 users.
+[kernel] : [    0.602855] ACPI: Battery Slot [BAT0] (battery present)
+[kernel] : [    0.210355] AppArmor: AppArmor Filesystem Enabled
+[kernel] : [    0.000000] CPUID[0d  05]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.3189] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[kernel] : [  287.681186] show_signal_msg: 9 callbacks suppressed
+[kernel] : [    0.000000] ACPI: Early table checksum verification disabled
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[kernel] : [    4.745066] fbcon: vboxdrmfb (fb0) is primary device
+[NetworkManager  pid: 567] : <info>  [1467290566.4214] devices added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3)
+[dbus  pid: 563] : [system] Successfully activated service 'org.freedesktop.hostname1'
+[kernel] : [    0.616796] ACPI: Power Button [PWRF]
+[systemd  pid: 1] : Listening on ACPID Listen Socket.
+[NetworkManager  pid: 572] : <info>  [1466518545.4663] monitoring ifupdown state file '/run/network/ifstate'.
+[kernel] : [    0.676272] ledtrig-cpu: registered to indicate activity on CPUs
+[NetworkManager  pid: 572] : <info>  [1466518545.7431] device (enp0s3): link connected
+[kernel] : [    0.000000] CPUID[0d  01]: eax=00000000 ebx=000003c0 ecx=00000000 edx=00000000
+[NetworkManager  pid: 582] : <info>  [1467205191.2899] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+[kernel] : [    0.000000] CPUID[0d  04]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Initializing cgroup subsys cpuacct
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[NetworkManager  pid: 572] : <info>  [1466518550.9752] manager: startup complete
+[NetworkManager  pid: 572] : <info>  [1466518545.6489] SettingsPlugin-Ofono: (31076800) ... get_connections.
+[kernel] : [    0.000000] CPUID[0d  09]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000]   Device   empty
+[NetworkManager  pid: 585] : <info>  [1466518840.1459] urfkill disappeared from the bus
+[NetworkManager  pid: 582] : <info>  [1467205191.3414] device (lo): link connected
+[kernel] : [    0.204291] SCSI subsystem initialized
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'
+[NetworkManager  pid: 582] : <info>  [1467205200.9615] WiFi hardware radio set enabled
+[NetworkManager  pid: 567] : <info>  [1467290566.8305] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[kernel] : [    0.185330] ACPI: Interpreter enabled
+[kernel] : [    0.026801] Initializing cgroup subsys freezer
+[kernel] : [    0.026093] Security Framework initialized
+[rtkit-daemon  pid: 1005] : Supervising 7 threads of 3 processes of 2 users.
+[NetworkManager  pid: 572] : <info>  [1466518545.4663] monitoring ifupdown state file '/run/network/ifstate'.
+[NetworkManager  pid: 572] : <info>  [1466518545.7223] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wwan.so)
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] CPUID[0d  08]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[kernel] : [    9.065765] work still pending
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMInfinibandFactory (internal)
+[kernel] : [    0.185344] ACPI: Using IOAPIC for interrupt routing
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[rtkit-daemon  pid: 1113] : Supervising 5 threads of 2 processes of 2 users.
+[pulseaudio  pid: 1189] : [pulseaudio] authkey.c: Failed to load authentication key '/home/stefan/.pulse-cookie': No such file or directory
+[kernel] : [    0.000000] BRK [0x021ff000  0x021fffff] PGTABLE
+[pulseaudio  pid: 1189] : [pulseaudio] authkey.c: Failed to load authentication key '/home/stefan/.pulse-cookie': No such file or directory
+[kernel] : [    0.000000]   Normal   empty
+[kernel] : [    0.183986] PCCT header not found.
+[kernel] : [    0.026570] Initializing cgroup subsys devices
+[kernel] : [    0.026567] Initializing cgroup subsys memory
+[anacron  pid: 491] : Will run job `cron.monthly' in 15 min.
+[kernel] : [    0.000000] Modules linked in:
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMEthernetFactory (internal)
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[kernel] : [    0.202513] NetLabel: Initializing
+[kernel] : [    0.186418] ACPI: Interpreter enabled
+[kernel] : [    0.000000] Policy zone: DMA32
+[kernel] : [    4.534584] audit: type=1400 audit(1466518839.336:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/ubuntu-core-launcher" pid=367 comm="apparmor_parser"
+[systemd-modules-load  pid: 210] : Inserted module 'parport_pc'
+[rtkit-daemon  pid: 1113] : Supervising 1 threads of 1 processes of 1 users.
+[dbus  pid: 536] : [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+[kernel] : [    5.950988] audit: type=1400 audit(1467290565.756:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=371 comm="apparmor_parser"
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMVlanFactory (internal)
+[kernel] : [    0.205654] PCI: Using ACPI for IRQ routing
+[NetworkManager  pid: 585] : <info>  [1466518840.0801] Loaded device plugin: NMBridgeFactory (internal)
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[NetworkManager  pid: 585] : <info>  [1466518840.2388] manager: NetworkManager state is now CONNECTED_LOCAL
+[kernel] : [    0.000000] CPUID[0d  08]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.026578] Initializing cgroup subsys pids
+[kernel] : [    0.184550] ACPI: Added _OSI(Processor Aggregator Device)
+[kernel] : [    0.000000] KERNEL supported cpus:
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[NetworkManager  pid: 567] : <info>  [1467290576.9615] WiFi hardware radio set enabled
+[systemd-modules-load  pid: 210] : Inserted module 'lp'
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[kernel] : [    0.186235] ACPI: Using IOAPIC for interrupt routing
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[dbus  pid: 563] : [system] AppArmor D-Bus mediation is enabled
+[systemd-logind  pid: 617] : Watching system buttons on /dev/input/event0 (Power Button)
+[NetworkManager  pid: 585] : <info>  [1466518839.9478] devices added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3)
+[kernel] : [    0.000000] Initializing cgroup subsys cpuset
+[NetworkManager  pid: 585] : <info>  [1466518844.9570] manager: startup complete
+[kernel] : [    0.027307] Initializing cgroup subsys memory
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[kernel] : [    0.602855] ACPI: Battery Slot [BAT0] (battery present)
+[kernel] : [    0.000000]   AMD AuthenticAMD
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[systemd-logind  pid: 518] : New session c1 of user lightdm.
+[kernel] : [    0.000000] CPUID[0d  11]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[pulseaudio  pid: 1189] : [pulseaudio] authkey.c: Failed to open cookie file '/home/stefan/.pulse-cookie': No such file or directory
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[kernel] : [    0.000000] BRK [0x02202000  0x02202fff] PGTABLE
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[dnsmasq  pid: 786] : DBus support enabled: connected to system bus
+[NetworkManager  pid: 585] : <info>  [1466518840.2388] manager: NetworkManager state is now CONNECTED_LOCAL
+[NetworkManager  pid: 582] : <info>  [1467205191.4081] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+[kernel] : [    0.026571] Initializing cgroup subsys freezer
+[dnsmasq  pid: 754] : DBus support enabled: connected to system bus
+[NetworkManager  pid: 582] : <info>  [1467205191.0664] init!
+[NetworkManager  pid: 572] : <info>  [1466518545.4596] NetworkManager (version 1.2.0) is starting...
+[systemd  pid: 1] : Received SIGRTMIN+21 from PID 324 (plymouthd).
+[kernel] : [    0.182140] pinctrl core: initialized pinctrl subsystem
+[NetworkManager  pid: 582] : <info>  [1467205191.4674] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[kernel] : [    0.183577] ACPI: Added _OSI(Processor Device)
+[kernel] : [    0.183962] ACPI: Executed 1 blocks of module-level executable AML code
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[NetworkManager  pid: 585] : <info>  [1466518840.1084] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[kernel] : [    0.046130] Freeing SMP alternatives memory: 28K (ffffffff820b3000 - ffffffff820ba000)
+[kernel] : [    0.026571] Initializing cgroup subsys freezer
+[anacron  pid: 491] : Will run job `cron.daily' in 5 min.
+[NetworkManager  pid: 582] : <info>  [1467205191.0685] SettingsPlugin-Ofono: init!
+[kernel] : [    0.674143] ohci-platform: OHCI generic platform driver
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[kernel] : [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+[kernel] : [    4.538070] audit: type=1400 audit(1466518839.344:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=368 comm="apparmor_parser"
+[NetworkManager  pid: 582] : <info>  [1467205191.1461] SettingsPlugin-Ofono: (11027824) ... get_connections.
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3  iface: enp0s3): no ifupdown configuration found.
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[systemd  pid: 1] : Created slice User Slice of stefan.
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.203397] PCI: Using ACPI for IRQ routing
+[kernel] : [    0.000000] CPUID[0d  03]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000] No NUMA configuration found
+[kernel] : [    0.205212] vgaarb: loaded
+[kernel] : [    0.000000] CPUID[0d  00]: eax=00000007 ebx=00000440 ecx=00000440 edx=00000000
+[systemd-modules-load  pid: 211] : Inserted module 'ppdev'
+[kernel] : [    0.000000]   DMA zone: 21 pages reserved
+[systemd-timesyncd  pid: 343] : Synchronized to time server 91.189.89.199:123 (ntp.ubuntu.com).
+[NetworkManager  pid: 572] : <info>  [1466518545.4599] Read config: /etc/NetworkManager/NetworkManager.conf
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[systemd  pid: 1] : Listening on D-Bus System Message Bus Socket.
+[kernel] : [    0.205876] NetLabel: Initializing
+[rtkit-daemon  pid: 1019] : Successfully made thread 1216 of process 1216 (n/a) owned by '1000' high priority at nice level -11.
+[NetworkManager  pid: 582] : <info>  [1467205190.8683] dns-mgr[0xa848c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[kernel] : [    0.183563] cpuidle: using governor ladder
+[NetworkManager  pid: 582] : <info>  [1467205191.0667] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[NetworkManager  pid: 567] : <info>  [1467290566.6340] Loaded device plugin: NMEthernetFactory (internal)
+[systemd  pid: 1] : Listening on D-Bus System Message Bus Socket.
+[NetworkManager  pid: 585] : <info>  [1466518849.9615] WWAN hardware radio set enabled
+[kernel] : [    0.000000] Movable zone start for each node
+[systemd-logind  pid: 518] : Watching system buttons on /dev/input/event3 (Video Bus)
+[kernel] : [    0.181155] APIC delta adjusted to PM-Timer: 6382345 (6128053)
+[systemd  pid: 1] : Received SIGRTMIN+20 from PID 327 (plymouthd).
+[systemd  pid: 1] : Stopped target Sound Card.
+[kernel] : [    0.181783] smpboot: Total of 1 processors activated (5183.93 BogoMIPS)
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[NetworkManager  pid: 582] : <info>  [1467205190.8426] NetworkManager (version 1.2.0) is starting...
+[NetworkManager  pid: 585] : <info>  [1466518840.0228] SettingsPlugin-Ofono: (18763120) ... get_connections.
+[NetworkManager  pid: 567] : <info>  [1467290566.6955] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[kernel] : [    0.183216] PCCT header not found.
+[NetworkManager  pid: 585] : <info>  [1466518840.2426] DNS: starting dnsmasq...
+[kernel] : [    0.000000] CPUID[0d  05]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[kernel] : [    5.049826] audit: type=1400 audit(1466518544.872:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=383 comm="apparmor_parser"
+[systemd  pid: 1026] : Stopped target Timers.
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[kernel] : [    0.181783] smpboot: Total of 1 processors activated (5183.93 BogoMIPS)
+[systemd-logind  pid: 575] : New session c4 of user stefan.
+[kernel] : [    0.686381] AppArmor: AppArmor sha1 policy hashing enabled
+[kernel] : [    0.186418] ACPI: Interpreter enabled
+[kernel] : [    0.000000] CPUID[0d  0d]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.186231] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[NetworkManager  pid: 582] : <info>  [1467205191.4654] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[kernel] : [    0.000000] MTRR default type: uncachable
+[kernel] : [    0.186427] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[NetworkManager  pid: 582] : <info>  [1467205190.8426] NetworkManager (version 1.2.0) is starting...
+[kernel] : [    0.026796] Initializing cgroup subsys memory
+[kernel] : [    9.065732] floppy0: no floppy controllers found
+[kernel] : [    0.000000] tsc: Detected 2591.966 MHz processor
+[kernel] : [    0.025233] Calibrating delay loop (skipped) preset value.. 5183.93 BogoMIPS (lpj=10367864)
+[kernel] : [    4.745721] AES CTR mode by8 optimization enabled
+[avahi-daemon  pid: 538] : Network interface enumeration completed.
+[NetworkManager  pid: 567] : <info>  [1467290566.7581] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000100000-0x000000002ffeffff]
+[kernel] : [    0.184623] ACPI: Added _OSI(Processor Aggregator Device)
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[rtkit-daemon  pid: 1088] : Successfully made thread 1102 of process 1087 (n/a) owned by '108' RT at priority 5.
+[kernel] : [    0.186423] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[kernel] : [    0.784904] Freeing unused kernel memory: 1868K (ffff88000182d000 - ffff880001a00000)
+[kernel] : [    0.000000] ACPI: IRQ0 used by override.
+[NetworkManager  pid: 572] : <info>  [1466518545.5965] SettingsPlugin-Ofono: init!
+[kernel] : [    4.533104] audit: type=1400 audit(1466518839.336:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=366 comm="apparmor_parser"
+[NetworkManager  pid: 567] : <info>  [1467290566.6339] Loaded device plugin: NMVxlanFactory (internal)
+[kernel] : [    0.000000] Movable zone start for each node
+[NetworkManager  pid: 582] : <info>  [1467205196.9719] manager: startup complete
+[kernel] : [    0.000000] CPU MTRRs all blank - virtualized system.
+[kernel] : [    0.614893] Initialise system trusted keyring
+[kernel] : [    0.000000]   Device   empty
+[kernel] : [    0.000000]   Intel GenuineIntel
+[kernel] : [    0.000000] CPUID[0d  0f]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[rtkit-daemon  pid: 1088] : Successfully called chroot.
+[kernel] : [    0.184549] ACPI: Added _OSI(Processor Device)
+[kernel] : [    0.000000] MTRR variable ranges disabled:
+[kernel] : [    0.025233] Calibrating delay loop (skipped) preset value.. 5183.93 BogoMIPS (lpj=10367864)
+[kernel] : [    0.026706] process: using mwait in idle threads
+[systemd  pid: 1] : Received SIGRTMIN+20 from PID 329 (plymouthd).
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] Loaded device plugin: NMVlanFactory (internal)
+[kernel] : [    0.181241] KVM setup paravirtual spinlock
+[kernel] : [    0.000000] ------------[ cut here ]------------
+[kernel] : [    0.000000] ACPI: IRQ9 used by override.
+[kernel] : [    0.000000]   Device   empty
+[kernel] : [    0.184623] ACPI: Added _OSI(Processor Aggregator Device)
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[NetworkManager  pid: 582] : <info>  [1467205191.2843] Loaded device plugin: NMIPTunnelFactory (internal)
+[systemd  pid: 1] : Mounted FUSE Control File System.
+[kernel] : [    0.202149] SCSI subsystem initialized
+[NetworkManager  pid: 567] : <info>  [1467290566.6339] Loaded device plugin: NMVxlanFactory (internal)
+[kernel] : [    0.000000]   DMA zone: 21 pages reserved
+[kernel] : [    0.000000] CPUID[0d  06]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.185335] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[rtkit-daemon  pid: 1005] : Supervising 5 threads of 2 processes of 2 users.
+[systemd  pid: 1] : Reloading.
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[kernel] : [    0.000000] Initializing cgroup subsys cpu
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] device added (path: /sys/devices/virtual/net/lo  iface: lo): no ifupdown configuration found.
+[NetworkManager  pid: 585] : <info>  [1466518839.9496] (18762960) ... get_connections.
+[kernel] : [    0.613106] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[kernel] : [    0.181982] devtmpfs: initialized
+[systemd  pid: 1026] : Stopped target Sockets.
+[systemd  pid: 1] : Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[NetworkManager  pid: 585] : <info>  [1466518839.9479] devices added (path: /sys/devices/virtual/net/lo  iface: lo)
+[kernel] : [    0.679661] Key type dns_resolver registered
+[NetworkManager  pid: 582] : <info>  [1467205191.4654] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+[kernel] : [    0.027305] Initializing cgroup subsys io
+[kernel] : [    0.026574] Initializing cgroup subsys perf_event
+[NetworkManager  pid: 585] : <info>  [1466518840.1726] ofono is now available
+[rtkit-daemon  pid: 1088] : Supervising 3 threads of 1 processes of 1 users.
+[NetworkManager  pid: 585] : <info>  [1466518840.1319] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+[kernel] : [    0.000000] Hierarchical RCU implementation.
+[NetworkManager  pid: 582] : <info>  [1467205191.4687] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+[NetworkManager  pid: 572] : <info>  [1466518545.8345] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+[rtkit-daemon  pid: 1088] : Supervising 5 threads of 2 processes of 2 users.
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMMacvlanFactory (internal)
+[rtkit-daemon  pid: 1019] : Canary thread running.
+[kernel] : [    0.676272] ledtrig-cpu: registered to indicate activity on CPUs
+[kernel] : [    0.672574] PM: Hibernation image not present or could not be loaded.
+[NetworkManager  pid: 572] : <info>  [1466518545.8335] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+[kernel] : [    0.663154] ledtrig-cpu: registered to indicate activity on CPUs
+[kernel] : [    0.000000] BRK [0x02200000  0x02200fff] PGTABLE
+[kernel] : [    0.000000]   Normal   empty
+[lightdm] : PAM adding faulty module: pam_kwallet5.so
+[kernel] : [    0.051518] ftrace: allocating 31907 entries in 125 pages
+[NetworkManager  pid: 572] : <info>  [1466518545.5965] (31076640) ... get_connections.
+[kernel] : [    0.000000] ACPI: Local APIC address 0xfee00000
+[kernel] : [    0.687274] PM: Hibernation image not present or could not be loaded.
+[rtkit-daemon  pid: 1019] : Successfully made thread 1225 of process 1216 (n/a) owned by '1000' RT at priority 5.
+[NetworkManager  pid: 585] : <info>  [1466518840.1084] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[kernel] : [    0.000000] CPUID[0d  07]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.7094] Loaded device plugin: NMEthernetFactory (internal)
+[kernel] : [    0.679661] Key type dns_resolver registered
+[NetworkManager  pid: 582] : <info>  [1467205191.3189] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[pulseaudio  pid: 1004] : [pulseaudio] authkey.c: Failed to open cookie file '/var/lib/lightdm/.config/pulse/cookie': No such file or directory
+[NetworkManager  pid: 582] : <info>  [1467205190.8603] monitoring ifupdown state file '/run/network/ifstate'.
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.hostname1'
+[NetworkManager  pid: 585] : <info>  [1466518839.9476] management mode: unmanaged
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] end _init.
+[kernel] : [    0.183216] PCCT header not found.
+[kernel] : [    0.000000] Hypervisor detected: KVM
+[NetworkManager  pid: 585] : <info>  [1466518839.8234] dns-mgr[0x11e50c0]: set resolv-conf-mode: dnsmasq  plugin="dnsmasq"
+[dbus  pid: 557] : [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+[kernel] : [    0.186427] ACPI Exception: AE_NOT_FOUND  While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[NetworkManager  pid: 572] : <info>  [1466518545.7316] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+[kernel] : [    0.000000] KERNEL supported cpus:
+[kernel] : [    0.000000]   DMA zone: 21 pages reserved
+[systemd  pid: 1] : Reloading OpenBSD Secure Shell server.
+[kernel] : [    0.000000] CPUID[0d  08]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[pulseaudio  pid: 1253] : [pulseaudio] pid.c: Daemon already running.
+[kernel] : [    0.181982] devtmpfs: initialized
+[systemd-modules-load  pid: 211] : Inserted module 'parport_pc'
+[NetworkManager  pid: 585] : <info>  [1466518839.9495] SettingsPlugin-Ofono: init!
+[kernel] : [    4.749698] fbcon: vboxdrmfb (fb0) is primary device
+[kernel] : [    0.690063] PM: Hibernation image not present or could not be loaded.
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.000000] CPUID[0d  0c]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 572] : <info>  [1466518545.7693] urfkill disappeared from the bus
+[kernel] : [    0.000000] CPUID[0d  04]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[NetworkManager  pid: 585] : <info>  [1466518839.8145] Read config: /etc/NetworkManager/NetworkManager.conf
+[NetworkManager  pid: 585] : <info>  [1466518849.9615] WWAN hardware radio set enabled
+[kernel] : [    5.947593] audit: type=1400 audit(1467290565.752:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=370 comm="apparmor_parser"
+[kernel] : [    0.000000] Early memory node ranges
+[kernel] : [    0.050858] ftrace: allocating 31907 entries in 125 pages
+[dbus  pid: 558] : [system] AppArmor D-Bus mediation is enabled
+[kernel] : [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[kernel] : [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[rtkit-daemon  pid: 1088] : Successfully made thread 1482 of process 1475 (n/a) owned by '1000' RT at priority 5.
+[kernel] : [    0.663154] ledtrig-cpu: registered to indicate activity on CPUs
+[systemd  pid: 1] : Reloaded OpenBSD Secure Shell server.
+[NetworkManager  pid: 572] : <info>  [1466518545.5948] end _init.
+[kernel] : [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000002ffeffff]
+[kernel] : [    0.000000] Modules linked in:
+[kernel] : [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[kernel] : [    5.327458] audit: type=1400 audit(1466518545.152:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=471 comm="apparmor_parser"
+[kernel] : [    0.622406] loop: module loaded
+[kernel] : [    0.692529] EDD information not available.
+[kernel] : [    0.186418] ACPI: Interpreter enabled
+[kernel] : [    5.327458] audit: type=1400 audit(1466518545.152:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=471 comm="apparmor_parser"
+[kernel] : [    0.026801] Initializing cgroup subsys freezer
+[kernel] : [    0.180955] APIC calibration not consistent with PM-Timer: 97ms instead of 100ms
+[dbus  pid: 557] : [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+[NetworkManager  pid: 582] : <info>  [1467205191.4016] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+[NetworkManager  pid: 582] : <info>  [1467205191.3930] device (enp0s3): state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+[kernel] : [    0.026570] Initializing cgroup subsys devices
+[kernel] : [    0.025703] Initializing cgroup subsys devices
+[kernel] : [    4.541342] audit: type=1400 audit(1467205190.348:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=369 comm="apparmor_parser"
+[NetworkManager  pid: 582] : <info>  [1467205191.2842] Loaded device plugin: NMVlanFactory (internal)
+[lightdm] : PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+[kernel] : [    0.180228] APIC delta adjusted to PM-Timer: 6364341 (6165813)
+[rtkit-daemon  pid: 1019] : Running.
+[kernel] : [    0.027904] process: using mwait in idle threads
+[kernel] : [    0.663870] Key type dns_resolver registered
+[NetworkManager  pid: 585] : <info>  [1466518840.0800] Loaded device plugin: NMInfinibandFactory (internal)
+[NetworkManager  pid: 582] : <info>  [1467205191.0665] management mode: unmanaged
+[kernel] : [    0.605301] loop: module loaded
+[systemd  pid: 1] : Stopped target Graphical Interface.
+[systemd-logind  pid: 518] : New seat seat0.
+[kernel] : [    0.025697] Initializing cgroup subsys io
+[dbus  pid: 558] : [system] Reloaded configuration
+[kernel] : [    0.000000] CPUID[0d  04]: eax=00000000 ebx=00000000 ecx=00000000 edx=00000000
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+[NetworkManager  pid: 585] : <info>  [1466518839.8194] monitoring ifupdown state file '/run/network/ifstate'.
+[NetworkManager  pid: 585] : <info>  [1466518840.2414] manager: NetworkManager state is now CONNECTED_GLOBAL
+[kernel] : [    5.947598] audit: type=1400 audit(1467290565.752:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=370 comm="apparmor_parser"
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+[kernel] : [    0.000000] CPUID[0d  05]: eax=00000000/ ebx=00000000 ecx=00000000 edx=00000000
+[kernel] : [    0.618217] loop: module loaded
+[kernel] : [    0.184549] ACPI: Added _OSI(Processor Device)
+[NetworkManager  pid: 585] : nm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed
+[org.gtk.vfs.Daemon  pid: 945] : A connection to the bus can't be made
+[dbus  pid: 558] : [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+[kernel] : [    0.205949] clocksource: Switched to clocksource kvm-clock
+[kernel] : [    4.189686] lp: driver loaded but no devices found
+[kernel] : [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[kernel] : [    0.604814] brd: module loaded
+[NetworkManager  pid: 585] : <info>  [1466518840.2376] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]

@@ -73,7 +73,10 @@ benchmark_settings = {
 
     'Mac': {
         'regex': [r'([\w-]+\.){2,}[\w-]+']
-    }
+    },
+    'Forensic': {
+        'regex': [r'(\d+\.){3}\d+', r'\d{2}:\d{2}:\d{2}']
+    },
 }
 input_dir = 'logs/'
 

@@ -1,5 +1,5 @@
 from Vue4logsParser import *
-
+from Forensic_data_generation import separate_forensic_headers
 import random
 
 random.seed(3)
@@ -101,6 +101,11 @@ benchmark_settings = {
         'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
         'regex': [r'([\w-]+\.){2,}[\w-]+'],
     },
+
+    'Forensic': {
+        'log_file': 'Forensic/Forensic_2k.log',
+        'regex': [r'(\d+\.){3}\d+', r'\d{2}:\d{2}:\d{2}']
+    }
 }
 
 if __name__ == '__main__':
@@ -111,6 +116,12 @@ if __name__ == '__main__':
         dataset_chosen = None
     pas = []
 
+    if type == '1':
+        print("\n======== Source Independant Parameter Tuning Benchmark ========")
+    elif type == '0':
+        print("\n======== Source Specific Parameter Tuning Benchmark ========")
+
+    print("======== Benchmarks of 16 Different Datasets ========\n")
     for dataset, setting in benchmark_settings.items():
         ground_truth_df = 'ground_truth/' + dataset + '_2k.log_structured.csv'
 
@@ -120,8 +131,14 @@ if __name__ == '__main__':
         dataset_config = benchmark_settings[dataset]
         indir = os.path.join(input_dir, os.path.dirname(dataset_config['log_file']))
         log_file = os.path.basename(dataset_config['log_file'])
-        headers, regex = generate_logformat_regex(dataset_config['log_format'])
-        df_log = log_to_dataframe(indir + '/' + log_file, regex, headers)
+
+        if dataset == 'Forensic':
+            print(sum(pas) / 16.0)
+            print("\n======== Forensic Log Benchmark ========\n")
+            df_log = separate_forensic_headers(os.path.join(input_dir,dataset_config['log_file']))
+        else:
+            headers, regex = generate_logformat_regex(dataset_config['log_format'])
+            df_log = log_to_dataframe(indir + '/' + log_file, regex, headers)
 
         if type == '1':
 
@@ -130,6 +147,7 @@ if __name__ == '__main__':
             parser.parse(df_log)
             output = "results/" + str(threshold) + "/" + dataset + "_structured.csv"
             pa = evaluate(ground_truth_df, output)[1]
+            print(dataset, pa)
             pas.append(pa)
 
         elif type == '0':
@@ -155,4 +173,4 @@ if __name__ == '__main__':
             print("Error in arguments.")
             sys.exit(0)
 
-    print(sum(pas) / 16.0)
+
