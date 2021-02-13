@@ -1,5 +1,16 @@
 .idea/
 __pycache__
 
+# Additional scripts
 results/
 scripts/
+data_generation/
+
+#log files of differrent sizes for efficiency tests
+logs/*/*_*M.log
+logs/*/*_1G.log
+logs/*/*_*K.log
+
+#large raw log files of HDFS, Android and BGL
+logs/*.log
+
