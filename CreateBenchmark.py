@@ -1,5 +1,5 @@
 from Vue4logsParser import *
-from Forensic_data_generation import separate_forensic_headers
+from ForensicDataGeneration import separate_forensic_headers
 import random
 
 random.seed(3)
