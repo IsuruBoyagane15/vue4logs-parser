@@ -84,7 +84,7 @@ def separate_forensic_headers(log_file):
 
         logdf = pd.DataFrame(log_messages, columns=headers, index=None)
         if i == "Duration":
-            logdf['LineId'] = [i + 1 for i in range(linecount)]
+            logdf['LineId'] = [j + 1 for j in range(linecount)]
         df_log[i] = logdf[i]
         df_log['Content'] = logdf['Content']
     return df_log
